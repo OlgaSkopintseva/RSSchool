@@ -45,6 +45,10 @@
   transition: color 0.3s linear;
 }
 
+.navigation-link:hover {
+  color: #9c9c9c;
+}
+
 .icon-profile {
   height: 28px;
   width: 28px;
