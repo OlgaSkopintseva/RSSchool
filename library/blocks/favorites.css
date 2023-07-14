@@ -11,7 +11,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding: 18px 640px 20px 640px;
+  padding: 20px 640px 20px 640px;
   margin: 0;
 }
 
@@ -31,7 +31,7 @@
   font-weight: 700;
   line-height: normal;
   margin: 0;
-  padding: 41px 1186px 38px 21px;
+  padding: 37px 1186px 38px 21px;
 }
 
 .favorites-season {
@@ -43,13 +43,8 @@
   padding-left: 20px;
 }
 
-.choose-button {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: transparent;
-  cursor: pointer;
+.favorites-season-icon {
+  padding: 6px 21px 39px 0;
 }
 
 .favorites-season-winter {
@@ -88,7 +83,7 @@
 
 .favorite-border {
   width: 548px;
-  height: 553px;
+  height: 552px;
   border: 1px solid #000;
   position: absolute;
   margin-left: 20px;
@@ -124,7 +119,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 18px 20px 20px 40px;
+  padding: 16px 20px 20px 40px;
   margin: 0;
 }
 
