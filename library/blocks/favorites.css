@@ -148,7 +148,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding: 0 15px 15px 40px;
+  padding: 0 15px 0px 40px;
   margin: 0;
 }
 
@@ -164,39 +164,32 @@
 }
 
 .buy-button-input {
-  display: none;
-}
-
-.buy-button-label {
-  display: inline-block;
-  width: 72px;
-  height: 28px;
-  border-radius: 2px;
-  border: 1px solid #0c0c0e;
-  color: #0c0c0e;
+  background-color: #fff;
   text-align: center;
   font-family: Inter;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
+  color: #0c0c0e;
   line-height: normal;
   letter-spacing: 1px;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin: 0 295px 15px 40px;
+  margin: 15px 292px 13px 40px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  width: 75px;
+  height: 30px;
+  position: absolute;
 }
 
 .buy-button-input-2 {
-  display: none;
-}
-
-.buy-button-label-2 {
   display: inline-block;
-  width: 72px;
-  height: 28px;
+  background-color: #fff;
+  width: 75px;
+  height: 30px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   color: #0c0c0e;
@@ -207,20 +200,18 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin: 40px 295px 15px 40px;
+  margin: 55px 292px 13px 40px;
 }
 
-.buy-button-input-4 {
-  display: none;
-}
-
-.buy-button-label-4 {
-  color: #bb945f;
+.buy-button-input:hover {
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  color: #0c0c0e;
   text-align: center;
   font-family: Inter;
   font-size: 10px;
@@ -228,13 +219,42 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
+  cursor: pointer
+}
+
+.buy-button-input-2:hover {
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  cursor: pointer
+}
+
+.buy-button-input-4 {
+  background-color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  color: #bb945f;
+  line-height: normal;
+  letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin: 80px 295px 15px 40px;
+  margin: 95px 292px 15px 40px;
   border-radius: 2px;
   border: 1px solid #bb945f;
-  width: 72px;
-  height: 28px;
+  width: 75px;
+  height: 30px;
+  position: absolute;
 }
