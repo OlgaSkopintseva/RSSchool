@@ -57,7 +57,7 @@
         <p class="welcome-text">Welcome<br />to the Brooklyn Library</p>
       </section>
     </div>
-    <section class="about">
+    <section class="about" id="#about">
       <h2 class="about-title">About</h2>
       <hr class="about-hr" />
       <p class="about-text">
@@ -75,42 +75,144 @@
           <img class="about-image" src="./img/image-3.png" />
         </li>
       </ul>
-      <img
-        class="about-carousel"
-        src="./img/carousel.svg"
-        alt="carousel-pagination"
-      />
+      <ul class="about-buttons">
+        <li class="about-button-li"><div class="about-button"></div></li>
+        <li class="about-button-li"><div class="about-button_about_button"></div></li>
+        <li class="about-button-li"><div class="about-button_about_button"></div></li>
+      </ul>
     </section>
-    <section class="favorites">
+    <section class="favorites" id="favorites">
       <h2 class="favorites-title">Favorites</h2>
       <hr class="favorites-hr" />
       <p class="favorites-text">Pick favorites of season</p>
       <ul class="favorites-season">
-        <img class="favorites-season-winter-icon" src="./img/group.svg" />
+        <input
+          type="radio"
+          id="buy-button"
+          name="button"
+          class="choose-button"
+        />
+        <label for="choose-button" class="choose_button"></label>
         <li class="favorites-season-winter">Winter</li>
-        <img class="favorites-season-spring-icon" src="./img/ellipse.svg" />
         <li class="favorites-season-spring">Spring</li>
-        <img class="favorites-season-summer-icon" src="./img/ellipse.svg" />
         <li class="favorites-season-summer">Summer</li>
-        <img class="favorites-season-autumn-icon" src="./img/ellipse.svg" />
         <li class="favorites-season-autumn">Autumn</li>
       </ul>
-      <div class="favorite-border"></div>
-      <div class="favorite-card-1">
-        <p class="favorite-card-staff-picks">Staff Picks</p>
-        <hr class="favorite-card-staff-picks-hr" />
-        <p class="favorite-card-book">
-          The Book Eaters <br /><span class="favorite-card-author"
-            >By Sunyi Dean</span
-          >
-        </p>
-        <p class="favorite-card-book-about">
-          An unusual sci-fi story about a book eater woman who tries desperately
-          to save her dangerous mind-eater son from tradition and certain death.
-          Complete with dysfunctional family values, light Sapphic romance, and
-          a strong, complex protagonist. Not for the faint of heart.
-        </p>
-        <img class="favorite-card-book-photo" src="./img/book.png" alt="" />
+      <div class="favorites-card">
+        <div class="favorite-card">
+          <div class="favorite-border"></div>
+          <p class="favorite-card-staff-picks">Staff Picks</p>
+          <hr class="favorite-card-staff-picks-hr" />
+          <p class="favorite-card-book">
+            The Book Eaters<br /><span class="favorite-card-author"
+              >By Sunyi Dean</span
+            >
+          </p>
+          <p class="favorite-card-book-about">
+            An unusual sci-fi story about a book eater woman who tries
+            desperately to save her dangerous mind-eater son from tradition and
+            certain death. Complete with dysfunctional family values, light
+            Sapphic romance, and a strong, complex protagonist. Not for the
+            faint of heart.
+          </p>
+          <img
+            class="favorite-card-book-photo"
+            src="./img/book-1.png"
+            alt="The Book Eaters photo"
+          />
+          <input
+            type="radio"
+            id="buy-button"
+            name="button"
+            class="buy-button-input"
+          />
+          <label for="buy-button" class="buy-button-label">Buy</label>
+        </div>
+        <div class="favorite-card">
+          <div class="favorite-border"></div>
+          <p class="favorite-card-staff-picks">Staff Picks</p>
+          <hr class="favorite-card-staff-picks-hr" />
+          <p class="favorite-card-book">
+            Cackle<br /><span class="favorite-card-author"
+              >By Rachel Harrison</span
+            >
+          </p>
+          <p class="favorite-card-book-about">
+            Are your Halloween movies of choice The Witches of Eastwick and
+            Practical Magic? Look no further than here - where a woman
+            recovering from a breakup moves to a quaint town in upstate New York
+            and befriends a beautiful witch.
+          </p>
+          <img
+            class="favorite-card-book-photo"
+            src="./img/book-2.png"
+            alt="Cackle photo"
+          />
+          <input
+            type="radio"
+            id="buy-button"
+            name="button"
+            class="buy-button-input-2"
+          />
+          <label for="buy-button" class="buy-button-label-2">Buy</label>
+        </div>
+        <div class="favorite-card">
+          <div class="favorite-border"></div>
+          <p class="favorite-card-staff-picks">Staff Picks</p>
+          <hr class="favorite-card-staff-picks-hr" />
+          <p class="favorite-card-book">
+            Dante: Poet of the Secular World<br /><span
+              class="favorite-card-author"
+              >By Erich Auerbach</span
+            >
+          </p>
+          <p class="favorite-card-book-about">
+            Auerbach's engaging book places the 'Comedy' within the tradition of
+            epic, tragedy, and philosophy in general, arguing for Dante's
+            uniqueness as one who raised the individual and his drama of soul
+            into something of divine significance—an inspired introduction to
+            Dante's main themes.
+          </p>
+          <img
+            class="favorite-card-book-photo"
+            src="./img/book-3.png"
+            alt="TDante: Poet of the Secular World photo"
+          />
+          <input
+            type="radio"
+            id="buy-button"
+            name="button"
+            class="buy-button-input"
+          />
+          <label for="buy-button" class="buy-button-label">Buy</label>
+        </div>
+        <div class="favorite-card">
+          <div class="favorite-border"></div>
+          <p class="favorite-card-staff-picks">Staff Picks</p>
+          <hr class="favorite-card-staff-picks-hr" />
+          <p class="favorite-card-book">
+            The Last Queen<br /><span class="favorite-card-author"
+              >By Clive Irving</span
+            >
+          </p>
+          <p class="favorite-card-book-about">
+            A timely and revelatory new biography of Queen Elizabeth (and her
+            family) exploring how the Windsors have evolved and thrived as the
+            modern world has changed around them.
+          </p>
+          <img
+            class="favorite-card-book-photo"
+            src="./img/book-4.png"
+            alt="The Last Queen"
+          />
+          <input
+            type="radio"
+            id="buy-button"
+            name="button"
+            class="buy-button-input-4"
+          />
+          <label for="buy-button" class="buy-button-label-4">Own</label>
+        </div>
       </div>
     </section>
   </body>
