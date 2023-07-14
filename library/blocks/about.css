@@ -58,8 +58,32 @@
   height: 560px;
 }
 
-.about-carousel {
-  width: 68px;
+.about-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  margin: 0;
+  padding: 40px 686px 60px 686px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+}
+
+.about-button-li {
+  list-style-type: none;
+}
+
+.about-button {
+  background-color: #BB945F;
+  border-radius: 100%;
+  width: 16px;
   height: 16px;
-  padding: 40px 686px;
+}
+
+.about-button_about_button  {
+  background-color: #0C0C0E;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
 }
