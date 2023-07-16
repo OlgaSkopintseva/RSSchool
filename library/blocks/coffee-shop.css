@@ -1,0 +1,182 @@
+.coffee-shop-title {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 61px 600px 19px 610px;
+  margin: 0;
+}
+
+.coffee-shop-hr {
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  margin: 0px auto;
+}
+
+.coffee-shop-text {
+  width: 1400px;
+  text-transform: lowercase;
+  margin: 0px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px 0 40px 0;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr 480px 1fr;
+  margin: 0px 20px;
+}
+
+.coffee-tea-block {
+  grid-column: 1;
+  margin: 0;
+  width: 458px;
+}
+
+.coffee-tea-name-menu {
+  color: #bb945f;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.coffee-tea {
+  margin: 20px 0 0 0;
+  padding: 0px 20px 0 0;
+}
+
+.coffee-tea-li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.coffee-tea-name-product-1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 20px 0;
+  width: 199px;
+}
+
+.coffee-tea-hr-1 {
+  width: 100px;
+  height: 1px;
+  background: #bb945f;
+  margin: 8px 57px;
+}
+
+.coffee-tea-name-product {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 20px 0;
+  width: 196px;
+}
+
+.coffee-tea-hr {
+  width: 100px;
+  height: 1px;
+  background: #bb945f;
+  margin: 8px 60px;
+}
+
+.coffee-tea-price {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.desserts-cakes-block {
+  grid-column: 3;
+  width: 485px;
+}
+
+.desserts-cakes-name-menu {
+  color: #bb945f;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0 20px 0px 145px;
+  width: 317px;
+}
+
+.desserts-cakes {
+  padding: 20px 20px 0 0;
+  margin: 0;
+}
+
+.desserts-cakes-li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.desserts-cakes-name-product {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.desserts-cakes-hr {
+  width: 100px;
+  height: 1px;
+  background: #bb945f;
+  margin-right: 70px;
+}
+
+.desserts-cakes-price {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
