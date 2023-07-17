@@ -24,7 +24,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px 180px;
   margin: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 }
 
 .our-contacts-container-text {
@@ -91,7 +91,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding: 20px 422px 20px 20px;
+  padding: 20px 422px 0px 20px;
   margin: 0;
   width: 140px;
 }
