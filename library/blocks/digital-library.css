@@ -1,0 +1,206 @@
+.digital-library-cards-title {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 0px 534px 0px 534px;
+  margin: 0;
+  width: 374px;
+}
+
+.digital-library-cards-hr {
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  margin: 20px auto;
+}
+
+.digital-library-cards-find-card {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  padding: 3px 718px 0px 158px;
+  width: 325px;
+  height: 36px;
+}
+
+.digital-library-cards-form {
+  display: flex;
+  justify-content: left;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.digital-library-cards-form-border {
+  width: 600px;
+  height: 383px;
+  border: 3px solid #bb945f;
+  background: #fff;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+.digital-library-cards-form-rectangle {
+  width: 557px;
+  height: 272px;
+  background: #bb945f;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 94px;
+}
+
+.digital-library-cards-form-rectangle-text {
+  color: #000;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  padding: 20px 240px 20px 20px;
+  margin: 0;
+}
+
+.digital-library-card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 520px;
+}
+
+input {
+  color: #8e8e8e;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 64px;
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+  margin: 0 20px 21px 57px;
+  padding-left: 20px;
+}
+
+.digital-library-card-check {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  display: inline-flex;
+  padding: 10px 40px;
+  align-items: flex-end;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background-color: #fff;
+  margin: 20px 175px 23px 155px;
+  padding: 10px 40px;
+  width: 247px;
+}
+
+.digital-library-card-check:hover {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  display: inline-flex;
+  padding: 10px 40px;
+  align-items: flex-end;
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  cursor: pointer;
+}
+
+.digital-library-cards-get-card {
+  color: #000;
+  text-align: center;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin: 0;
+  width: 221px;
+  padding: 0px 20px 35px 20px;
+}
+
+.digital-library-cards-get-card-explanation {
+  width: 456px;
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+  margin: 0;
+  width: 456px;
+}
+
+.digital-library-card-buttons {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  display: flex;
+  width: 75px;
+  height: 30px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background-color: #fff;
+}
+
+.digital-library-card-buttons:hover {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  display: flex;
+  width: 75px;
+  height: 30px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  cursor: pointer;
+}
