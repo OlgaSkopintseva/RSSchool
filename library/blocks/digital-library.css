@@ -1,4 +1,5 @@
-.digital-library-cards-title {
+
+.digital-library-cards__title {
   color: #0c0c0e;
   font-family: Forum;
   font-size: 40px;
@@ -12,14 +13,14 @@
   width: 374px;
 }
 
-.digital-library-cards-hr {
+.digital-library-cards__hr {
   width: 50px;
   height: 1px;
   background: #0c0c0e;
   margin: 20px auto;
 }
 
-.digital-library-cards-find-card {
+.digital-library-cards__find-card {
   color: #000;
   font-family: Inter;
   font-size: 30px;
@@ -28,18 +29,16 @@
   line-height: normal;
   letter-spacing: 0.6px;
   padding: 3px 718px 0px 158px;
-  width: 325px;
-  height: 36px;
 }
 
-.digital-library-cards-form {
+.digital-library-cards__container {
   display: flex;
   justify-content: left;
   width: 600px;
   margin-left: 20px;
 }
 
-.digital-library-cards-form-border {
+.digital-library-cards__container-border {
   width: 600px;
   height: 383px;
   border: 3px solid #bb945f;
@@ -49,7 +48,7 @@
   padding: 0px;
 }
 
-.digital-library-cards-form-rectangle {
+.digital-library-cards__container-rectangle {
   width: 557px;
   height: 272px;
   background: #bb945f;
@@ -60,7 +59,7 @@
   bottom: 94px;
 }
 
-.digital-library-cards-form-rectangle-text {
+.digital-library-cards__container-rectangle-text {
   color: #000;
   font-family: Forum;
   font-size: 30px;
@@ -72,7 +71,7 @@
   margin: 0;
 }
 
-.digital-library-card-form {
+.digital-library-card__form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +97,7 @@ input {
   padding-left: 20px;
 }
 
-.digital-library-card-check {
+.digital-library-card__button-check {
   color: #0c0c0e;
   text-align: center;
   font-family: Inter;
@@ -118,7 +117,7 @@ input {
   width: 247px;
 }
 
-.digital-library-card-check:hover {
+.digital-library-card__button-check:hover {
   color: #0c0c0e;
   text-align: center;
   font-family: Inter;
@@ -136,7 +135,7 @@ input {
   cursor: pointer;
 }
 
-.digital-library-cards-get-card {
+.digital-library-cards__get-card {
   color: #000;
   text-align: center;
   font-family: Forum;
@@ -146,11 +145,10 @@ input {
   line-height: normal;
   letter-spacing: 0.6px;
   margin: 0;
-  width: 221px;
   padding: 0px 20px 35px 20px;
 }
 
-.digital-library-cards-get-card-explanation {
+.digital-library-cards__get-card-explanation {
   width: 456px;
   color: #000;
   text-align: right;
@@ -161,10 +159,9 @@ input {
   line-height: 40px;
   letter-spacing: 0.4px;
   margin: 0;
-  width: 456px;
 }
 
-.digital-library-card-buttons {
+.digital-library-card__buttons {
   color: #0c0c0e;
   text-align: center;
   font-family: Inter;
@@ -184,22 +181,8 @@ input {
   background-color: #fff;
 }
 
-.digital-library-card-buttons:hover {
+.digital-library-card__buttons:hover {
   color: #0c0c0e;
-  text-align: center;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  display: flex;
-  width: 75px;
-  height: 30px;
-  padding: 10px 0px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2px;
   border: 1px solid #bb945f;
   background: #bb945f;
   cursor: pointer;

@@ -21,37 +21,28 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__header-title">Brooklyn Public Library</h1>
-      <nav class="header__navigation-nav">
-        <ul class="navigation-nav__ul">
-          <li><a class="navigation-nav-ul__link" href="#about">About</a></li>
+      <h1 class="header__title">Brooklyn Public Library</h1>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li><a class="navigation__link" href="#about">About</a></li>
           <li>
-            <a class="navigation-nav-ul__link" href="#favorites">Favorites</a>
+            <a class="navigation__link" href="#favorites">Favorites</a>
           </li>
           <li>
-            <a class="navigation-nav-ul__link" href="#coffee-shop"
-              >Coffee shop</a
-            >
+            <a class="navigation__link" href="#coffee-shop">Coffee shop</a>
           </li>
           <li>
-            <a class="navigation-nav-ul__link" href="#contacts">Contacts</a>
+            <a class="navigation__link" href="#contacts">Contacts</a>
           </li>
           <li>
-            <a class="navigation-nav-ul__link" href="#library-card"
-              >Library Card</a
-            >
+            <a class="navigation__link" href="#library-card">Library Card</a>
           </li>
         </ul>
       </nav>
       <button class="header__profile-icon" type="button"></button>
     </header>
-    <section class="welcome">
-      <div class="welcome__gradient">
-        <img src="./img/bg-welcome.png" alt="Фон секции Welcome" />
-      </div>
-      <div class="welcome__div">
-        <p class="welcome__div__p">Welcome<br />to the Brooklyn Library</p>
-      </div>
+    <section class="welcome" title="Welcome image">
+      <p class="welcome__title">Welcome<br />to the Brooklyn Library</p>
     </section>
     <section class="about" id="#about">
       <h2 class="about__title">About</h2>
@@ -60,20 +51,20 @@
         The Brooklyn Library is a free workspace, a large number of books and a
         cozy coffee shop inside
       </p>
-      <ul class="about__ul-images">
+      <ul class="about__images">
         <li>
           <img class="about__image" src="./img/image-1.png" />
         </li>
         <li>
-          <img class="about-image" src="./img/image-2.png" />
+          <img class="about__image" src="./img/image-2.png" />
         </li>
         <li>
-          <img class="about-image" src="./img/image-3.png" />
+          <img class="about__image" src="./img/image-3.png" />
         </li>
       </ul>
       <ul class="about__buttons">
         <li>
-          <div class="about__button-first"></div>
+          <div class="about__button about__button_color-brown"></div>
         </li>
         <li>
           <div class="about__button"></div>
@@ -86,36 +77,35 @@
     <section class="favorites" id="favorites">
       <h2 class="favorites__title">Favorites</h2>
       <hr class="favorites__hr" />
-      <p class="favorites__text">Pick favorites of season</p>
-      <ul class="favorites__ul">
-        <li class="favorites__ul-icon">
+      <p class="favorites__subtitle">Pick favorites of season</p>
+      <ul class="favorites__seasons">
+        <li class="favorites__icon">
           <img src="./img/group.svg" alt="icon" />
         </li>
-        <li class="favorites__ul-season">Winter</li>
-        <li class="favorites__ul-icon">
+        <li class="favorites__season">Winter</li>
+        <li class="favorites__icon">
           <img src="./img/ellipse.svg" alt="icon" />
         </li>
-        <li class="favorites__ul-season">Spring</li>
-        <li class="favorites__ul-icon">
+        <li class="favorites__season">Spring</li>
+        <li class="favorites__icon">
           <img src="./img/ellipse.svg" alt="icon" />
         </li>
-        <li class="favorites__ul-season">Summer</li>
-        <li class="favorites__ul-icon">
+        <li class="favorites__season">Summer</li>
+        <li class="favorites__icon">
           <img src="./img/ellipse.svg" alt="icon" />
         </li>
-        <li class="favorites__ul-season">Autumn</li>
+        <li class="favorites__season">Autumn</li>
       </ul>
       <div class="favorites__cards">
         <div class="favorites__card">
-          <div class="favorites__border"></div>
-          <p class="favorite__staff-picks">Staff Picks</p>
-          <hr class="favorite__staff-picks__hr" />
-          <p class="favorites__card-book-name">
+          <p class="favorites__popularity">Staff Picks</p>
+          <hr class="favorites__card-hr" />
+          <p class="favorites__card-title">
             The Book Eaters<br /><span class="favorites__card-author"
               >By Sunyi Dean</span
             >
           </p>
-          <p class="favorites__card-book-about">
+          <p class="favorites__card-about">
             An unusual sci-fi story about a book eater woman who tries
             desperately to save her dangerous mind-eater son from tradition and
             certain death. Complete with dysfunctional family values, light
@@ -123,7 +113,7 @@
             faint of heart.
           </p>
           <img
-            class="favorites__card-book-photo"
+            class="favorites__card-book"
             src="./img/book-1.png"
             alt="The Book Eaters book photo"
           />
@@ -203,9 +193,9 @@
       <hr class="coffee-shop__hr" />
       <p class="coffee-shop__text">
         In our library, we have of cozy coffee shop, welcoming in customers with
-        frothy cappuccinos and friendly conversation.<br />you can get a
+        frothy cappuccinos and friendly conversation. You can get a
         favorite book and read in coffee shop. Our barista to cook you best
-        coffee, and also you can try desserts<br />from bakery.
+        coffee, and also you can try desserts from bakery.
       </p>
       <div class="coffee-shop__menu-container">
         <div class="coffee-tea__block">
@@ -293,9 +283,7 @@
             >
           </p>
           <p class="our-contacts-list-li">
-            <span class="our-contacts__span"
-              >For TTY service, please call</span
-            >
+            <span class="our-contacts__span">For TTY service, please call</span>
             <a href="tel:(617)730-2370" class="our-contacts__tel"
               >(617) 730-2370</a
             >
@@ -314,52 +302,50 @@
             >
           </p>
         </div>
-        <img class="our-contacts__map" src="./img/map.png" alt="Brooklyn Public Library map" />
+        <img
+          class="our-contacts__map"
+          src="./img/map.png"
+          alt="Brooklyn Public Library map"
+        />
       </div>
     </section>
     <section class="digital-library-cards">
-      <h2 class="digital-library-cards-title">Digital Library Cards</h2>
-      <hr class="digital-library-cards-hr" />
-      <div class="digital-library-card-container">
-        <p class="digital-library-cards-find-card">Find your Library card</p>
-        <div class="digital-library-cards-form">
-          <div class="digital-library-cards-form-border">
-            <div class="digital-library-cards-form-rectangle">
-              <p class="digital-library-cards-form-rectangle-text">
-                Brooklyn Public Library
-              </p>
-              <form class="digital-library-card-form">
-                <input
-                  type="text"
-                  pattern="[A-Za-z0-9-]+"
-                  name="last-name"
-                  placeholder="Reader's name"
-                />
-                <input
-                  type="text"
-                  pattern="[A-Za-z0-9-]+"
-                  name="card-number"
-                  placeholder="Card number"
-                />
-              </form>
-              <div>
-                <button class="digital-library-card-check">
-                  Check the card
-                </button>
-              </div>
-            </div>
+      <h2 class="digital-library-cards__title">Digital Library Cards</h2>
+      <hr class="digital-library-cards__hr" />
+      <p class="digital-library-cards__find-card">Find your Library card</p>
+      <div class="digital-library-cards__container">
+        <div class="digital-library-cards__container-border">
+          <div class="digital-library-cards__container-rectangle">
+            <p class="digital-library-cards__container-rectangle-text">
+              Brooklyn Public Library
+            </p>
+            <form class="digital-library-card__form">
+              <input
+                type="text"
+                pattern="[A-Za-z0-9-]+"
+                name="last-name"
+                placeholder="Reader's name"
+              />
+              <input
+                type="text"
+                pattern="[A-Za-z0-9-]+"
+                name="card-number"
+                placeholder="Card number"
+              />
+            </form>
+            <button class="digital-library-card__button-check">
+              Check the card
+            </button>
           </div>
         </div>
-        <div class="digital-library-cards-left-container">
-          <p class="digital-library-cards-get-card">Get a reader card</p>
-          <p class="digital-library-cards-get-card-explanation">
-            You will be able to see a reader card after logging into account or
-            you can register a new account
-          </p>
-          <button class="digital-library-card-buttons">Sign Up</button>
-          <button class="digital-library-card-buttons">Log in</button>
-        </div>
       </div>
+      <p class="digital-library-cards__get-card">Get a reader card</p>
+      <p class="digital-library-cards__get-card-explanation">
+        You will be able to see a reader card after logging into account or you
+        can register a new account
+      </p>
+      <button class="digital-library-card__buttons">Sign Up</button>
+      <button class="digital-library-card__buttons">Log in</button>
     </section>
     <footer class="footer">
       <div class="footer-container-first">

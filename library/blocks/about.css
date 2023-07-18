@@ -38,7 +38,7 @@
   margin: 0;
 }
 
-.about__ul-images {
+.about__images {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -65,15 +65,15 @@
   list-style-type: none;
 }
 
-.about__button-first{
-  background-color: #BB945F;
+.about__button  {
+  background-color: #0C0C0E;
   border-radius: 100%;
   width: 16px;
   height: 16px;
 }
 
-.about__button  {
-  background-color: #0C0C0E;
+.about__button_color-brown {
+  background-color: #BB945F;
   border-radius: 100%;
   width: 16px;
   height: 16px;

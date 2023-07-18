@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.header__header-title {
+.header__title {
   color: #fff;
   font-family: Forum;
   font-size: 30px;
@@ -24,7 +24,7 @@
   margin: 0 88px 0 0;
 }
 
-.navigation__ul {
+.navigation {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(5, max-content);
@@ -35,7 +35,7 @@
   width: 584px;
 }
 
-.navigation-ul__link{
+.navigation__link{
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -45,7 +45,7 @@
   transition: color 0.3s linear;
 }
 
-.navigation-ul__link:hover {
+.navigation__link:hover {
   color: #9c9c9c;
 }
 
