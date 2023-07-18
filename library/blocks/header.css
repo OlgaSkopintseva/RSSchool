@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.header-title {
+.header__header-title {
   color: #fff;
   font-family: Forum;
   font-size: 30px;
@@ -20,11 +20,11 @@
   margin: 0 0 0 20px;
 }
 
-.navigation {
+.header__navigation-nav {
   margin: 0 88px 0 0;
 }
 
-.navigation-links {
+.navigation-nav__ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(5, max-content);
@@ -35,7 +35,7 @@
   width: 584px;
 }
 
-.navigation-link {
+.navigation-nav-ul__link{
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -45,7 +45,7 @@
   transition: color 0.3s linear;
 }
 
-.navigation-link:hover {
+.navigation-nav-ul__link:hover {
   color: #9c9c9c;
 }
 
