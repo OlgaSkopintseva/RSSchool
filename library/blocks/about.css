@@ -3,7 +3,7 @@
   vertical-align: top;
 }
 
-.about-title {
+.about__title {
   color: #0c0c0e;
   font-family: Forum;
   font-size: 40px;
@@ -16,14 +16,14 @@
   margin: 0;
 }
 
-.about-hr {
+.about__hr {
   width: 50px;
   height: 1px;
   background: #0c0c0e;
   margin: 0 auto;
 }
 
-.about-text {
+.about__text {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -38,7 +38,7 @@
   margin: 0;
 }
 
-.about-images {
+.about__ul-images {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,17 +48,11 @@
   height: 560px;
 }
 
-.about-image-li {
-  height: 560px;
-}
-
-.about-image {
+.about__image {
   text-align: center;
-  width: 450px;
-  height: 560px;
 }
 
-.about-buttons {
+.about__buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
@@ -68,20 +62,17 @@
   align-items: center;
   justify-content: space-around;
   position: absolute;
-}
-
-.about-button-li {
   list-style-type: none;
 }
 
-.about-button {
+.about__button-first{
   background-color: #BB945F;
   border-radius: 100%;
   width: 16px;
   height: 16px;
 }
 
-.about-button_about_button  {
+.about__button  {
   background-color: #0C0C0E;
   border-radius: 100%;
   width: 16px;
