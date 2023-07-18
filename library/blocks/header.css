@@ -20,11 +20,11 @@
   margin: 0 0 0 20px;
 }
 
-.header__navigation-nav {
+.header__navigation {
   margin: 0 88px 0 0;
 }
 
-.navigation-nav__ul {
+.navigation__ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(5, max-content);
@@ -35,7 +35,7 @@
   width: 584px;
 }
 
-.navigation-nav-ul__link{
+.navigation-ul__link{
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -45,7 +45,7 @@
   transition: color 0.3s linear;
 }
 
-.navigation-nav-ul__link:hover {
+.navigation-ul__link:hover {
   color: #9c9c9c;
 }
 
