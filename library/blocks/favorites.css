@@ -2,7 +2,7 @@
   margin-top: 96px;
 }
 
-.favorites-title {
+.favorites__title {
   color: #0c0c0e;
   font-family: Forum;
   font-size: 40px;
@@ -15,14 +15,14 @@
   margin: 0;
 }
 
-.favorites-hr {
+.favorites__hr {
   width: 50px;
   height: 1px;
   background: #0c0c0e;
   margin: 0 auto;
 }
 
-.favorites-text {
+.favorites__text {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -34,7 +34,7 @@
   padding: 37px 1186px 38px 21px;
 }
 
-.favorites-season {
+.favorites__ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -43,23 +43,11 @@
   padding-left: 20px;
 }
 
-.favorites-season-icon {
+.favorites__ul-icon {
   padding: 6px 21px 39px 0;
 }
 
-.favorites-season-winter {
-  color: #000;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding: 0px 90px 40px 0;
-}
-
-.favorites-season-spring,
-.favorites-season-summer,
-.favorites-season-autumn {
+.favorites__ul-season {
   color: #000;
   font-family: Inter;
   font-size: 20px;
@@ -69,19 +57,19 @@
   padding: 0px 90px 40px 0;
 }
 
-.favorites-card {
+.favorites__cards{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px 182px;
 }
 
-.favorite-card {
+.favorites__card{
   position: relative;
   width: 550px;
   height: 555px;
 }
 
-.favorite-border {
+.favorites__border {
   width: 548px;
   height: 552px;
   border: 1px solid #000;
@@ -90,7 +78,7 @@
   margin-right: 40px;
 }
 
-.favorite-card-staff-picks {
+.favorite__staff-picks {
   color: #000;
   font-family: Forum;
   font-size: 20px;
@@ -103,14 +91,14 @@
   margin: 0;
 }
 
-.favorite-card-staff-picks-hr {
+.favorite__staff-picks__hr {
   width: 60px;
   height: 1px;
   background: #bb945f;
   margin: 0 0px 0px 40px;
 }
 
-.favorite-card-book {
+.favorites__card-book-name {
   color: #000;
   font-family: Inter;
   font-size: 15px;
@@ -123,7 +111,7 @@
   margin: 0;
 }
 
-.favorite-card-author {
+.favorites__card-author {
   color: #000;
   font-family: Inter;
   font-size: 15px;
@@ -135,7 +123,7 @@
   margin: 0;
 }
 
-.favorite-card-book-about {
+.favorites__card-book-about {
   display: flex;
   width: 357px;
   flex-direction: column;
@@ -152,7 +140,7 @@
   margin: 0;
 }
 
-.favorite-card-book-photo {
+.favorites__card-book-photo {
   width: 200px;
   height: 300px;
   padding: 0;
@@ -163,7 +151,7 @@
   margin: 0;
 }
 
-.buy-button-input {
+.favorites__button{
   background-color: #fff;
   text-align: center;
   font-family: Inter;
@@ -185,7 +173,7 @@
   position: absolute;
 }
 
-.buy-button-input-2 {
+.favorites__button-second{
   display: inline-block;
   background-color: #fff;
   width: 75px;
@@ -207,7 +195,7 @@
   margin: 55px 292px 13px 40px;
 }
 
-.buy-button-input:hover {
+.favorites__button:hover {
   border-radius: 2px;
   border: 1px solid #bb945f;
   background: #bb945f;
@@ -222,7 +210,7 @@
   cursor: pointer;
 }
 
-.buy-button-input-2:hover {
+.favorites__button-second:hover {
   border-radius: 2px;
   border: 1px solid #bb945f;
   background: #bb945f;
@@ -237,7 +225,7 @@
   cursor: pointer
 }
 
-.buy-button-input-4 {
+.favorites__button-fourth {
   background-color: #fff;
   text-align: center;
   font-family: Inter;
