@@ -1,0 +1,111 @@
+.shop__title {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 61px 600px 19px 610px;
+  margin: 0;
+}
+
+.shop__hr {
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  margin: 0px auto;
+}
+
+.shop__about {
+  margin: 0px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  padding: 36px 20px 0 20px;
+}
+
+.shop__categories {
+  display: grid;
+  grid-template-columns: 1fr 480px 1fr;
+  margin: 40px 0 20px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop__categorie {
+  grid-column: 1;
+  margin: 0;
+  width: 458px;
+}
+
+.shop__categorie-title {
+  color: #bb945f;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.shop__categorie-title_side-left {
+  direction: rtl;
+  margin: 0 20px 0 0;
+}
+
+.shop__products {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.shop__product {
+  display: flex;
+  align-items: center;
+}
+
+.shop__product-title {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 40px 0 0 0;
+}
+
+.shop__product-title_side-left {
+  direction: rtl;
+}
+
+.shop__product-hr {
+  width: 100px;
+  height: 1px;
+  background: #bb945f;
+}
+
+.shop__product-price {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 40px 20px 0 0;
+}
