@@ -79,22 +79,24 @@
       <hr class="favorites__hr" />
       <p class="favorites__subtitle">Pick favorites of season</p>
       <ul class="favorites__seasons">
-        <li class="favorites__icon">
-          <img src="./img/group.svg" alt="icon" />
-        </li>
-        <li class="favorites__season">Winter</li>
-        <li class="favorites__icon">
-          <img src="./img/ellipse.svg" alt="icon" />
-        </li>
-        <li class="favorites__season">Spring</li>
-        <li class="favorites__icon">
-          <img src="./img/ellipse.svg" alt="icon" />
-        </li>
-        <li class="favorites__season">Summer</li>
-        <li class="favorites__icon">
-          <img src="./img/ellipse.svg" alt="icon" />
-        </li>
-        <li class="favorites__season">Autumn</li>
+        <input class="favorites__input" type="radio" id="favorites__choise-1" />
+        <label
+          for="favorites__choise-1"
+          class="favorites__season favorites__season_weight-700"
+          >Winter</label
+        >
+        <input class="favorites__input" type="radio" id="favorites__choise-2" />
+        <label for="favorites__choise-2" class="favorites__season"
+          >Spring</label
+        >
+        <input class="favorites__input" type="radio" id="favorites__choise-3" />
+        <label for="favorites__choise-3" class="favorites__season"
+          >Summer</label
+        >
+        <input class="favorites__input" type="radio" id="favorites__choise-4" />
+        <label for="favorites__choise-4" class="favorites__season"
+          >Autumn</label
+        >
       </ul>
       <div class="favorites__cards">
         <div class="favorites__card">
@@ -138,7 +140,11 @@
             src="./img/book-2.png"
             alt="Cackle book photo"
           />
-          <button class="favorites__card-button favorites__card-button_margin-top-55px">Buy</button>
+          <button
+            class="favorites__card-button favorites__card-button_margin-top-55px"
+          >
+            Buy
+          </button>
         </div>
         <div class="favorites__card">
           <p class="favorites__card-popularity">Staff Picks</p>
@@ -181,7 +187,12 @@
             src="./img/book-4.png"
             alt="The Last Queen book photo"
           />
-          <button class="favorites__card-button favorites__card-button_color-brown" disabled>Own</button>
+          <button
+            class="favorites__card-button favorites__card-button_color-brown"
+            disabled
+          >
+            Own
+          </button>
         </div>
       </div>
     </section>
@@ -190,9 +201,9 @@
       <hr class="shop__hr" />
       <p class="shop__about">
         In our library, we have of cozy coffee shop, welcoming in customers with
-        frothy cappuccinos and friendly conversation. You can get a
-        favorite book and read in coffee shop. Our barista to cook you best
-        coffee, and also you can try desserts from bakery.
+        frothy cappuccinos and friendly conversation. You can get a favorite
+        book and read in coffee shop. Our barista to cook you best coffee, and
+        also you can try desserts from bakery.
       </p>
       <div class="shop__categories">
         <div class="shop__categorie">
@@ -231,35 +242,49 @@
           </ul>
         </div>
         <div class="shop__categorie">
-          <p class="shop__categorie-title shop__categorie-title_side-left">Desserts & Cakes</p>
+          <p class="shop__categorie-title shop__categorie-title_side-left">
+            Desserts & Cakes
+          </p>
           <ul class="shop__products">
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">Forest Gateau</p>
+              <p class="shop__product-title shop__product-title_side-left">
+                Forest Gateau
+              </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">Blue Moon</p>
+              <p class="shop__product-title shop__product-title_side-left">
+                Blue Moon
+              </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">Truffle Cake</p>
+              <p class="shop__product-title shop__product-title_side-left">
+                Truffle Cake
+              </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$15</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">Chocolate Cake</p>
+              <p class="shop__product-title shop__product-title_side-left">
+                Chocolate Cake
+              </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$18</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">Poet's Dream Cake</p>
+              <p class="shop__product-title shop__product-title_side-left">
+                Poet's Dream Cake
+              </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">Pineapple Cake</p>
+              <p class="shop__product-title shop__product-title_side-left">
+                Pineapple Cake
+              </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$14</p>
             </li>
@@ -267,40 +292,40 @@
         </div>
       </div>
     </section>
-    <section class="our-contacts">
-      <h2 class="our-contacts__title">Our Contacts</h2>
-      <hr class="our-contacts__hr" />
-      <div class="our-contacts__container">
-        <div class="our-contacts__container-text">
-          <p class="our-contacts-list-library-1">For all Library inquiries:</p>
-          <p class="our-contacts-list-li">
-            <span class="our-contacts__span">Please call</span>
-            <a href="tel:(617)730-2370" class="our-contacts__tel"
+    <section class="contacts">
+      <h2 class="contacts__title">Our Contacts</h2>
+      <hr class="contacts__hr" />
+      <div class="contacts__categories">
+        <div class="contacts__contacts-categorie">
+          <p class="contacts__subtitle">For all Library inquiries:</p>
+          <p class="contacts__contact">
+            <span class="contacts__span">Please call</span>
+            <a href="tel:(617)730-2370" class="contacts__tel"
               >(617) 730-2370</a
             >
           </p>
-          <p class="our-contacts-list-li">
-            <span class="our-contacts__span">For TTY service, please call</span>
-            <a href="tel:(617)730-2370" class="our-contacts__tel"
+          <p class="contacts__contact">
+            <span class="contacts__span">For TTY service, please call</span>
+            <a href="tel:(617)730-2370" class="contacts__tel"
               >(617) 730-2370</a
             >
           </p>
-          <p class="our-contacts-list-li">
-            <span class="our-contacts__span">Putterham Library:</span>
-            <a href="tel:(617)30-2385" class="our-contacts__tel"
+          <p class="contacts__contact">
+            <span class="contacts__span">Putterham Library:</span>
+            <a href="tel:(617)30-2385" class="contacts__tel"
               >(617) 730-2385</a
             >
           </p>
-          <p class="our-contacts-list-library-2">Senior Staff</p>
-          <p class="our-contacts-list-li">
-            <span class="our-contacts-list-director">Library Director:</span>
-            <a href="mailto:AmandaHirst@gmail.com" class="our-contacts__mailto"
+          <p class="contacts__subtitle">Senior Staff</p>
+          <p class="contacts__contact contacts__contact_margin-top-0px">
+            <span class="contacts__span">Library Director:</span>
+            <a href="mailto:AmandaHirst@gmail.com" class="contacts__mailto"
               >&nbsp;Amanda Hirst</a
             >
           </p>
         </div>
         <img
-          class="our-contacts__map"
+          class="contacts__map-categorie"
           src="./img/map.png"
           alt="Brooklyn Public Library map"
         />
