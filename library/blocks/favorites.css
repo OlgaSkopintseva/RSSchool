@@ -73,7 +73,7 @@
   box-sizing: border-box;
 }
 
-.favorites__popularity {
+.favorites__card-popularity {
   color: #000;
   font-family: Forum;
   font-size: 20px;
@@ -129,6 +129,7 @@
   letter-spacing: 2px;
   padding: 20px 0 0 0;
   margin: 0;
+  text-transform: capitalize;
 }
 
 .favorites__card-book {
@@ -141,7 +142,7 @@
   margin: 0;
 }
 
-.favorites__button{
+.favorites__card-button{
   background-color: #fff;
   text-align: center;
   font-family: Inter;
@@ -151,36 +152,14 @@
   color: #0c0c0e;
   line-height: normal;
   letter-spacing: 1px;
-  margin: 15px 0 15px 0px;
+  margin: 15px 0 0 0;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   width: 75px;
   height: 30px;
 }
 
-.favorites__button-second{
-  display: inline-block;
-  background-color: #fff;
-  width: 75px;
-  height: 30px;
-  border-radius: 2px;
-  border: 1px solid #0c0c0e;
-  color: #0c0c0e;
-  text-align: center;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  margin: 55px 292px 13px 40px;
-}
-
-.favorites__button:hover {
+.favorites__card-button:hover {
   border-radius: 2px;
   border: 1px solid #bb945f;
   background: #bb945f;
@@ -195,22 +174,7 @@
   cursor: pointer;
 }
 
-.favorites__button-second:hover {
-  border-radius: 2px;
-  border: 1px solid #bb945f;
-  background: #bb945f;
-  color: #0c0c0e;
-  text-align: center;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  cursor: pointer
-}
-
-.favorites__button-fourth {
+.favorites__card-button_color-brown {
   background-color: #fff;
   text-align: center;
   font-family: Inter;
@@ -220,14 +184,27 @@
   color: #bb945f;
   line-height: normal;
   letter-spacing: 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  margin: 95px 292px 15px 40px;
+  margin: 95px 292px 15px 0px;
   border-radius: 2px;
   border: 1px solid #bb945f;
   width: 75px;
   height: 30px;
-  position: absolute;
 }
+
+.favorites__card-button_margin-top-55px {
+  background-color: #fff;
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin: 55px 0px 13px 0px;
+}
+
