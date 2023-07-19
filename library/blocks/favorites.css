@@ -43,7 +43,12 @@
   padding-left: 20px;
 }
 
-.favorites__icon {
+
+.favorites__input {
+  height: 17px;
+  width: 17px;
+  accent-color: #0c0c0e;
+  margin: 5px 20px 2px 0;
   padding: 6px 21px 39px 0;
 }
 
@@ -55,6 +60,11 @@
   font-weight: 400;
   line-height: normal;
   padding: 0px 90px 40px 0;
+}
+
+.favorites__season_weight-700 {
+  width: 67px;
+  font-weight: 700;
 }
 
 .favorites__cards{
@@ -137,7 +147,7 @@
   height: 300px;
   padding: 0;
   position: absolute;
-  top: 253px;
+  top: 254px;
   left: 389px;
   margin: 0;
 }
