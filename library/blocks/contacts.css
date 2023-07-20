@@ -16,7 +16,7 @@
   width: 50px;
   height: 1px;
   background: #0c0c0e;
-  margin: 0px auto 20px auto;
+  margin: 0px auto 37px auto;
 }
 
 .contacts__categories {
@@ -26,8 +26,7 @@
   margin: 0 0 40px 0;
 }
 
-.contacts__contacts-categorie {
-  position: relative;
+.contacts__info-categorie {
   width: 530px;
 }
 
@@ -40,8 +39,12 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding: 20px 0px 20px 20px;
+  padding: 0px 0px 20px 20px;
   margin: 0;
+}
+
+.contacts__subtitle_padding-top-20px {
+  padding: 20px 0 0 20px;
 }
 
 .contacts__contact {
@@ -78,10 +81,6 @@
   text-decoration: none;
 }
 
-.contacts__contact_margin-top-0px {
-  margin: 0 0 0 20px;
-}
-
 .contacts__mailto {
   color: #000;
   font-family: Inter;
@@ -97,5 +96,5 @@
 .contacts__map-categorie {
   width: 696px;
   height: 414px;
-  padding: 40px 20px 0px 0;
+  padding: 0px 20px 0px 0;
 }
