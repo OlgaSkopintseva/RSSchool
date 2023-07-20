@@ -79,24 +79,48 @@
       <hr class="favorites__hr" />
       <p class="favorites__subtitle">Pick favorites of season</p>
       <ul class="favorites__seasons">
-        <input class="favorites__input" type="radio" id="favorites__choise-1" />
-        <label
-          for="favorites__choise-1"
-          class="favorites__season favorites__season_weight-700"
-          >Winter</label
-        >
-        <input class="favorites__input" type="radio" id="favorites__choise-2" />
-        <label for="favorites__choise-2" class="favorites__season"
-          >Spring</label
-        >
-        <input class="favorites__input" type="radio" id="favorites__choise-3" />
-        <label for="favorites__choise-3" class="favorites__season"
-          >Summer</label
-        >
-        <input class="favorites__input" type="radio" id="favorites__choise-4" />
-        <label for="favorites__choise-4" class="favorites__season"
-          >Autumn</label
-        >
+        <li class="favorites__season">
+          <input
+            class="favorites__season-radio"
+            type="radio"
+            id="favorites__choise-1"
+          />
+          <label
+            class="favorites__season-title favorites__season-title_weight-700"
+            for="favorites__choise-1"
+            >Winter</label
+          >
+        </li>
+        <li class="favorites__season">
+          <input
+            class="favorites__season-radio"
+            type="radio"
+            id="favorites__choise-2"
+          />
+          <label class="favorites__season-title" for="favorites__choise-2"
+            >Spring</label
+          >
+        </li>
+        <li class="favorites__season">
+          <input
+            class="favorites__season-radio"
+            type="radio"
+            id="favorites__choise-3"
+          />
+          <label class="favorites__season-title" for="favorites__choise-3"
+            >Summer</label
+          >
+        </li>
+        <li class="favorites__season">
+          <input
+            class="favorites__season-radio"
+            type="radio"
+            id="favorites__choise-4"
+          />
+          <label class="favorites__season-title" for="favorites__choise-4"
+            >Autumn</label
+          >
+        </li>
       </ul>
       <div class="favorites__cards">
         <div class="favorites__card">
@@ -241,48 +265,48 @@
             </li>
           </ul>
         </div>
-        <div class="shop__categorie">
-          <p class="shop__categorie-title shop__categorie-title_side-left">
+        <div class="shop__categorie shop__categorie_side-right">
+          <p class="shop__categorie-title shop__categorie-title_side-right">
             Desserts & Cakes
           </p>
           <ul class="shop__products">
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">
+              <p class="shop__product-title shop__product-title_side-right">
                 Forest Gateau
               </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">
+              <p class="shop__product-title shop__product-title_side-right">
                 Blue Moon
               </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">
+              <p class="shop__product-title shop__product-title_side-right">
                 Truffle Cake
               </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$15</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">
+              <p class="shop__product-title shop__product-title_side-right">
                 Chocolate Cake
               </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$18</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">
+              <p class="shop__product-title shop__product-title_side-right">
                 Poet's Dream Cake
               </p>
               <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
-              <p class="shop__product-title shop__product-title_side-left">
+              <p class="shop__product-title shop__product-title_side-right">
                 Pineapple Cake
               </p>
               <hr class="shop__product-hr" />
@@ -296,28 +320,24 @@
       <h2 class="contacts__title">Our Contacts</h2>
       <hr class="contacts__hr" />
       <div class="contacts__categories">
-        <div class="contacts__contacts-categorie">
+        <div class="contacts__info-categorie">
           <p class="contacts__subtitle">For all Library inquiries:</p>
           <p class="contacts__contact">
             <span class="contacts__span">Please call</span>
-            <a href="tel:(617)730-2370" class="contacts__tel"
-              >(617) 730-2370</a
-            >
+            <a href="tel:(617)730-2370" class="contacts__tel">(617) 730-2370</a>
           </p>
           <p class="contacts__contact">
             <span class="contacts__span">For TTY service, please call</span>
-            <a href="tel:(617)730-2370" class="contacts__tel"
-              >(617) 730-2370</a
-            >
+            <a href="tel:(617)730-2370" class="contacts__tel">(617) 730-2370</a>
           </p>
           <p class="contacts__contact">
             <span class="contacts__span">Putterham Library:</span>
-            <a href="tel:(617)30-2385" class="contacts__tel"
-              >(617) 730-2385</a
-            >
+            <a href="tel:(617)30-2385" class="contacts__tel">(617) 730-2385</a>
           </p>
-          <p class="contacts__subtitle">Senior Staff</p>
-          <p class="contacts__contact contacts__contact_margin-top-0px">
+          <p class="contacts__subtitle contacts__subtitle_padding-top-20px">
+            Senior Staff
+          </p>
+          <p class="contacts__contact">
             <span class="contacts__span">Library Director:</span>
             <a href="mailto:AmandaHirst@gmail.com" class="contacts__mailto"
               >&nbsp;Amanda Hirst</a
@@ -331,17 +351,15 @@
         />
       </div>
     </section>
-    <section class="digital-library-cards" id="library-card">
-      <h2 class="digital-library-cards__title">Digital Library Cards</h2>
-      <hr class="digital-library-cards__hr" />
-      <p class="digital-library-cards__find-card">Find your Library card</p>
-      <div class="digital-library-cards__container">
-        <div class="digital-library-cards__container-border">
-          <div class="digital-library-cards__container-rectangle">
-            <p class="digital-library-cards__container-rectangle-text">
-              Brooklyn Public Library
-            </p>
-            <form class="digital-library-card__form">
+    <section class="digital" id="library-card">
+      <h2 class="digital__title">Digital Library Cards</h2>
+      <hr class="digital__hr" />
+      <p class="digital__subtitle">Find your Library card</p>
+      <div class="digital__container-form">
+        <div class="digital__container-border">
+          <div class="digital__container-rectangle">
+            <p class="digital__container-subtitle">Brooklyn Public Library</p>
+            <form class="digital__form">
               <input
                 type="text"
                 pattern="[A-Za-z0-9-]+"
@@ -355,10 +373,8 @@
                 placeholder="Card number"
               />
             </form>
-            <button class="digital-library-card__button-check">
-              Check the card
-            </button>
           </div>
+          <button class="digital__button-check">Check the card</button>
         </div>
       </div>
       <p class="digital-library-cards__get-card">Get a reader card</p>
