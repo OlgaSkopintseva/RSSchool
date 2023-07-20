@@ -12,8 +12,10 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding: 20px 667px 20px 667px;
+  padding: 20px 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .about__hr {
