@@ -1,3 +1,7 @@
+.contacts {
+  margin: 0 0 40px 0;
+}
+
 .contacts__title {
   color: #0c0c0e;
   font-family: Forum;
@@ -7,9 +11,10 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  width: 242px;
-  padding: 40px 600px 20px 600px;
+  padding: 20px 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .contacts__hr {
@@ -23,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px 180px;
-  margin: 0 0 40px 0;
+  margin: 0;
 }
 
 .contacts__info-categorie {
