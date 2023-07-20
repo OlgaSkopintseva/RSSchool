@@ -11,8 +11,10 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding: 20px 640px 20px 640px;
+  padding: 20px 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .favorites__hr {
@@ -36,7 +38,7 @@
 .favorites__seasons {
   list-style-type: none;
   margin: 0;
-  padding: 40px 0 40px 20px;
+  padding: 38px 0 40px 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 90px;
@@ -81,7 +83,7 @@
   height: 555px;
   border: 1px solid #000;
   margin: 0 0 0 20px;
-  padding: 15px 0 15px 20px;
+  padding: 15px 0 16px 20px;
   position: relative;
   box-sizing: border-box;
 }
@@ -104,6 +106,7 @@
   height: 1px;
   background: #bb945f;
   margin: 0;
+  border: 0;
 }
 
 .favorites__card-title {
@@ -115,7 +118,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 15px 0 0 0;
+  padding: 18px 0 0 0;
   margin: 0;
 }
 
@@ -197,7 +200,7 @@
   color: #bb945f;
   line-height: normal;
   letter-spacing: 1px;
-  margin: 95px 292px 15px 0px;
+  margin: 95px 0px 15px 0px;
   border-radius: 2px;
   border: 1px solid #bb945f;
   width: 75px;
