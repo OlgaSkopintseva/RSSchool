@@ -72,13 +72,13 @@
   font-weight: 700;
 }
 
-.favorites__cards{
+.favorites__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px 182px;
 }
 
-.favorites__card{
+.favorites__card {
   width: 550px;
   height: 555px;
   border: 1px solid #000;
@@ -158,7 +158,7 @@
   margin: 0;
 }
 
-.favorites__card-button{
+.favorites__card-button {
   background-color: #fff;
   text-align: center;
   font-family: Inter;
@@ -223,4 +223,3 @@
   letter-spacing: 1px;
   margin: 55px 0px 13px 0px;
 }
-
