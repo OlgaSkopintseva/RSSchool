@@ -46,7 +46,8 @@
 }
 
 .navigation__link:hover {
-  color: #9c9c9c;
+  color: #c0c0c0;
+  font-weight: 500;
 }
 
 .header__profile-icon {
