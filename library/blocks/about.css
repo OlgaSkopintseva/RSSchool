@@ -64,15 +64,16 @@
   justify-content: center;
 }
 
-.about__button  {
-  background-color: #0C0C0E;
+.about__button {
+  background-color: #0c0c0e;
   border-radius: 100%;
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 .about__button_color-brown {
-  background-color: #BB945F;
+  background-color: #bb945f;
   border-radius: 100%;
   width: 16px;
   height: 16px;
