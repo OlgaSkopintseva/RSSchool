@@ -50,10 +50,6 @@
   height: 560px;
 }
 
-.about__image {
-  text-align: center;
-}
-
 .about__buttons {
   display: grid;
   grid-template-columns: repeat(3, 16px);
