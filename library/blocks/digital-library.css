@@ -32,8 +32,8 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.6px;
-  padding: 40px 0 30px 138px;
-  margin: 0;
+  padding: 40px 0 30px 0;
+  margin: 0 auto;
   width: 326px;
 }
 
@@ -78,13 +78,11 @@
 
 .digital__form {
   display: grid;
-  grid-template-rows: repeat(2);
-  row-gap: 25px;
+  grid-template-rows: repeat(3, 1fr);
   margin: 0;
-
 }
 
-input {
+.digital__form-input {
   color: #8e8e8e;
   font-family: Forum;
   font-size: 30px;
@@ -111,32 +109,19 @@ input {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  padding: 10px 40px;
+  padding: 0;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background-color: #fff;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  margin: 20px auto 30px auto;
+  width: 242px;
+  height: 44px;
+  cursor: pointer;
 }
 
 .digital__container-button:hover {
-  color: #0c0c0e;
-  text-align: center;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  padding: 10px 40px;
-  border-radius: 2px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
   border: 1px solid #bb945f;
   background: #bb945f;
-  cursor: pointer;
 }
 
 .digital__container-get {
