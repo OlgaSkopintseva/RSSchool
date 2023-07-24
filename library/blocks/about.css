@@ -52,25 +52,40 @@
 
 .about__buttons {
   display: grid;
-  grid-template-columns: repeat(3, 16px);
-  column-gap: 10px;
+  grid-template-columns: repeat(3, 26px);
   margin: 0;
-  padding: 40px 0 40px 0;
+  padding: 35px 0;
   list-style-type: none;
   justify-content: center;
 }
 
 .about__button {
-  background-color: #0c0c0e;
-  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__button::after {
+  content: "";
   width: 16px;
   height: 16px;
-  cursor: pointer;
+  background-color: #000;
+  border-radius: 100%;
+
 }
 
 .about__button_color-brown {
-  background-color: #bb945f;
-  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+}
+
+.about__button_color-brown::after {
+  content: "";
   width: 16px;
   height: 16px;
+  background-color: #bb945f;
+  border-radius: 100%;
 }
