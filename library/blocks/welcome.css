@@ -6,7 +6,7 @@
     #0c0c0e 0%,
     #0c0c0e 0.01%,
     rgba(18, 18, 21, 0.1) 100%
-  ), url(/library/img/bg-welcome.png);
+  ), url(../img/bg-welcome.png);
 }
 
 .welcome__title {
