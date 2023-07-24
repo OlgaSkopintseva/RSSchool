@@ -39,15 +39,24 @@
   list-style-type: none;
   margin: 0;
   padding: 38px 0 40px 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   column-gap: 90px;
-  width: 700px;
 }
 
 .favorites__season {
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.favorites__season::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: absolute;
 }
 
 .favorites__season-radio {
@@ -188,6 +197,7 @@
   line-height: normal;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .favorites__card-button_color-brown {
@@ -205,6 +215,13 @@
   border: 1px solid #bb945f;
   width: 75px;
   height: 30px;
+}
+
+.favorites__card-button_color-brown:hover {
+  background-color: #fff;
+  color: #bb945f;
+  border: 1px solid #bb945f;
+  cursor: default;
 }
 
 .favorites__card-button_margin-top-55px {
