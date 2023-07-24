@@ -42,9 +42,9 @@
       <button class="header__profile-icon" type="button"></button>
     </header>
     <section class="welcome" title="Welcome image">
-      <p class="welcome__title">Welcome<br />to the Brooklyn Library</p>
+      <h2 class="welcome__title">Welcome<br />to the Brooklyn Library</h2>
     </section>
-    <section class="about" id="#about">
+    <section class="about" id="about">
       <h2 class="about__title">About</h2>
       <hr class="about__hr" />
       <p class="about__text">
@@ -53,13 +53,13 @@
       </p>
       <ul class="about__images">
         <li>
-          <img class="about__image" src="./img/image-1.png" />
+          <img src="./img/image-1.png" alt="Girl in library" />
         </li>
         <li>
-          <img class="about__image" src="./img/image-2.png" />
+          <img src="./img/image-2.png" alt="Sculptures" />
         </li>
         <li>
-          <img class="about__image" src="./img/image-3.png" />
+          <img src="./img/image-3.png" alt="Library" />
         </li>
       </ul>
       <ul class="about__buttons">
@@ -316,7 +316,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="contacts__title">Our Contacts</h2>
       <hr class="contacts__hr" />
       <div class="contacts__categories">
@@ -354,79 +354,91 @@
     <section class="digital" id="library-card">
       <h2 class="digital__title">Digital Library Cards</h2>
       <hr class="digital__hr" />
-      <p class="digital__subtitle">Find your Library card</p>
-      <div class="digital__container-form">
-        <div class="digital__container-border">
-          <div class="digital__container-rectangle">
-            <p class="digital__container-subtitle">Brooklyn Public Library</p>
-            <form class="digital__form">
-              <input
-                type="text"
-                pattern="[A-Za-z0-9-]+"
-                name="last-name"
-                placeholder="Reader's name"
-              />
-              <input
-                type="text"
-                pattern="[A-Za-z0-9-]+"
-                name="card-number"
-                placeholder="Card number"
-              />
-            </form>
+      <div class="digital__containers">
+        <div class="digital__container-form">
+          <p class="digital__subtitle">Find your Library card</p>
+          <div class="digital__container-border">
+            <div class="digital__container-rectangle">
+              <p class="digital__container-subtitle">Brooklyn Public Library</p>
+              <form class="digital__form" onsubmit="return false">
+                <input
+                  class="digital__form-input"
+                  type="text"
+                  name="last-name"
+                  placeholder="Reader's name"
+                  pattern="[a-zA-Z]" required
+                  title="Only letters and numbers"
+                />
+                <input
+                  class="digital__form-input"
+                  type="text"
+                  name="card-number"
+                  placeholder="Card number"
+                  pattern="[a-zA-Z]" required
+                />
+                <button class="digital__container-button" type="submit">Check the card</button>
+              </form>
+            </div>
           </div>
-          <button class="digital__button-check">Check the card</button>
+        </div>
+        <div class="digital__container-get">
+          <p class="digital__get-card">Get a reader card</p>
+          <p class="digital__get-card-explanation">
+            You will be able to see a reader card after logging into account or
+            you can register a new account
+          </p>
+          <div class="digital__buttons">
+            <button class="digital__button">Sign Up</button>
+            <button class="digital__button">Log in</button>
+          </div>
         </div>
       </div>
-      <p class="digital-library-cards__get-card">Get a reader card</p>
-      <p class="digital-library-cards__get-card-explanation">
-        You will be able to see a reader card after logging into account or you
-        can register a new account
-      </p>
-      <button class="digital-library-card__buttons">Sign Up</button>
-      <button class="digital-library-card__buttons">Log in</button>
     </section>
     <footer class="footer">
-      <div class="footer-container-first">
-        <p class="footer-place">
-          286 Cadman Plaza, New York, NY 11238, United States
-        </p>
-        <p class="footer-shedule">Mon - Fri<br />08:00 am - 07:00 pm</p>
+      <div class="footer__information">
+        <div class="footer__row">
+          <p class="footer__address">
+            286 Cadman Plaza, New York, NY 11238, United States
+          </p>
+          <p class="footer__shedule">Mon - Fri<br />08:00 am - 07:00 pm</p>
+        </div>
+        <div class="footer__row">
+          <ul class="footer__social">
+            <li class="footer__social-icon">
+              <a href=""
+                ><img src="./img/twitter-icon.svg" alt="Twitter icon"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a
+                href="https://instagram.com/rsschool_en?igshid=MmU2YjMzNjRlOQ=="
+                target="_blank"
+                ><img src="./img/intagram-icon.svg" alt="Instagram icon"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a
+                href="https://www.facebook.com/groups/TheRollingScopes/"
+                target="_blank"
+                ><img src="./img/facebook-icon.svg" alt="Facebook icon"
+              /></a>
+            </li>
+          </ul>
+          <p class="footer__shedule">Sat - Sun<br />10:00 am - 06:00 pm</p>
+        </div>
       </div>
-      <ul class="footer-social-media">
-        <li class="footer-li">
-          <a href=""
-            ><img class="footer-icon" src="./img/twitter-icon.svg"
-          /></a>
-        </li>
-        <li class="footer-li">
-          <a
-            href="https://instagram.com/rsschool_en?igshid=MmU2YjMzNjRlOQ=="
-            target="_blank"
-            ><img class="footer-icon" src="./img/intagram-icon.svg"
-          /></a>
-        </li>
-        <li class="footer-li">
-          <a
-            href="https://www.facebook.com/groups/TheRollingScopes/"
-            target="_blank"
-            ><img class="footer-icon" src="./img/facebook-icon.svg"
-          /></a>
-        </li>
-        <li class="footer-li">
-          <p class="footer-shedule-2">Sat - Sun<br />10:00 am - 06:00 pm</p>
-        </li>
-      </ul>
-      <hr class="footer-hr" />
-      <p class="footer-year">2023</p>
-      <a
-        class="footer-rss-school-link"
-        href="https://rs.school/js-stage0/"
-        target="_blank"
-        ><p class="footer-rss-school">The Rolling Scopes School</p></a
-      >
-      <a href="https://github.com/" target="_blank"
-        ><p class="footer-username">Olga Skopintseva</p></a
-      >
+      <div class="footer__copyright">
+        <p class="footer__year">2023</p>
+        <a
+          class="footer__rss-school"
+          href="https://rs.school/js-stage0/"
+          target="_blank"
+          >The Rolling Scopes School</a
+        >
+        <a class="footer__username" href="https://github.com/" target="_blank"
+          >Olga Skopintseva</a
+        >
+      </div>
     </footer>
   </body>
 </html>
