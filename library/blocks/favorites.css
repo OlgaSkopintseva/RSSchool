@@ -92,7 +92,7 @@
   height: 555px;
   border: 1px solid #000;
   margin: 0 0 0 20px;
-  padding: 15px 0 16px 20px;
+  padding: 0;
   position: relative;
   box-sizing: border-box;
 }
@@ -106,7 +106,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  padding: 0;
+  padding: 15px 0 0 20px;
   margin: 0;
 }
 
@@ -114,7 +114,7 @@
   width: 60px;
   height: 1px;
   background: #bb945f;
-  margin: 0;
+  margin: 0 0 0 20px;
   border: 0;
 }
 
@@ -127,7 +127,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 18px 0 0 0;
+  padding: 18px 0 0 20px;
   margin: 0;
 }
 
@@ -152,7 +152,7 @@
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0 20px;
   margin: 0;
   text-transform: capitalize;
 }
@@ -177,11 +177,17 @@
   color: #0c0c0e;
   line-height: normal;
   letter-spacing: 1px;
-  margin: 15px 0 0 0;
+  margin: 0;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   width: 75px;
   height: 30px;
+  padding: 0;
+  position: absolute;
+  top: auto;
+  left: 20px;
+  bottom: 15px;
+  right: 0px;
 }
 
 .favorites__card-button:hover {
@@ -210,11 +216,17 @@
   color: #bb945f;
   line-height: normal;
   letter-spacing: 1px;
-  margin: 95px 0px 15px 0px;
+  margin: 0;
+  padding: 0;
   border-radius: 2px;
   border: 1px solid #bb945f;
   width: 75px;
   height: 30px;
+  position: absolute;
+  top: auto;
+  left: 20px;
+  bottom: 15px;
+  right: 0px;
 }
 
 .favorites__card-button_color-brown:hover {
@@ -224,19 +236,6 @@
   cursor: default;
 }
 
-.favorites__card-button_margin-top-55px {
-  background-color: #fff;
-  width: 75px;
-  height: 30px;
-  border-radius: 2px;
-  border: 1px solid #0c0c0e;
-  color: #0c0c0e;
-  text-align: center;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-  margin: 55px 0px 13px 0px;
+.favorites__card_display-none {
+  display: none;
 }
