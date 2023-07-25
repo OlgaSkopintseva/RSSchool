@@ -366,7 +366,7 @@
                   type="text"
                   name="last-name"
                   placeholder="Reader's name"
-                  pattern="[a-zA-Z]" required
+                  pattern="[A-Za-z0-9\-]+" required
                   title="Only letters and numbers"
                 />
                 <input
@@ -374,7 +374,8 @@
                   type="text"
                   name="card-number"
                   placeholder="Card number"
-                  pattern="[a-zA-Z]" required
+                  pattern="[A-Za-z0-9\-]+" required
+                  title="Only letters and numbers"
                 />
                 <button class="digital__container-button" type="submit">Check the card</button>
               </form>
