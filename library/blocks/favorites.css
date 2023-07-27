@@ -65,6 +65,8 @@
   accent-color: #0c0c0e;
   margin: 0 20px 0 0;
   padding: 0;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .favorites__season-title {
