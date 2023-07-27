@@ -1,5 +1,5 @@
 .favorites {
-  margin: 0 0 49px 0;
+  margin: 0 0 52px 0;
 }
 
 .favorites__title {
@@ -32,13 +32,13 @@
   font-weight: 700;
   line-height: normal;
   margin: 0;
-  padding: 37px 0 0 21px;
+  padding: 38px 0 0 21px;
 }
 
 .favorites__seasons {
   list-style-type: none;
   margin: 0;
-  padding: 38px 0 40px 23px;
+  padding: 40px 0 39px 23px;
   display: flex;
   column-gap: 90px;
 }
@@ -127,7 +127,7 @@
   line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 17px 0 0 19px;
+  padding: 20px 0 0 19px;
   margin: 0;
 }
 
@@ -162,7 +162,7 @@
   height: 300px;
   padding: 0;
   position: absolute;
-  top: 254px;
+  top: 255px;
   left: 389px;
   margin: 0;
 }
@@ -184,7 +184,7 @@
   position: absolute;
   top: auto;
   left: 20px;
-  bottom: 15px;
+  bottom: 12px;
   right: 0px;
   padding: 0;
   margin: 0;
