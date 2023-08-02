@@ -35,7 +35,7 @@
   width: 584px;
 }
 
-.navigation__link{
+.navigation__link {
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -63,4 +63,24 @@
   background-image: url(../img/icon_profile.svg);
   background-repeat: no-repeat;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .header__menu {
+    background-image: url(../img/burger.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 22px;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+
+  .header__profile-icon {
+    right: 105px;
+  }
 }
