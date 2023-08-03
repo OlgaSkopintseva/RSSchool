@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="index.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       type="image/x-icon"
       href="./img/favicon-32x32.png"
       rel="shortcut icon"
-    >
+    />
     <title>Brooklyn Library Public</title>
   </head>
   <body class="page">
@@ -41,26 +41,27 @@
         </ul>
       </nav>
       <button class="header__profile-icon" type="button"></button>
+      <button class="header__menu" type="button"></button>
     </header>
     <section class="welcome" title="Welcome image">
-      <h2 class="welcome__title">Welcome<br>to the Brooklyn Library</h2>
+      <h2 class="welcome__title">Welcome<br />to the Brooklyn Library</h2>
     </section>
     <section class="about" id="about">
       <h2 class="about__title">About</h2>
-      <hr class="about__hr">
+      <hr class="about__hr" />
       <p class="about__text">
         The Brooklyn Library is a free workspace, a large number of books and a
         cozy coffee shop inside
       </p>
       <ul class="about__images">
         <li>
-          <img src="./img/image-1.png" alt="Girl in library">
+          <img src="./img/image-1.png" alt="Girl in library" />
         </li>
         <li>
-          <img src="./img/image-2.png" alt="Sculptures">
+          <img src="./img/image-2.png" alt="Sculptures" />
         </li>
         <li>
-          <img src="./img/image-3.png" alt="Library">
+          <img src="./img/image-3.png" alt="Library" />
         </li>
       </ul>
       <ul class="about__buttons">
@@ -74,10 +75,36 @@
           <div class="about__button"></div>
         </li>
       </ul>
+      <div class="about__images-frame">
+        <div class="about__image-frame">
+          <img src="./img/arrow-left.svg" />
+          <li class="about__image">
+            <img src="./img/image-1.png" alt="Girl in library" />
+          </li>
+          <img src="./img/arrow-right.svg" />
+        </div>
+      </div>
+      <ul class="about__buttons-frame">
+        <li>
+          <div class="about__button about__button_color-brown"></div>
+        </li>
+        <li>
+          <div class="about__button"></div>
+        </li>
+        <li>
+          <div class="about__button"></div>
+        </li>
+        <li>
+          <div class="about__button"></div>
+        </li>
+        <li>
+          <div class="about__button"></div>
+        </li>
+      </ul>
     </section>
-    <section class="favorites" id="favorites">
+    <!-- <section class="favorites" id="favorites">
       <h2 class="favorites__title">Favorites</h2>
-      <hr class="favorites__hr">
+      <hr class="favorites__hr" />
       <p class="favorites__subtitle">Pick favorites of season</p>
       <ul class="favorites__seasons">
         <li class="favorites__season">
@@ -85,7 +112,7 @@
             class="favorites__season-radio"
             type="radio"
             id="favorites__choise-1"
-          >
+          />
           <label
             class="favorites__season-title favorites__season-title_weight-700"
             for="favorites__choise-1"
@@ -97,7 +124,7 @@
             class="favorites__season-radio"
             type="radio"
             id="favorites__choise-2"
-          >
+          />
           <label class="favorites__season-title" for="favorites__choise-2"
             >Spring</label
           >
@@ -107,7 +134,7 @@
             class="favorites__season-radio"
             type="radio"
             id="favorites__choise-3"
-          >
+          />
           <label class="favorites__season-title" for="favorites__choise-3"
             >Summer</label
           >
@@ -117,7 +144,7 @@
             class="favorites__season-radio"
             type="radio"
             id="favorites__choise-4"
-          >
+          />
           <label class="favorites__season-title" for="favorites__choise-4"
             >Autumn</label
           >
@@ -126,9 +153,9 @@
       <div class="favorites__cards">
         <div class="favorites__card">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            The Book Eaters<br><span class="favorites__card-author"
+            The Book Eaters<br /><span class="favorites__card-author"
               >By Sunyi Dean</span
             >
           </p>
@@ -143,14 +170,14 @@
             class="favorites__card-book"
             src="./img/book-1.png"
             alt="The Book Eaters book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Cackle<br><span class="favorites__card-author"
+            Cackle<br /><span class="favorites__card-author"
               >By Rachel Harrison</span
             >
           </p>
@@ -164,14 +191,14 @@
             class="favorites__card-book"
             src="./img/book-2.png"
             alt="Cackle book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Dante: Poet of the Secular World<br><span
+            Dante: Poet of the Secular World<br /><span
               class="favorites__card-author"
               >By Erich Auerbach</span
             >
@@ -187,14 +214,14 @@
             class="favorites__card-book"
             src="./img/book-3.png"
             alt="TDante: Poet of the Secular World book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            The Last Queen<br><span class="favorites__card-author"
+            The Last Queen<br /><span class="favorites__card-author"
               >By Clive Irving</span
             >
           </p>
@@ -207,7 +234,7 @@
             class="favorites__card-book"
             src="./img/book-4.png"
             alt="The Last Queen book photo"
-          >
+          />
           <button
             class="favorites__card-button favorites__card-button_color-brown"
             disabled
@@ -217,9 +244,9 @@
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            The Body<br><span class="favorites__card-author"
+            The Body<br /><span class="favorites__card-author"
               >By Stephen King</span
             >
           </p>
@@ -231,14 +258,14 @@
             class="favorites__card-book"
             src="./img/book-5.png"
             alt="The Body book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Carry: A Memoir of Survival on Stolen Land<br><span
+            Carry: A Memoir of Survival on Stolen Land<br /><span
               class="favorites__card-author"
               >By Toni Jenson</span
             >
@@ -252,14 +279,14 @@
             class="favorites__card-book"
             src="./img/book-6.png"
             alt="Carry: A Memoir of Survival on Stolen Land book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Days of Distraction<br><span class="favorites__card-author"
+            Days of Distraction<br /><span class="favorites__card-author"
               >By Alexandra Chang</span
             >
           </p>
@@ -272,14 +299,14 @@
             class="favorites__card-book"
             src="./img/book-7.png"
             alt="Days of Distraction book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Dominicana<br><span class="favorites__card-author"
+            Dominicana<br /><span class="favorites__card-author"
               >By Angie Cruz</span
             >
           </p>
@@ -293,7 +320,7 @@
             class="favorites__card-book"
             src="./img/book-8.png"
             alt="Dominicana book photo"
-          >
+          />
           <button
             class="favorites__card-button favorites__card-button_color-brown"
           >
@@ -302,9 +329,9 @@
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Crude: A Memoir<br><span class="favorites__card-author"
+            Crude: A Memoir<br /><span class="favorites__card-author"
               >By Pablo Fajardo & ​​Sophie Tardy-Joubert</span
             >
           </p>
@@ -318,14 +345,14 @@
             class="favorites__card-book"
             src="./img/book-9.png"
             alt="Crude: A Memoir book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Let My People Go Surfing<br><span class="favorites__card-author"
+            Let My People Go Surfing<br /><span class="favorites__card-author"
               >By Yvon Chouinard</span
             >
           </p>
@@ -340,14 +367,14 @@
             class="favorites__card-book"
             src="./img/book-10.png"
             alt="Let My People Go Surfing book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            The Octopus Museum: Poems<br><span class="favorites__card-author"
+            The Octopus Museum: Poems<br /><span class="favorites__card-author"
               >By Brenda Shaughnessy</span
             >
           </p>
@@ -360,14 +387,14 @@
             class="favorites__card-book"
             src="./img/book-11.png"
             alt="The Octopus Museum: Poems book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Shark Dialogues: A Novel<br><span class="favorites__card-author"
+            Shark Dialogues: A Novel<br /><span class="favorites__card-author"
               >By Kiana Davenport</span
             >
           </p>
@@ -381,14 +408,14 @@
             class="favorites__card-book"
             src="./img/book-12.png"
             alt="Shark Dialogues: A Novel book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            TCasual Conversation<br><span class="favorites__card-author"
+            TCasual Conversation<br /><span class="favorites__card-author"
               >By Renia White</span
             >
           </p>
@@ -402,14 +429,14 @@
             class="favorites__card-book"
             src="./img/book-13.png"
             alt="TCasual Conversation book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            The Great Fire<br><span class="favorites__card-author"
+            The Great Fire<br /><span class="favorites__card-author"
               >By Lou Ureneck</span
             >
           </p>
@@ -423,14 +450,14 @@
             class="favorites__card-book"
             src="./img/book-14.png"
             alt="The Great Fire book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Rickey: The Life and Legend<br><span
+            Rickey: The Life and Legend<br /><span
               class="favorites__card-author"
               >By Howard Bryant</span
             >
@@ -445,14 +472,14 @@
             class="favorites__card-book"
             src="./img/book-15.png"
             alt="Rickey: The Life and Legend book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
         <div class="favorites__card favorites__card_display-none">
           <p class="favorites__card-popularity">Staff Picks</p>
-          <hr class="favorites__card-hr">
+          <hr class="favorites__card-hr" />
           <p class="favorites__card-title">
-            Slug: And Other Stories<br><span class="favorites__card-author"
+            Slug: And Other Stories<br /><span class="favorites__card-author"
               >By Megan Milks</span
             >
           </p>
@@ -465,14 +492,14 @@
             class="favorites__card-book"
             src="./img/book-16.png"
             alt="Slug: And Other Stories book photo"
-          >
+          />
           <button class="favorites__card-button">Buy</button>
         </div>
       </div>
     </section>
     <section class="shop" id="coffee-shop">
       <h2 class="shop__title">Coffee shop</h2>
-      <hr class="shop__hr">
+      <hr class="shop__hr" />
       <p class="shop__about">
         In our library, we have of cozy coffee shop, welcoming in customers with
         frothy cappuccinos and friendly conversation. You can get a favorite
@@ -485,32 +512,32 @@
           <ul class="shop__products">
             <li class="shop__product">
               <p class="shop__product-title">Cold Brew Coffee</p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$3</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title">French Press Pot</p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$5</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title">Espresso</p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$2</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title">Cappuccino</p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$4</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title">Hot tea</p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$2</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title">Cold tea</p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$2</p>
             </li>
           </ul>
@@ -524,42 +551,42 @@
               <p class="shop__product-title shop__product-title_side-right">
                 Forest Gateau
               </p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title shop__product-title_side-right">
                 Blue Moon
               </p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title shop__product-title_side-right">
                 Truffle Cake
               </p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$15</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title shop__product-title_side-right">
                 Chocolate Cake
               </p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$18</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title shop__product-title_side-right">
                 Poet's Dream Cake
               </p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$16</p>
             </li>
             <li class="shop__product">
               <p class="shop__product-title shop__product-title_side-right">
                 Pineapple Cake
               </p>
-              <hr class="shop__product-hr">
+              <hr class="shop__product-hr" />
               <p class="shop__product-price">$14</p>
             </li>
           </ul>
@@ -568,7 +595,7 @@
     </section>
     <section class="contacts" id="contacts">
       <h2 class="contacts__title">Our Contacts</h2>
-      <hr class="contacts__hr">
+      <hr class="contacts__hr" />
       <div class="contacts__categories">
         <div class="contacts__info-categorie">
           <p class="contacts__subtitle">For all Library inquiries:</p>
@@ -598,12 +625,12 @@
           class="contacts__map-categorie"
           src="./img/map.png"
           alt="Brooklyn Public Library map"
-        >
+        />
       </div>
     </section>
     <section class="digital" id="library-card">
       <h2 class="digital__title">Digital Library Cards</h2>
-      <hr class="digital__hr">
+      <hr class="digital__hr" />
       <div class="digital__containers">
         <div class="digital__container-form">
           <p class="digital__subtitle">Find your Library card</p>
@@ -619,7 +646,7 @@
                   pattern="[A-Za-z0-9\-]+"
                   required
                   title="Only letters and numbers"
-                >
+                />
                 <input
                   class="digital__form-input"
                   type="text"
@@ -628,7 +655,7 @@
                   pattern="[A-Za-z0-9\-]+"
                   required
                   title="Only letters and numbers"
-                >
+                />
                 <button class="digital__container-button" type="submit">
                   Check the card
                 </button>
@@ -655,31 +682,31 @@
           <p class="footer__address">
             286 Cadman Plaza, New York, NY 11238, United States
           </p>
-          <p class="footer__shedule">Mon - Fri<br>08:00 am - 07:00 pm</p>
+          <p class="footer__shedule">Mon - Fri<br />08:00 am - 07:00 pm</p>
         </div>
         <div class="footer__row">
           <ul class="footer__social">
             <li class="footer__social-icon">
               <a href=""
                 ><img src="./img/twitter-icon.svg" alt="Twitter icon"
-              ></a>
+              /></a>
             </li>
             <li class="footer__social-icon">
               <a
                 href="https://instagram.com/rsschool_en?igshid=MmU2YjMzNjRlOQ=="
                 target="_blank"
                 ><img src="./img/intagram-icon.svg" alt="Instagram icon"
-              ></a>
+              /></a>
             </li>
             <li class="footer__social-icon">
               <a
                 href="https://www.facebook.com/groups/TheRollingScopes/"
                 target="_blank"
                 ><img src="./img/facebook-icon.svg" alt="Facebook icon"
-              ></a>
+              /></a>
             </li>
           </ul>
-          <p class="footer__shedule">Sat - Sun<br>10:00 am - 06:00 pm</p>
+          <p class="footer__shedule">Sat - Sun<br />10:00 am - 06:00 pm</p>
         </div>
       </div>
       <div class="footer__copyright">
@@ -694,6 +721,21 @@
           >Olga Skopintseva</a
         >
       </div>
-    </footer>
+    </footer> -->
+    <div class="popup">
+      <div class="popup__header">
+        <img class="popup__icon-profile" src="./img/icon_profile.svg" />
+        <img class="popup__cross" src="./img/cross.svg" />
+      </div>
+      <nav class="popup__navigation">
+        <ul class="popup__navigation-links">
+          <li class="popup__navigation-link">About</li>
+          <li class="popup__navigation-link">Favorites</li>
+          <li class="popup__navigation-link">Coffee shop</li>
+          <li class="popup__navigation-link">Contacts</li>
+          <li class="popup__navigation-link">Library Card</li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
