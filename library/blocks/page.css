@@ -3,7 +3,7 @@ html {
 }
 
 .page {
-  max-width: 1440px;
+  width: 1440px;
   min-width: 320px;
   background-color: #fff;
   margin: 0 auto;
