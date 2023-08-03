@@ -105,6 +105,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contacts {
+    margin: 0 0 38px 0;
+  }
+  
   .contacts__categories {
     display: flex;
     flex-direction: column;
