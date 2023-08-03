@@ -86,7 +86,7 @@
   margin: 0;
 }
 
-.footer__rss-school{
+.footer__rss-school {
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -112,4 +112,18 @@
   padding: 0;
   text-decoration: none;
   justify-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+
+  .footer__copyright {
+    padding: 44px 0 42px 0;
+  }
+
+  .footer__username {
+    text-align: end;
+  }
 }
