@@ -51,7 +51,7 @@
 
 .about__buttons {
   display: grid;
-  grid-template-columns: repeat(3, 26px);
+  grid-template-columns: repeat(5, 26px);
   margin: 0;
   padding: 35px 0;
   list-style-type: none;
@@ -86,4 +86,56 @@
   height: 16px;
   background-color: #bb945f;
   border-radius: 100%;
+}
+
+.about__image-frame {
+  display: none;
+}
+
+.about__buttons-frame {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about__text {
+    
+  }
+
+  .about__images {
+    display: none;
+  }
+
+  .about__images-frame {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__image-frame {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about__image {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 560px;
+  }
+
+  .about__buttons {
+    display: none;
+  }
+
+  .about__buttons-frame {
+    display: grid;
+    grid-template-columns: repeat(5, 26px);
+    margin: 0;
+    padding: 23px 0 25px 0;
+    list-style-type: none;
+    justify-content: center;
+  }
 }
