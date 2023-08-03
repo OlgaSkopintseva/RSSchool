@@ -190,3 +190,27 @@
   background: #bb945f;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .digital__container-form {
+    margin: 0;
+    padding: 0;
+  }
+
+  .digital__containers {
+    align-items: center;
+  }
+
+  .digital__containers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .digital__form {
+    row-gap: 25px;
+  }
+
+  .digital__container-button {
+    height: 44px;
+  }
+}
