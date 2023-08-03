@@ -64,7 +64,7 @@
   margin: 18px;
 }
 
-.digital__container-subtitle{
+.digital__container-subtitle {
   color: #000;
   font-family: Forum;
   font-size: 30px;
@@ -127,7 +127,7 @@
 
 .digital__container-get {
   width: 456px;
-  margin: 40px 20px 0 0 ;
+  margin: 40px 20px 0 0;
   padding: 0;
 }
 
@@ -212,5 +212,28 @@
 
   .digital__container-button {
     height: 44px;
+  }
+
+  .digital__container-get {
+    margin: 21px 0 0 0;
+  }
+
+  .digital__get-card {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 40px 0;
+  }
+
+  .digital__get-card-explanation {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    padding: 0 0 40px 0;
+  }
+
+  .digital__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
