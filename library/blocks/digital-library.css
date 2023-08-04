@@ -215,7 +215,10 @@
   }
 
   .digital__container-get {
-    margin: 21px 0 0 0;
+    margin: 23px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .digital__get-card {
@@ -225,8 +228,7 @@
   }
 
   .digital__get-card-explanation {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width: 600px;
     padding: 0 0 40px 0;
   }
