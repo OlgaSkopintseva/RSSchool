@@ -47,7 +47,6 @@
 
 .navigation__link:hover {
   color: #c0c0c0;
-  font-weight: 500;
 }
 
 .header__profile-icon {
@@ -64,12 +63,17 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+.header__menu {
+  display: none;
+}
 @media screen and (max-width: 768px) {
-  .navigation {
+  .header__navigation {
     display: none;
   }
 
   .header__menu {
+    display: block;
     background-image: url(../img/burger.svg);
     background-repeat: no-repeat;
     background-color: transparent;
