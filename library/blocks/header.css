@@ -67,6 +67,29 @@
 .header__menu {
   display: none;
 }
+
+@media screen and (max-width: 1024px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+    background-image: url(../img/burger.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 22px;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+
+  .header__profile-icon {
+    right: 105px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__navigation {
     display: none;
