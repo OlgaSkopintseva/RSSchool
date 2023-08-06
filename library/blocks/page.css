@@ -3,25 +3,11 @@ html {
 }
 
 .page {
-  width: 1440px;
-  min-width: 320px;
+  max-width: 1440px;
+  min-width: 640px;
   background-color: #fff;
   margin: 0 auto;
   font-family: "Forum", cursive;
   font-family: "Inter", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  .page {
-    max-width: 768px;
-    min-width: 320px;
-    background-color: #fff;
-    margin: 0 auto;
-    font-family: "Forum", cursive;
-    font-family: "Inter", sans-serif;
-  }
-}
