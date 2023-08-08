@@ -191,6 +191,88 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1250px) {
+  .digital__container-form {
+    width: 490px;
+    margin: 0 auto;
+  }
+
+  .digital__container-subtitle {
+    font-size: 25px;
+  }
+
+  .digital__container-border {
+    width: 490px;
+    height: 380px;
+  }
+
+  .digital__container-rectangle {
+    max-width: 450px;
+  }
+
+  .digital__form-input {
+    width: 390px;
+  }
+
+  .digital__container-get {
+    margin: 40px auto;
+  }
+
+  .digital__get-card {
+    font-size: 28px;
+  }
+
+  .digital__get-card-explanation {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .digital__container-form {
+    margin: 0;
+    padding: 0;
+  }
+
+  .digital__containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .digital__form {
+    row-gap: 25px;
+  }
+
+  .digital__container-button {
+    height: 44px;
+  }
+
+  .digital__container-get {
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .digital__get-card {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 40px 0;
+  }
+
+  .digital__get-card-explanation {
+    text-align: center;
+    width: 600px;
+    padding: 0 0 40px 0;
+  }
+
+  .digital__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .digital__container-form {
     margin: 0;
@@ -198,12 +280,9 @@
   }
 
   .digital__containers {
-    align-items: center;
-  }
-
-  .digital__containers {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .digital__form {
