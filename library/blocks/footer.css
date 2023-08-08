@@ -114,6 +114,16 @@
   justify-self: flex-end;
 }
 
+@media screen and (max-width: 1439px) {
+  .footer {
+    max-width: 100%;
+  }
+
+  .footer__username {
+    text-align: end;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     width: 768px;
