@@ -53,59 +53,54 @@
         The Brooklyn Library is a free workspace, a large number of books and a
         cozy coffee shop inside
       </p>
-      <p class="about__text-media">
-        The Brooklyn Library is a free workspace, a large number of books and
-        a<br />
-        cozy coffee shop inside
-      </p>
-      <ul class="about__images">
-        <li>
-          <img src="./img/image-1.png" alt="Girl in library" />
-        </li>
-        <li>
-          <img src="./img/image-2.png" alt="Sculptures" />
-        </li>
-        <li>
-          <img src="./img/image-3.png" alt="Library" />
-        </li>
-      </ul>
-      <ul class="about__buttons">
-        <li>
-          <div class="about__button about__button_color-brown"></div>
-        </li>
-        <li>
-          <div class="about__button"></div>
-        </li>
-        <li>
-          <div class="about__button"></div>
-        </li>
-      </ul>
-      <div class="about__images-frame">
-        <div class="about__image-frame">
-          <img src="./img/arrow-left.svg" />
-          <li class="about__image">
-            <img src="./img/image-1.png" alt="Girl in library" />
-          </li>
-          <img src="./img/arrow-right.svg" />
+      <div class="about__gallery">
+        <button
+          class="about__gallery-arrow about__gallery-arrow_left"
+          type="button"
+        ></button>
+        <div class="about__cards-container">
+          <ul class="about__cards">
+            <li class="about__card">
+              <img
+                class="about__card-image"
+                src="./img/image-1.png"
+                alt="Girl in library"
+              />
+            </li>
+            <li class="about__card">
+              <img
+                class="about__card-image"
+                src="./img/image-2.png"
+                alt="Sculptures"
+              />
+            </li>
+            <li class="about__card">
+              <img
+                class="about__card-image"
+                src="./img/image-3.png"
+                alt="Library"
+              />
+            </li>
+          </ul>
+          <ul class="about__gallery-buttons">
+            <li>
+              <div
+                class="about__gallery-button about__gallery-button_color-brown"
+              ></div>
+            </li>
+            <li>
+              <div class="about__gallery-button"></div>
+            </li>
+            <li>
+              <div class="about__gallery-button"></div>
+            </li>
+          </ul>
         </div>
+        <button
+          class="about__gallery-arrow about__gallery-arrow_right"
+          type="button"
+        ></button>
       </div>
-      <ul class="about__buttons-frame">
-        <li>
-          <div class="about__button about__button_color-brown"></div>
-        </li>
-        <li>
-          <div class="about__button"></div>
-        </li>
-        <li>
-          <div class="about__button"></div>
-        </li>
-        <li>
-          <div class="about__button"></div>
-        </li>
-        <li>
-          <div class="about__button"></div>
-        </li>
-      </ul>
     </section>
     <section class="favorites" id="favorites">
       <h2 class="favorites__title">Favorites</h2>
@@ -723,7 +718,7 @@
           >The Rolling Scopes School</a
         >
         <a class="footer__username" href="https://github.com/" target="_blank"
-          >Olga Skopintseva</a
+          >Skopintseva</a
         >
       </div>
     </footer>
