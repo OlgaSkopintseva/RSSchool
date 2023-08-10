@@ -1,5 +1,5 @@
 .digital {
-  margin: 0 0 41px 0;
+  margin: 0 0 38px 0;
 }
 
 .digital__title {
@@ -191,7 +191,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1250px) {
+/* @media screen and (max-width: 1250px) {
   .digital__container-form {
     width: 490px;
     margin: 0 auto;
@@ -271,7 +271,7 @@
     justify-content: center;
     align-items: center;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .digital__container-form {
