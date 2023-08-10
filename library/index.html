@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,7 +41,34 @@
         </ul>
       </nav>
       <button class="header__profile-icon" type="button"></button>
-      <button class="header__menu" type="button"></button>
+      <button id="myButton" class="header__menu" type="button"></button>
+      <div class="popup hidden">
+        <div class="popup__header">
+          <img class="popup__icon-profile" src="./img/icon_profile.svg" />
+          <img class="popup__cross" src="./img/cross.svg" />
+        </div>
+        <nav class="popup__navigation">
+          <ul class="popup__navigation-links">
+            <li><a class="popup__navigation-link" href="#about">About</a></li>
+            <li>
+              <a class="popup__navigation-link" href="#favorites">Favorites</a>
+            </li>
+            <li>
+              <a class="popup__navigation-link" href="#coffee-shop"
+                >Coffee shop</a
+              >
+            </li>
+            <li>
+              <a class="popup__navigation-link" href="#contacts">Contacts</a>
+            </li>
+            <li>
+              <a class="popup__navigation-link" href="#library-card"
+                >Library Card</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="welcome" title="Welcome image">
       <h2 class="welcome__title">Welcome<br />to the Brooklyn Library</h2>
@@ -722,20 +749,5 @@
         >
       </div>
     </footer>
-    <div class="popup">
-      <div class="popup__header">
-        <img class="popup__icon-profile" src="./img/icon_profile.svg" />
-        <img class="popup__cross" src="./img/cross.svg" />
-      </div>
-      <nav class="popup__navigation">
-        <ul class="popup__navigation-links">
-          <li class="popup__navigation-link">About</li>
-          <li class="popup__navigation-link">Favorites</li>
-          <li class="popup__navigation-link">Coffee shop</li>
-          <li class="popup__navigation-link">Contacts</li>
-          <li class="popup__navigation-link">Library Card</li>
-        </ul>
-      </nav>
-    </div>
   </body>
 </html>
