@@ -273,3 +273,13 @@
     top: 256px;
   }
 }
+
+@media screen and (max-width: 730px) {
+  .favorites__seasons {
+    column-gap: 50px;
+  }
+
+  .digital__container-form {
+    margin: 0;
+  }
+}
