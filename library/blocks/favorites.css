@@ -96,7 +96,6 @@
   margin: 0 0 0 20px;
   padding: 0;
   position: relative;
-  box-sizing: border-box;
 }
 
 .favorites__card-popularity {
@@ -164,7 +163,7 @@
   height: 300px;
   padding: 0;
   position: absolute;
-  top: 254px;
+  top: 257px;
   left: 389px;
   margin: 0;
 }
@@ -186,7 +185,7 @@
   position: absolute;
   top: auto;
   left: 20px;
-  bottom: 12px;
+  bottom: 15px;
   right: 0px;
   padding: 0;
   margin: 0;
@@ -244,68 +243,26 @@
 
 @media screen and (max-width: 1439px) {
   .favorites__cards {
-    grid-gap: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .favorites__card {
-    max-width: 70%;
-    max-height: 75%;
-  }
-
-  .favorites__card-popularity {
-    font-size: 1.553vw;
-  }
-
-  .favorites__card-hr {
-    width: 35px;
-    height: 1.5px;
-  }
-
-  .favorites__card-title {
-    font-size: 1.165vw;
-    padding: 15px 0 0 19px;
-    line-height: 1.778vw;
-  }
-
-  .favorites__card-author {
-    font-size: 1.165vw;
-  }
-
-  .favorites__card-about {
-    width: 220px;
-    font-size: 1.042vw;
-    line-height: 2vw;
-    padding: 10px 0 0 20px;
-  }
-
-  .favorites__card-book {
-    width: 150px;
-    height: 200px;
-    top: 216px;
-    left: 268px;
-  }
-
-  .favorites__card-button {
-    width: 60px;
-    height: 25px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 768px) {
+  .favorites {
+    margin: 40px 0 50px 0;
+  }
+
   .favorites__title {
-    padding: 28px 0 20px 0;
+    padding: 15px 0 20px 0;
   }
 
   .favorites__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-gap: 37px 181px;
   }
 
   .favorites__card {
@@ -313,6 +270,6 @@
   }
 
   .favorites__card-book {
-    top: 254px;
+    top: 256px;
   }
 }
