@@ -203,6 +203,10 @@
     flex-direction: column;
   }
 
+  .digital__container-form {
+    margin: 0;
+  }
+
   .digital__form {
     row-gap: 25px;
   }
@@ -232,3 +236,4 @@
     justify-content: center;
   }
 }
+
