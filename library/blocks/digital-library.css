@@ -1,5 +1,5 @@
 .digital {
-  margin: 0 0 41px 0;
+  margin: 0 0 38px 0;
 }
 
 .digital__title {
@@ -64,7 +64,7 @@
   margin: 18px;
 }
 
-.digital__container-subtitle{
+.digital__container-subtitle {
   color: #000;
   font-family: Forum;
   font-size: 30px;
@@ -127,7 +127,7 @@
 
 .digital__container-get {
   width: 456px;
-  margin: 40px 20px 0 0 ;
+  margin: 40px 20px 0 0;
   padding: 0;
 }
 
@@ -190,3 +190,50 @@
   background: #bb945f;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1040px) {
+  .digital__containers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .digital__containers {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .digital__container-form {
+    margin: 0;
+  }
+
+  .digital__form {
+    row-gap: 25px;
+  }
+
+  .digital__container-button {
+    height: 44px;
+  }
+
+  .digital__get-card {
+    text-align: center;
+    padding: 0 0 40px 0;
+  }
+
+  .digital__get-card-explanation {
+    text-align: center;
+    width: 600px;
+    padding: 0 0 40px 0;
+  }
+
+  .digital__container-get {
+    margin: 21px 0 0 0;
+    width: 600px;
+  }
+
+  .digital__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+

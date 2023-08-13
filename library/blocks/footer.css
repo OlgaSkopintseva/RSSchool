@@ -31,6 +31,12 @@
   line-height: 20px;
   padding: 0px;
   margin: 0;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.footer__address:hover {
+  color: #c0c0c0;
 }
 
 .footer__shedule {
@@ -86,7 +92,7 @@
   margin: 0;
 }
 
-.footer__rss-school{
+.footer__rss-school {
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -98,6 +104,11 @@
   padding: 0;
   text-decoration: none;
   justify-self: center;
+  transition: color 0.3s linear;
+}
+
+.footer__rss-school:hover {
+  color: #c0c0c0;
 }
 
 .footer__username {
@@ -112,4 +123,37 @@
   padding: 0;
   text-decoration: none;
   justify-self: flex-end;
+  transition: color 0.3s linear;
+}
+
+.footer__username:hover {
+  color: #c0c0c0;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer {
+    max-width: 100%;
+  }
+
+  .footer__username {
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+
+  .footer__information {
+    padding: 22px 0 30px 0;
+  }
+
+  .footer__copyright {
+    padding: 44px 0 42px 0;
+  }
+
+  .footer__username {
+    text-align: end;
+  }
 }

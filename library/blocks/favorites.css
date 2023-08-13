@@ -1,5 +1,5 @@
 .favorites {
-  margin: 0 0 52px 0;
+  margin: 0 0 50px 0;
 }
 
 .favorites__title {
@@ -38,7 +38,7 @@
 .favorites__seasons {
   list-style-type: none;
   margin: 0;
-  padding: 40px 0 39px 23px;
+  padding: 40px 0 40px 23px;
   display: flex;
   column-gap: 90px;
 }
@@ -96,7 +96,6 @@
   margin: 0 0 0 20px;
   padding: 0;
   position: relative;
-  box-sizing: border-box;
 }
 
 .favorites__card-popularity {
@@ -164,7 +163,7 @@
   height: 300px;
   padding: 0;
   position: absolute;
-  top: 255px;
+  top: 257px;
   left: 389px;
   margin: 0;
 }
@@ -186,7 +185,7 @@
   position: absolute;
   top: auto;
   left: 20px;
-  bottom: 12px;
+  bottom: 15px;
   right: 0px;
   padding: 0;
   margin: 0;
@@ -240,4 +239,43 @@
 
 .favorites__card_display-none {
   display: none;
+}
+
+@media screen and (max-width: 1439px) {
+  .favorites__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .favorites {
+    margin: 40px 0 50px 0;
+  }
+
+  .favorites__title {
+    padding: 15px 0 20px 0;
+  }
+
+  .favorites__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 37px 181px;
+  }
+
+  .favorites__card {
+    margin: 0 40px 0 0;
+  }
+
+  .favorites__card-book {
+    top: 256px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .favorites__seasons {
+    column-gap: 50px;
+  }
 }

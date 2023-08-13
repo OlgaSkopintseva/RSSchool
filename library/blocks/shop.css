@@ -131,3 +131,27 @@
 .shop__categorie_side-right {
   width: 482px;
 }
+
+@media screen and (max-width: 1040px) {
+  .shop__categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop__categorie_side-right {
+    margin: 40px 0 0 0;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shop__categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shop__categorie_side-right {
+    margin: 40px 0 0 0;
+    align-self: flex-end;
+  }
+}

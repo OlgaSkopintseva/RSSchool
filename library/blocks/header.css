@@ -35,7 +35,7 @@
   width: 584px;
 }
 
-.navigation__link{
+.navigation__link {
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -47,7 +47,6 @@
 
 .navigation__link:hover {
   color: #c0c0c0;
-  font-weight: 500;
 }
 
 .header__profile-icon {
@@ -63,4 +62,31 @@
   background-image: url(../img/icon_profile.svg);
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.header__menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+    background-image: url(../img/burger.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 22px;
+    padding: 0;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+  }
+
+  .header__profile-icon {
+    right: 105px;
+  }
 }
