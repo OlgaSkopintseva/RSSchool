@@ -1,1 +1,20 @@
-console.log("*Вёрстка валидная +10\n*Вёрстка семантическая +16\n*Вёрстка соответствует макету +54:\n  блок <header> +8\n  секция Welcome +4\n  секция About +6\n  секция Favorites +8\n  секция CoffeShop +6\n  секция Contacts +6\n  секция LibraryCard +8\n  блок <footer> +8\n*Общие требования к верстке +20" );
+const headerMenu = document.querySelector('.header__menu');
+const popup = document.querySelector ('.popup');
+const popupCloseButton = document.querySelector('.popup__close');
+
+headerMenu.addEventListener('click', () => {
+    popup.classList.add('popup_enable')
+});
+
+document.addEventListener('click', (event) => {
+    if (!popup.contains(event.target) && !headerMenu.contains(event.target)) {
+        popup.classList.remove('popup_enable');
+    }
+});
+
+popupCloseButton.addEventListener('click', () => {
+    popup.classList.remove('popup_enable');
+  });
+
+
+
