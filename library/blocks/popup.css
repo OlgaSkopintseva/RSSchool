@@ -1,4 +1,8 @@
 .popup {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
   position: absolute;
   top: 0;
   right: 0;
@@ -6,7 +10,6 @@
   visibility: hidden;
   z-index: 2;
   transition: opacity 0.2s ease-in, visibility 0.3s ease-out;
-  display: block;
 }
 
 .popup__container {
