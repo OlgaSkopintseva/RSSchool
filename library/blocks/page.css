@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  max-width: 1440px;
+  min-width: 640px;
+  background-color: #fff;
+  margin: 0 auto;
+  font-family: "Forum", cursive;
+  font-family: "Inter", sans-serif;
+}
+
