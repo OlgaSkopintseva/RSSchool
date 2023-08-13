@@ -21,64 +21,62 @@
     <title>Brooklyn Library Public</title>
   </head>
   <body class="page">
-    <main>
-      <header class="header">
-        <h1 class="header__title">Brooklyn Public Library</h1>
-        <nav class="header__navigation">
-          <ul class="navigation">
-            <li><a class="navigation__link" href="#about">About</a></li>
-            <li>
-              <a class="navigation__link" href="#favorites">Favorites</a>
-            </li>
-            <li>
-              <a class="navigation__link" href="#coffee-shop">Coffee shop</a>
-            </li>
-            <li>
-              <a class="navigation__link" href="#contacts">Contacts</a>
-            </li>
-            <li>
-              <a class="navigation__link" href="#library-card">Library Card</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header__profile-icon" type="button"></button>
-        <button class="header__menu" type="button"></button>
-        <div class="popup popup_enable">
-          <div class="popup__container">
-            <div class="popup__header">
-              <img class="popup__icon-profile" src="./img/icon_profile.svg" />
-              <img class="popup__close" src="./img/cross.svg" alt="Cross" />
-            </div>
-            <nav class="popup__navigation">
-              <ul class="popup__navigation-links">
-                <li>
-                  <a class="popup__navigation-link" href="#about">About</a>
-                </li>
-                <li>
-                  <a class="popup__navigation-link" href="#favorites"
-                    >Favorites</a
-                  >
-                </li>
-                <li>
-                  <a class="popup__navigation-link" href="#coffee-shop"
-                    >Coffee shop</a
-                  >
-                </li>
-                <li>
-                  <a class="popup__navigation-link" href="#contacts"
-                    >Contacts</a
-                  >
-                </li>
-                <li>
-                  <a class="popup__navigation-link" href="#library-card"
-                    >Library Card</a
-                  >
-                </li>
-              </ul>
-            </nav>
+    <header class="header">
+      <h1 class="header__title">Brooklyn Public Library</h1>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li><a class="navigation__link" href="#about">About</a></li>
+          <li>
+            <a class="navigation__link" href="#favorites">Favorites</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="#coffee-shop">Coffee shop</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="#contacts">Contacts</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="#library-card">Library Card</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__profile-icon" type="button"></button>
+      <button class="header__menu" type="button"></button>
+      <div class="popup">
+        <div class="popup__container">
+          <div class="popup__header">
+            <img class="popup__icon-profile" src="./img/icon_profile.svg" />
+            <img class="popup__close" src="./img/cross.svg" alt="Cross" />
           </div>
+          <nav class="popup__navigation">
+            <ul class="popup__navigation-links">
+              <li>
+                <a class="popup__navigation-link" href="#about">About</a>
+              </li>
+              <li>
+                <a class="popup__navigation-link" href="#favorites"
+                  >Favorites</a
+                >
+              </li>
+              <li>
+                <a class="popup__navigation-link" href="#coffee-shop"
+                  >Coffee shop</a
+                >
+              </li>
+              <li>
+                <a class="popup__navigation-link" href="#contacts">Contacts</a>
+              </li>
+              <li>
+                <a class="popup__navigation-link" href="#library-card"
+                  >Library Card</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-      </header>
+      </div>
+    </header>
+    <main class="content">
       <section class="welcome" title="Welcome image">
         <h2 class="welcome__title">Welcome<br />to the Brooklyn Library</h2>
       </section>
@@ -727,55 +725,56 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="footer__information">
-          <div class="footer__row">
-            <a
-              class="footer__address"
-              href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/@40.6956458,-73.9912976,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a49b649b8c3:0x6342a2291cea2e!8m2!3d40.6956458!4d-73.9912976!16s%2Fg%2F11s2lgz8ns?entry=ttu" target="_blank"
-            >
-              286 Cadman Plaza, New York, NY 11238, United States
-            </a>
-            <p class="footer__shedule">Mon - Fri<br />08:00 am - 07:00 pm</p>
-          </div>
-          <div class="footer__row">
-            <ul class="footer__social">
-              <li class="footer__social-icon">
-                <a href=""
-                  ><img src="./img/twitter-icon.svg" alt="Twitter icon"
-                /></a>
-              </li>
-              <li class="footer__social-icon">
-                <a
-                  href="https://instagram.com/rsschool_en?igshid=MmU2YjMzNjRlOQ=="
-                  target="_blank"
-                  ><img src="./img/intagram-icon.svg" alt="Instagram icon"
-                /></a>
-              </li>
-              <li class="footer__social-icon">
-                <a
-                  href="https://www.facebook.com/groups/TheRollingScopes/"
-                  target="_blank"
-                  ><img src="./img/facebook-icon.svg" alt="Facebook icon"
-                /></a>
-              </li>
-            </ul>
-            <p class="footer__shedule">Sat - Sun<br />10:00 am - 06:00 pm</p>
-          </div>
-        </div>
-        <div class="footer__copyright">
-          <p class="footer__year">2023</p>
-          <a
-            class="footer__rss-school"
-            href="https://rs.school/js-stage0/"
-            target="_blank"
-            >The Rolling Scopes School</a
-          >
-          <a class="footer__username" href="https://github.com/" target="_blank"
-            >Skopintseva</a
-          >
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <div class="footer__information">
+        <div class="footer__row">
+          <a
+            class="footer__address"
+            href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/@40.6956458,-73.9912976,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a49b649b8c3:0x6342a2291cea2e!8m2!3d40.6956458!4d-73.9912976!16s%2Fg%2F11s2lgz8ns?entry=ttu"
+            target="_blank"
+          >
+            286 Cadman Plaza, New York, NY 11238, United States
+          </a>
+          <p class="footer__shedule">Mon - Fri<br />08:00 am - 07:00 pm</p>
+        </div>
+        <div class="footer__row">
+          <ul class="footer__social">
+            <li class="footer__social-icon">
+              <a href=""
+                ><img src="./img/twitter-icon.svg" alt="Twitter icon"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a
+                href="https://instagram.com/rsschool_en?igshid=MmU2YjMzNjRlOQ=="
+                target="_blank"
+                ><img src="./img/intagram-icon.svg" alt="Instagram icon"
+              /></a>
+            </li>
+            <li class="footer__social-icon">
+              <a
+                href="https://www.facebook.com/groups/TheRollingScopes/"
+                target="_blank"
+                ><img src="./img/facebook-icon.svg" alt="Facebook icon"
+              /></a>
+            </li>
+          </ul>
+          <p class="footer__shedule">Sat - Sun<br />10:00 am - 06:00 pm</p>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__year">2023</p>
+        <a
+          class="footer__rss-school"
+          href="https://rs.school/js-stage0/"
+          target="_blank"
+          >The Rolling Scopes School</a
+        >
+        <a class="footer__username" href="https://github.com/" target="_blank"
+          >Skopintseva</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
