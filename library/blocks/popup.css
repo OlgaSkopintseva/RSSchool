@@ -1,10 +1,18 @@
 .popup {
-  width: 332px;
-  height: 570px;
-  background-color: #0c0c0e;
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  transition: opacity 0.2s ease-in, visibility 0.3s ease-out;
+  display: block;
+}
+
+.popup__container {
+  background-color: #0c0c0e;
+  width: 332px;
+  height: 570px;
 }
 
 .popup__header {
@@ -23,7 +31,7 @@
   cursor: pointer;
 }
 
-.popup__cross {
+.popup__close {
   width: 32px;
   height: 32px;
   margin: 31px 28px 0 0;
@@ -64,6 +72,7 @@
   color: #c0c0c0;
 }
 
-.hidden {
-  visibility: hidden;
+.popup_enable {
+  opacity: 1;
+  visibility: visible;
 }
