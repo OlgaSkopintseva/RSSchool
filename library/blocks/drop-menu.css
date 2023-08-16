@@ -1,0 +1,35 @@
+.drop-menu {
+  width: 80px;
+  height: 115px;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.drop-menu__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+.drop-menu__hr {
+  width: 40px;
+  height: 1px;
+  background: #bb945f;
+  margin: 0 auto;
+}
+
+.drop-menu__text {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
