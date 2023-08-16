@@ -49,11 +49,11 @@
 }
 
 .about__gallery-arrow_left {
-  background-image: url(/library/img/arrow-left.svg);
+  background-image: url(../img/arrow-left.svg);
 }
 
 .about__gallery-arrow_right {
-  background-image: url(/library/img/arrow-right.svg);
+  background-image: url(../img/arrow-right.svg);
 }
 
 .about__cards {

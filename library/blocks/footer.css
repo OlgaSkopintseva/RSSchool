@@ -54,7 +54,7 @@
 
 .footer__copyright {
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 18% 57% 25%;
   justify-content: space-between;
   grid-template-rows: 22px;
   padding: 42px 0;
