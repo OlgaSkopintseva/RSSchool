@@ -1,0 +1,10 @@
+.popup__form-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 10px 0;
+}
