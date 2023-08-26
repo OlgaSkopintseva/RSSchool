@@ -237,10 +237,6 @@
   cursor: default;
 }
 
-.favorites__card_display-none {
-  display: none;
-}
-
 @media screen and (max-width: 1439px) {
   .favorites__cards {
     display: flex;
