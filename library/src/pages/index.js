@@ -1,4 +1,5 @@
 const headerMenu = document.querySelector(".header__menu");
+
 const popup = document.querySelector(".popup");
 const popupCloseButton = document.querySelector(".popup__close");
 const popupLinks = document.querySelectorAll(".popup__navigation-link");
