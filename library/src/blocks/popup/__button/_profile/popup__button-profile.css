@@ -1,8 +1,7 @@
 .popup__button-profile {
-  background-color: transparent;
-  border: none;
   color: #000;
   font-family: Inter;
+  text-align: center;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
