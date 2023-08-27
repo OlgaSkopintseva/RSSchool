@@ -1,0 +1,96 @@
+.popup__buy-card {
+  width: 650px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__text-container_buy-card {
+  display: flex;
+  gap: 40px;
+}
+
+.popup__header_buy-card {
+  width: 650px;
+  height: 60px;
+  background: #0c0c0e;
+  display: flex;
+  position: relative;
+}
+
+.popup__title_buy-card {
+  color: #fff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.popup__close_buy-card {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.popup__form_buy-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 40px;
+  width: 200px;
+}
+
+.popup__input_buy-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.popup__input_buy-card {
+  width: 45px;
+  height: 19px;
+}
+
+.popup__form-text_margin-25px {
+  margin: 25px 0 10px 0;
+}
+
+.popup__form-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.popup__price {
+  color: #0c0c0e;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 30px 0 0 0;
+}
+
+.popup__text_buy-card {
+  color: #8e8e8e;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  width: 330px;
+  flex: 1;
+  margin: 30px 40px 0 0;
+}
