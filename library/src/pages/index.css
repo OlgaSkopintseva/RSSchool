@@ -30,7 +30,9 @@
 
 
 @import url(../blocks/popup/_no-auth/popup_no-auth.css);
+@import url(../blocks/popup/_menu/_no-auth/popup_menu_no-auth.css);
 @import url(../blocks/popup/__container/_no-auth/popup__container_no-auth.css);
+@import url(../blocks/popup/__block/_no-auth/popup__block_no-auth.css);
 @import url(../blocks/popup/__title/_no-auth/popup__title_no-auth.css);
 @import url(../blocks/popup/__hr/popup__hr.css);
 @import url(../blocks/popup/__button/popup__button.css);
@@ -62,3 +64,5 @@
 
 
 @import url(../blocks/popup/_profile/popup_profile.css);
+
+@import url(../blocks/buy-card.css);
