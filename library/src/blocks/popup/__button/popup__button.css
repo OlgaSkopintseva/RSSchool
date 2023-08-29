@@ -14,3 +14,10 @@
   line-height: normal;
   letter-spacing: 1px;
 }
+
+.popup__button:hover {
+  color: #0c0c0e;
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  cursor: pointer;
+}
