@@ -205,8 +205,6 @@
 
 
 
-
-
 .digital__container-form_footer {
   display: flex;
   gap: 35px;
@@ -241,6 +239,7 @@
 
 .digital__container-form_footer-icon-union {
   background-image: url(../img/union-icon.svg);
+  background-color: transparent;
   width: 20px;
   height: 21px;
   border: none;
