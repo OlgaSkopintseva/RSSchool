@@ -1,0 +1,7 @@
+.popup_register {
+  top: 0;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
