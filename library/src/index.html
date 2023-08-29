@@ -74,6 +74,86 @@
           </nav>
         </div>
       </div>
+      <div class="popup popup_no-auth">
+        <div class="popup__container popup__container_no-auth">
+          <p class="popup__title popup__title_no-auth">Profile</p>
+          <hr class="popup__hr" />
+          <div class="popup__block_no-auth">
+            <button class="popup__button-profile popup__button-profile_login">
+              Log in
+            </button>
+            <button
+              class="popup__button-profile popup__button-profile_register"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_register">
+        <div class="popup__container popup__container_register">
+          <div class="popup__header popup__header_register">
+            <h1 class="popup__title popup__title_register">Register</h1>
+            <img
+              class="popup__close popup__close_register"
+              src="./img/close_button.svg"
+            />
+          </div>
+          <form class="popup__form">
+            <p class="popup__form-text">First name</p>
+            <input class="popup__input" type="text" name="E-mail" required/>
+            <p class="popup__form-text">Last name</p>
+            <input class="popup__input" type="text" name="Password" required/>
+            <p class="popup__form-text">E-mail</p>
+            <input class="popup__input" type="email" name="E-mail" required/>
+            <p class="popup__form-text">Password</p>
+            <input
+              class="popup__input"
+              type="password"
+              name="Password"
+              minlength="8"
+              required
+            />
+            <button class="popup__button">Sign Up</button>
+          </form>
+          <div class="popup__footer popup__footer_register">
+            <p class="popup__register_register-prompt">
+              Already have an account?
+            </p>
+            <p class="popup__register_login">Login</p>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_login">
+        <div class="popup__container popup__container_login">
+          <div class="popup__header popup__header_login">
+            <h2 class="popup__title popup__title_login">Login</h2>
+            <img
+              class="popup__close popup__close_login"
+              src="./img/close_button.svg"
+            />
+          </div>
+          <form class="popup__form">
+            <p class="popup__form-text">E-mail or readers card</p>
+            <input class="popup__input" type="email" name="E-mail" required/>
+            <p class="popup__form-text">Password</p>
+            <input
+              class="popup__input"
+              type="password"
+              name="Password"
+              minlength="8"
+              required
+            />
+            <button class="popup__button popup__button_login">Log In</button>
+          </form>
+          <div class="popup__footer popup__footer_login">
+            <p class="popup__footer_login-register_prompt">
+              Don’t have an account?
+            </p>
+            <p class="popup__footer_login-register">Register</p>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="content">
       <section class="welcome" title="Welcome image">
@@ -134,11 +214,11 @@
             <input
               class="favorites__season-radio"
               type="radio"
-              id="favorites__choise-1"
+              id="favorites__choise_winter"
             />
             <label
               class="favorites__season-title favorites__season-title_weight-700"
-              for="favorites__choise-1"
+              for="favorites__choise_winter"
               >Winter</label
             >
           </li>
@@ -146,9 +226,9 @@
             <input
               class="favorites__season-radio"
               type="radio"
-              id="favorites__choise-2"
+              id="favorites__choise_spring"
             />
-            <label class="favorites__season-title" for="favorites__choise-2"
+            <label class="favorites__season-title" for="favorites__choise_spring"
               >Spring</label
             >
           </li>
@@ -156,9 +236,9 @@
             <input
               class="favorites__season-radio"
               type="radio"
-              id="favorites__choise-3"
+              id="favorites__choise_summer"
             />
-            <label class="favorites__season-title" for="favorites__choise-3"
+            <label class="favorites__season-title" for="favorites__choise_summer"
               >Summer</label
             >
           </li>
@@ -166,9 +246,9 @@
             <input
               class="favorites__season-radio"
               type="radio"
-              id="favorites__choise-4"
+              id="favorites__choise_autumn"
             />
-            <label class="favorites__season-title" for="favorites__choise-4"
+            <label class="favorites__season-title" for="favorites__choise_autumn"
               >Autumn</label
             >
           </li>
@@ -179,15 +259,10 @@
               <p class="favorites__card-popularity">Staff Picks</p>
               <hr class="favorites__card-hr" />
               <p class="favorites__card-title">
-                <br /><span class="favorites__card-author"
-                  ></span
-                >
+              <p class="favorites__card-author"></p>
               </p>
-              <p class="favorites__card-about">
-              </p>
-              <img
-                class="favorites__card-book"
-              />
+              <p class="favorites__card-about"></p>
+              <img class="favorites__card-book" />
               <button class="favorites__card-button">Buy</button>
             </div>
           </template>
@@ -374,8 +449,12 @@
               or you can register a new account
             </p>
             <div class="digital__buttons">
-              <button class="digital__button">Sign Up</button>
-              <button class="digital__button">Log in</button>
+              <button class="digital__button digital__button_sign-up">
+                Sign Up
+              </button>
+              <button class="digital__button digital__button_log-in">
+                Log in
+              </button>
             </div>
           </div>
         </div>
@@ -458,61 +537,7 @@
       </div>
     </div>
 
-    <div class="popup popup_login">
-      <div class="popup__container popup__container_login">
-        <div class="popup__header popup__header_login">
-          <h2 class="popup__title popup__title_login">Login</h2>
-          <img
-            class="popup__close popup__close_login"
-            src="./img/close_button.svg"
-          />
-        </div>
-        <form class="popup__form">
-          <p class="popup__form-text">E-mail or readers card</p>
-          <input class="popup__input" type="text" name="E-mail" />
-          <p class="popup__form-text">Password</p>
-          <input class="popup__input" type="text" name="Password" />
-          <button class="popup__button popup__button_login">Log In</button>
-        </form>
-        <div class="popup__footer popup__footer_login">
-          <p class="popup__footer_login-register_prompt">
-            Don’t have an account?
-          </p>
-          <p class="popup__footer_login-register">Register</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="popup popup_register">
-      <div class="popup__container popup__container_register">
-        <div class="popup__header popup__header_register">
-          <h1 class="popup__title popup__title_register">Register</h1>
-          <img
-            class="popup__close popup__close_register"
-            src="./img/close_button.svg"
-          />
-        </div>
-        <form class="popup__form">
-          <p class="popup__form-text">First name</p>
-          <input class="popup__input" type="text" name="E-mail" />
-          <p class="popup__form-text">Last name</p>
-          <input class="popup__input" type="text" name="Password" />
-          <p class="popup__form-text">E-mail</p>
-          <input class="popup__input" type="text" name="E-mail" />
-          <p class="popup__form-text">Password</p>
-          <input class="popup__input" type="text" name="Password" />
-          <button class="popup__button popup__button_register">Sign Up</button>
-        </form>
-        <div class="popup__footer popup__footer_register">
-          <p class="popup__register_register-prompt">
-            Already have an account?
-          </p>
-          <p class="popup__register_login">Login</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="popup popup_profile popup_enable">
+    <div class="popup popup_profile">
       <aside class="popup__profile_sidebar">
         <div class="popup__profile__avatar">
           <div class="popup__profile_avatar-bg"></div>
@@ -523,20 +548,54 @@
         </div>
       </aside>
       <div class="popup__container popup__container_profile">
-        <div class="popup__header popup__header-profile">
+        <header class="popup__header popup__header-profile">
           <h2 class="popup__title popup__title_profile">My profile</h2>
           <img
             class="popup__close popup__close_profile"
             src="./img/close_button.svg"
           />
+        </header>
+        <div class="popup__profile_footer">
+          <ul class="popup__profile_footer-types">
+            <li class="popup__profile_type">visits</li>
+            <li
+              class="popup__profile_icon popup__profile_footer-icon-union"
+            ></li>
+            <li class="popup__profile-footer-score">23</li>
+          </ul>
+          <ul class="popup__profile_footer-types">
+            <li class="popup__profile_type">bonuses</li>
+            <li
+              class="popup__profile_icon popup__profile_footer-icon-star"
+            ></li>
+            <li class="popup__profile-footer-score">1240</li>
+          </ul>
+          <ul class="popup__profile_footer-types">
+            <li class="popup__profile_type">Books</li>
+            <li
+              class="popup__profile_icon popup__profile_footer-icon-book"
+            ></li>
+            <li class="popup__profile-footer-score">2</li>
+          </ul>
         </div>
-        <ul class="popup__profile_types">
-          <li class="popup__profile_types-categorie">visits</li>
-          <li class="popup__profile_types-categorie">bonuses</li>
-          <li class="popup__profile_types-categorie">books</li>
-        </ul>
+        <div class="popup__text_profile">
+          <p class="popup__text_profile-rented-books">Rented books</p>
+          <ul class="popup__text_profile-buy-book">
+            <li class="popup__text_profile-book-name">
+              The Last Queen, Clive Irving
+            </li>
+            <li class="popup__text_profile-book-name">
+              Dominicana, Angie Cruz
+            </li>
+          </ul>
+        </div>
+        <div class="popup__text_profile-card-info">
+          <p class="popup__text_profile-card">Card number</p>
+          <p class="popup__text_profile-card-number">F00234030</p>
+          <button class="popup__text_profile-copy"></button>
+        </div>
       </div>
-    </div> -->
+    </div>
 
     <section class="digital" id="library-card">
       <h2 class="digital__title">Digital Library Cards</h2>
@@ -606,6 +665,49 @@
         </div>
       </div>
     </section>
+
+    <div class="popup popup__buy-card">
+      <div class="popup__container popup__container_buy-card">
+        <header class="popup__header popup__header_buy-card">
+          <h2 class="popup__title popup__title_buy-card">Buy a library card</h2>
+          <img
+            class="popup__close popup__close_buy-card"
+            src="../src/img/close__button_white.svg"
+          />
+        </header>
+        <div class="popup__text-container_buy-card">
+          <form class="popup__form popup__form_buy-card">
+            <p class="popup__form-text">Bank card number</p>
+            <input class="popup__input popup__input_buy-card_" type="text" />
+            <p class="popup__form-text">Expiration code</p>
+            <div class="popup__input_buy-card-container">
+              <input class="popup__input popup__input_buy-card_" type="text" />
+              <input class="popup__input popup__input_buy-card" type="text" />
+            </div>
+            <p class="popup__form-text">CVC</p>
+            <input class="popup__input popup__input_buy-card" type="text" />
+            <p class="popup__form-text popup__form-text_margin-25px">
+              Cardholder name
+            </p>
+            <input class="popup__input" type="text" />
+            <p class="popup__form-text">Postal code</p>
+            <input class="popup__input" type="text" />
+            <p class="popup__form-text">City / Town</p>
+            <input class="popup__input" type="text" />
+            <div class="popup__form-footer">
+              <button class="popup__button">Buy</button>
+              <p class="popup__price">$ 25.00</p>
+            </div>
+          </form>
+          <p class="popup__text_buy-card">
+            If you are live, work, attend school, or pay property taxes in New
+            York State, you can get a $25 digital library card right now using
+            this online form. Visitors to New York State can also use this form
+            to apply for a temporary card.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
   <script type="module" src="./pages/index.js"></script>
   <script type="module" src="./pages/carousel.js"></script>
