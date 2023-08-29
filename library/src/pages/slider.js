@@ -1,99 +1,48 @@
-import { cardsArray } from "./constant.js";
+import { booksArray } from "./constant.js";
 
 const favoritesCards = document.querySelector(".favorites__cards");
+const seasonButtons = document.querySelectorAll(".favorites__season");
 
-cardsArray.forEach((card) => {
-  const cardElement = document
-    .querySelector(".favorites__cards_template")
-    .content.querySelector(".favorites__card")
-    .cloneNode(true);
-
-  favoritesCards.append(cardElement);
-
-  cardElement.querySelector(".favorites__card-title").textContent =
-    card.winter[0].title;
-  //   cardElement.querySelector(".favorites__card-author").textContent =
-  //     card.winter[1].author;
-  cardElement.querySelector(".favorites__card-about").textContent =
-    card.winter[2].about;
-  cardElement.querySelector(".favorites__card-book").src = card.winter[3].src;
-  cardElement.querySelector(".favorites__card-book").alt = card.winter[3].alt;
-
-  const secondCardElement = cardElement.cloneNode(true);
-
-  favoritesCards.append(secondCardElement);
-
-  cardElement.querySelector(".favorites__card-title").textContent =
-    card.winter[4].title;
-  //   cardElement.querySelector(".favorites__card-author").textContent =
-  //     card.winter[5].author;
-  cardElement.querySelector(".favorites__card-about").textContent =
-    card.winter[6].about;
-  cardElement.querySelector(".favorites__card-book").src = card.winter[7].src;
-  cardElement.querySelector(".favorites__card-book").alt = card.winter[7].alt;
-
-  const thirdCardElement = cardElement.cloneNode(true);
-
-  favoritesCards.append(thirdCardElement);
-
-  cardElement.querySelector(".favorites__card-title").textContent =
-    card.winter[8].title;
-  //   cardElement.querySelector(".favorites__card-author").textContent =
-  //     card.winter[9].author;
-  cardElement.querySelector(".favorites__card-about").textContent =
-    card.winter[10].about;
-  cardElement.querySelector(".favorites__card-book").src = card.winter[11].src;
-  cardElement.querySelector(".favorites__card-book").alt = card.winter[11].alt;
-
-  const fourthCardElement = cardElement.cloneNode(true);
-
-  favoritesCards.append(fourthCardElement);
-
-  cardElement.querySelector(".favorites__card-title").textContent =
-    card.winter[12].title;
-  //   cardElement.querySelector(".favorites__card-author").textContent =
-  //     card.winter[13].author;
-  cardElement.querySelector(".favorites__card-about").textContent =
-    card.winter[14].about;
-  cardElement.querySelector(".favorites__card-book").src = card.winter[15].src;
-  cardElement.querySelector(".favorites__card-book").alt = card.winter[15].alt;
-
-  const fifthCardElement = cardElement.cloneNode(true);
-
-  favoritesCards.append(fifthCardElement);
-
-  cardElement.querySelector(".favorites__card-title").textContent =
-    card.spring[0].title;
-  //   cardElement.querySelector(".favorites__card-author").textContent =
-  //     card.spring[1].author;
-  cardElement.querySelector(".favorites__card-about").textContent =
-    card.spring[2].about;
-  cardElement.querySelector(".favorites__card-book").src = card.spring[3].src;
-  cardElement.querySelector(".favorites__card-book").alt = card.spring[3].alt;
-
-  const sixthCardElement = cardElement.cloneNode(true);
-
-  favoritesCards.append(sixthCardElement);
-
-  cardElement.querySelector(".favorites__card-title").textContent =
-    card.spring[0].title;
-  //   cardElement.querySelector(".favorites__card-author").textContent =
-  //     card.spring[1].author;
-  cardElement.querySelector(".favorites__card-about").textContent =
-    card.spring[2].about;
-  cardElement.querySelector(".favorites__card-book").src = card.spring[3].src;
-  cardElement.querySelector(".favorites__card-book").alt = card.spring[3].alt;
-
-  const seventhCardElement = cardElement.cloneNode(true);
-
-  favoritesCards.append(seventhCardElement);
-
-  cardElement.querySelector(".favorites__card-title").textContent =
-    card.spring[8].title;
-  //   cardElement.querySelector(".favorites__card-author").textContent =
-  //     card.spring[9].author;
-  cardElement.querySelector(".favorites__card-about").textContent =
-    card.spring[10].about;
-  cardElement.querySelector(".favorites__card-book").src = card.spring[11].src;
-  cardElement.querySelector(".favorites__card-book").alt = card.spring[11].alt;
+seasonButtons.forEach((season) => {
+  season.addEventListener("click", (event) => {
+    if (event.target.id === "favorites__choise_winter") {
+      createCards("winter");
+    } else if (event.target.id === "favorites__choise_spring") {
+      createCards("spring");
+    } else if (event.target.id === "favorites__choise_summer") {
+      createCards("summer");
+    } else if (event.target.id === "favorites__choise_autumn") {
+      createCards("autumn");
+    }
+  });
 });
+
+const createCards = (season) => {
+  const bookCards = document.querySelectorAll(".favorites__card");
+
+  booksArray.forEach((book) => {
+    if (book.season === season) {
+      const cardElement = document
+        .querySelector(".favorites__cards_template")
+        .content.querySelector(".favorites__card")
+        .cloneNode(true);
+
+      cardElement.querySelector(".favorites__card-title").textContent =
+        book.title;
+      cardElement.querySelector(".favorites__card-author").textContent =
+        book.author;
+      cardElement.querySelector(".favorites__card-about").textContent =
+        book.about;
+      cardElement.querySelector(".favorites__card-book").src = book.src;
+      cardElement.querySelector(".favorites__card-book").alt = book.alt;
+
+      favoritesCards.append(cardElement);
+    }
+  });
+
+  bookCards.forEach((bookCard) => {
+    bookCard.remove();
+  });
+};
+
+createCards("winter");
