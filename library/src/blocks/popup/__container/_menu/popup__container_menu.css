@@ -1,5 +1,5 @@
 .popup__container_menu {
-  background-color: #0c0c0e;
+  background-color: #0c0c0e !important;
   width: 332px;
   height: 570px;
 }
