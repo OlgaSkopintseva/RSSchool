@@ -40,7 +40,6 @@
       <div class="popup popup_menu">
         <div class="popup__container popup__container_menu">
           <div class="popup__header popup__header_menu">
-            <img class="popup__icon-profile" src="./img/icon_profile.svg" />
             <img
               class="popup__close popup__close_menu"
               src="./img/cross.svg"
@@ -99,19 +98,38 @@
               src="./img/close_button.svg"
             />
           </div>
-          <form class="popup__form">
+          <form class="popup__form popup__form_register">
             <p class="popup__form-text">First name</p>
-            <input class="popup__input" type="text" name="E-mail" required/>
+            <input
+              class="popup__input"
+              type="text"
+              name="First name"
+              id="register_first-name"
+              required
+            />
             <p class="popup__form-text">Last name</p>
-            <input class="popup__input" type="text" name="Password" required/>
+            <input
+              class="popup__input"
+              type="text"
+              name="Last name"
+              id="register_last-name"
+              required
+            />
             <p class="popup__form-text">E-mail</p>
-            <input class="popup__input" type="email" name="E-mail" required/>
+            <input
+              class="popup__input"
+              type="email"
+              name="E-mail"
+              id="register_email"
+              required
+            />
             <p class="popup__form-text">Password</p>
             <input
               class="popup__input"
               type="password"
               name="Password"
               minlength="8"
+              id="register_password"
               required
             />
             <button class="popup__button">Sign Up</button>
@@ -133,12 +151,13 @@
               src="./img/close_button.svg"
             />
           </div>
-          <form class="popup__form">
+          <form class="popup__form popup__form_login">
             <p class="popup__form-text">E-mail or readers card</p>
-            <input class="popup__input" type="email" name="E-mail" required/>
+            <input class="popup__input" type="email" name="E-mail" required id="login_email"/>
             <p class="popup__form-text">Password</p>
             <input
               class="popup__input"
+              id="login_password"
               type="password"
               name="Password"
               minlength="8"
@@ -148,7 +167,7 @@
           </form>
           <div class="popup__footer popup__footer_login">
             <p class="popup__footer_login-register_prompt">
-              Don’t have an account?
+              Don`t have an account?
             </p>
             <p class="popup__footer_login-register">Register</p>
           </div>
@@ -210,11 +229,13 @@
         <hr class="favorites__hr" />
         <p class="favorites__subtitle">Pick favorites of season</p>
         <ul class="favorites__seasons">
-          <li class="favorites__season">
+          <li class="favorites__season favorites__season_winter">
             <input
               class="favorites__season-radio"
               type="radio"
               id="favorites__choise_winter"
+              checked
+              name="favorites__season-radio"
             />
             <label
               class="favorites__season-title favorites__season-title_weight-700"
@@ -222,33 +243,42 @@
               >Winter</label
             >
           </li>
-          <li class="favorites__season">
+          <li class="favorites__season favorites__season_spring">
             <input
               class="favorites__season-radio"
               type="radio"
               id="favorites__choise_spring"
+              name="favorites__season-radio"
             />
-            <label class="favorites__season-title" for="favorites__choise_spring"
+            <label
+              class="favorites__season-title"
+              for="favorites__choise_spring"
               >Spring</label
             >
           </li>
-          <li class="favorites__season">
+          <li class="favorites__season favorites__season_summer">
             <input
               class="favorites__season-radio"
               type="radio"
               id="favorites__choise_summer"
+              name="favorites__season-radio"
             />
-            <label class="favorites__season-title" for="favorites__choise_summer"
+            <label
+              class="favorites__season-title"
+              for="favorites__choise_summer"
               >Summer</label
             >
           </li>
-          <li class="favorites__season">
+          <li class="favorites__season favorites__season_autumn">
             <input
               class="favorites__season-radio"
               type="radio"
               id="favorites__choise_autumn"
+              name="favorites__season-radio"
             />
-            <label class="favorites__season-title" for="favorites__choise_autumn"
+            <label
+              class="favorites__season-title"
+              for="favorites__choise_autumn"
               >Autumn</label
             >
           </li>
@@ -258,9 +288,8 @@
             <div class="favorites__card">
               <p class="favorites__card-popularity">Staff Picks</p>
               <hr class="favorites__card-hr" />
-              <p class="favorites__card-title">
+              <p class="favorites__card-title"></p>
               <p class="favorites__card-author"></p>
-              </p>
               <p class="favorites__card-about"></p>
               <img class="favorites__card-book" />
               <button class="favorites__card-button">Buy</button>
@@ -712,4 +741,5 @@
   <script type="module" src="./pages/index.js"></script>
   <script type="module" src="./pages/carousel.js"></script>
   <script type="module" src="./pages/slider.js"></script>
+  <script type="module" src="./pages/localStorage.js"></script>
 </html>
