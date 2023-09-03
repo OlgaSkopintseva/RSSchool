@@ -2,12 +2,13 @@ const headerMenu = document.querySelector(".header__menu");
 const headerIcon = document.querySelector(".header__profile-icon");
 
 const popup = document.querySelector(".popup");
+const popups = document.querySelectorAll(".popup");
 const popupCloseButton = document.querySelector(".popup__close");
 const popupLinks = document.querySelectorAll(".popup__navigation-link");
 
-const popupIcon = document.querySelector(".popup__icon-profile");
 const popupNoAuth = document.querySelector(".popup_no-auth");
 
+const popupRegister = document.querySelector(".popup_register");
 const popupLinkRegister = document.querySelector(
   ".popup__button-profile_register"
 );
@@ -15,25 +16,37 @@ const digitalLibrarySignUp = document.querySelector(".digital__button_sign-up");
 const popupRegisterCloseButton = document.querySelector(
   ".popup__close_register"
 );
-const popupRegister = document.querySelector(".popup_register");
 
+const popupLogin = document.querySelector(".popup_login");
 const popupLinkLogin = document.querySelector(".popup__button-profile_login");
 const digitalLibraryLogin = document.querySelector(".digital__button_log-in");
-const popupLogin = document.querySelector(".popup_login");
 const popupLoginCloseButton = document.querySelector(".popup__close_login");
 
+function closeAllPopups() {
+  popups.forEach((popup) => {
+    popup.classList.remove("popup_enable");
+  });
+}
+
 headerMenu.addEventListener("click", () => {
+  closeAllPopups();
+  headerMenu.style.opacity = "0";
+  headerMenu.style.visibility = "hidden";
   popup.classList.add("popup_enable");
 });
 
 popup.addEventListener("click", (event) => {
   if (event.target.classList.contains("popup")) {
     popup.classList.remove("popup_enable");
+    headerMenu.style.opacity = "1";
+    headerMenu.style.visibility = "visible";
   }
 });
 
 popupCloseButton.addEventListener("click", () => {
   popup.classList.remove("popup_enable");
+  headerMenu.style.opacity = "1";
+  headerMenu.style.visibility = "visible";
 });
 
 popupLinks.forEach((link) => {
@@ -45,7 +58,10 @@ popupLinks.forEach((link) => {
 //icon profile in header//
 
 headerIcon.addEventListener("click", () => {
+  closeAllPopups()
   popupNoAuth.classList.add("popup_enable");
+  headerMenu.style.opacity = "1";
+  headerMenu.style.visibility = "visible";
 });
 
 popupNoAuth.addEventListener("click", (event) => {
@@ -54,28 +70,11 @@ popupNoAuth.addEventListener("click", (event) => {
   }
 });
 
-//icon profile in popup//
-
-popupIcon.addEventListener("click", () => {
-  popupNoAuth.classList.add("popup_enable");
-});
-
 popupNoAuth.addEventListener("click", (event) => {
   if (event.target.classList.contains("popup_no-auth")) {
     popupNoAuth.classList.remove("popup_enable");
   }
 });
-
-popupIcon.addEventListener("click", () => {
-  popup.classList.remove("popup_enable");
-  popupNoAuth.classList.add("popup_enable");
-});
-
-// document.addEventListener("click", (event) => {
-//   if (!popupNoAuth.contains(event.target) && !popupIcon.contains(event.target)) {
-//     popupNoAuth.classList.remove("popup_enable");
-//   }
-// });
 
 //click on Register button//
 
@@ -125,8 +124,16 @@ popupLogin.addEventListener("click", (event) => {
   }
 });
 
-// popupLoginCloseButton.addEventListener("click", )
-
 digitalLibraryLogin.addEventListener("click", () => {
   popupLogin.classList.add("popup_enable");
+});
+
+const favoritesButtonsBuy = document.querySelectorAll(
+  ".favorites__card-button"
+);
+
+favoritesButtonsBuy.forEach((button) => {
+  button.addEventListener("click", () => {
+    popupLogin.classList.add("popup_enable");
+  });
 });
