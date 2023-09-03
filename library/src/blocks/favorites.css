@@ -55,7 +55,7 @@
   height: 17px;
   width: 17px;
   accent-color: #0c0c0e;
-  z-index: 1;
+  z-index: 0;
   cursor: pointer;
   margin: 0;
 }
@@ -255,7 +255,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 0;
     background-color: #fff;
   }
 
