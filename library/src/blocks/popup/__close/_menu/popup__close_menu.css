@@ -1,6 +1,8 @@
 .popup__close_menu {
   width: 32px;
   height: 32px;
-  margin: 30px 26px 0 0;
+  position: relative;
+  top: 30px;
+  right: 26px;
   padding: 0;
 }
