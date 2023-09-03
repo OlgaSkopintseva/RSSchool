@@ -84,7 +84,7 @@
     position: absolute;
     right: 20px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 2;
     opacity: 1;
     visibility: visible;
     transition: opacity 0.2s ease-in, visibility 0.1s ease-out;
@@ -92,6 +92,6 @@
 
   .header__profile-icon {
     right: 105px;
-    z-index: 6;
+    z-index: 3;
   }
 }
