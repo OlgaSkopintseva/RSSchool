@@ -36,6 +36,7 @@
         </ul>
       </nav>
       <button class="header__profile-icon" type="button"></button>
+      <button class="header__profile-icon_user" type="button">JD</button>
       <button class="header__menu" type="button"></button>
       <div class="popup popup_menu">
         <div class="popup__container popup__container_menu">
@@ -85,6 +86,26 @@
               class="popup__button-profile popup__button-profile_register"
             >
               Register
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_with-auth">
+        <div class="popup__container popup__container_with-auth">
+          <p class="popup__title popup__title_with-auth">Profile</p>
+          <hr class="popup__hr" />
+          <div class="popup__block_with-auth">
+            <button
+              class="popup__button-profile popup__button-profile_my-profile"
+              type="button"
+            >
+              My profile
+            </button>
+            <button
+              class="popup__button-profile popup__button-profile_log-out"
+              type="button"
+            >
+              Log Out
             </button>
           </div>
         </div>
@@ -153,7 +174,13 @@
           </div>
           <form class="popup__form popup__form_login">
             <p class="popup__form-text">E-mail or readers card</p>
-            <input class="popup__input" type="email" name="E-mail" required id="login_email"/>
+            <input
+              class="popup__input"
+              type="email"
+              name="E-mail"
+              required
+              id="login_email"
+            />
             <p class="popup__form-text">Password</p>
             <input
               class="popup__input"
@@ -549,19 +576,6 @@
         </button>
         <button class="popup__button popup__button-profile" type="button">
           Register
-        </button>
-      </div>
-    </div>
-
-    <div class="popup popup_with-auth">
-      <div class="popup__container popup__container_with-auth">
-        <p class="popup__title popup__title_with-auth">Profile</p>
-        <hr class="popup__hr" />
-        <button class="popup__button popup__button-profile" type="button">
-          My profile
-        </button>
-        <button class="popup__button popup__button-profile" type="button">
-          Log Out
         </button>
       </div>
     </div>
