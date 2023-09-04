@@ -1,9 +1,9 @@
 .popup__container_with-auth {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  width: 80px;
+  height: 115px;
+  top: 60px;
+  right: 20px;
+  position: absolute;
 }
 
 @media screen and (max-width: 1024px) {
