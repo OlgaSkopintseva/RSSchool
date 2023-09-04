@@ -1,0 +1,9 @@
+.popup__profile_avatar-bg {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}

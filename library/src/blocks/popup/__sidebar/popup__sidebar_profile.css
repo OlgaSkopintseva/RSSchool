@@ -1,0 +1,8 @@
+.popup__sidebar_profile {
+  width: 170px;
+  height: 400px;
+  background: #0c0c0e;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

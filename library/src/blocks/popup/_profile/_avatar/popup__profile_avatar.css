@@ -1,0 +1,6 @@
+.popup__profile_avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 139px 0 0 0;
+}
