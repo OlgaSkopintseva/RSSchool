@@ -10,6 +10,7 @@ const popupWithAuth = document.querySelector(".popup_with-auth");
 const popupLogin = document.querySelector(".popup_login");
 const popupRegister = document.querySelector(".popup_register");
 const popupUserProfile = document.querySelector(".popup_profile");
+const popupBuyCard = document.querySelector(".popup__buy-card");
 
 const popupLinks = document.querySelectorAll(".popup__navigation-link");
 const popupLinkLogin = document.querySelector(".popup__button-profile_login");
@@ -20,13 +21,15 @@ const popupLinkMyProfile = document.querySelector(".popup__button-profile_my-pro
 const popupLinkProfileLogout = document.querySelector(".popup__button-profile_log-out");
 const digitalLibrarySignUp = document.querySelector(".digital__button_sign-up");
 const digitalLibraryLogin = document.querySelector(".digital__button_log-in");
+const digitalLibraryProfile = document.querySelector(".digital__button_profile");
 
 const popupCloseButton = document.querySelector(".popup__close");
 const popupRegisterCloseButton = document.querySelector(
   ".popup__close_register"
 );
 const popupLoginCloseButton = document.querySelector(".popup__close_login");
-const popupProfileClose = document.querySelector(".popup__close_profile");
+const popupProfileCloseButton = document.querySelector(".popup__close_profile");
+const popupBuyCardCloseButton = document.querySelector(".popup__close_buy-card");
 
 function closeAllPopups() {
   popups.forEach((popup) => {
@@ -134,6 +137,8 @@ digitalLibraryLogin.addEventListener("click", () => {
   popupLogin.classList.add("popup_enable");
 });
 
+// click on buttons Buy //
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   const favoritesButtonsBuy = document.querySelectorAll(
 //     ".favorites__card-button"
@@ -148,6 +153,33 @@ digitalLibraryLogin.addEventListener("click", () => {
 //     });
 //   });
 // });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const favoritesButtonsBuy = document.querySelectorAll(
+//     ".favorites__card-button"
+//   );
+
+//   favoritesButtonsBuy.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       const popupBuyCard = document.querySelector(".popup__buy-card");
+//       if (popupBuyCard) {
+//         popupBuyCard.classList.add("popup_enable");
+//       }
+//     });
+//   });
+// });
+
+// popupBuyCardCloseButton.addEventListener("click", () => {
+//   popupBuyCard.classList.remove("popup_enable")
+// });
+
+// popupBuyCard.addEventListener("click", (event) => {
+//   if (event.target.classList.contains("popup__buy-card")) {
+//     popupBuyCard.classList.remove("popup_enable");
+//   }
+// });
+
+// click on headerIconUser //
 
 headerIconUser.addEventListener("click", () => {
   closeAllPopups();
@@ -173,7 +205,7 @@ popupLinkMyProfile.addEventListener("click", () => {
   popupUserProfile.classList.add("popup_enable");
 });
 
-popupProfileClose.addEventListener("click", () => {
+popupProfileCloseButton.addEventListener("click", () => {
   popupUserProfile.classList.remove("popup_enable")
 });
 
@@ -187,3 +219,9 @@ popupLinkMyProfile.addEventListener("click", () => {
   popupWithAuth.classList.remove("popup_enable");
   popupUserProfile.classList.add("popup_enable");
 });
+
+
+digitalLibraryProfile.addEventListener("click", () => {
+  popupUserProfile.classList.add("popup_enable")
+});
+
