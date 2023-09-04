@@ -64,6 +64,36 @@
 @import url(../blocks/popup/__footer/_register/_register-prompt/popup__register_register-prompt.css);
 @import url(../blocks/popup/__footer/_register/_login/popup__register_login.css);
 
+@import url(../blocks/popup/_profile/popup_profile.css);
+@import url(../blocks/popup/__container/_profile/popup__container_profile.css);
+@import url(../blocks/popup/__sidebar/popup__sidebar_profile.css);
+@import url(../blocks/popup/_profile/_avatar/popup__profile_avatar.css);
+@import url(../blocks/popup/_profile/_avatar/-bg/popup__profile_avatar-bg.css);
+@import url(../blocks/popup/_profile/_avatar/-name/popup__profile_avatar-name.css);
+@import url(../blocks/popup/_profile/_name-bg/popup__profile_name-bg.css);
+@import url(../blocks/popup/_profile/_name/popup__profile_name.css);
+@import url(../blocks/popup/_profile/_block_content/popup__block_contaner-profile.css);
+
+@import url(../blocks/popup/_profile/_footer-icon/-union/popup__profile_footer-icon-union.css);
+@import url(../blocks/popup/_profile/_footer-icon/-star/popup__profile_footer-icon-star.css);
+@import url(../blocks/popup/_profile/_footer-icon/-book/popup__profile_footer-icon-book.css);
+
+@import url(../blocks/popup/__header/_profile/popup__header_profile.css);
+@import url(../blocks/popup/__title/_profile/popup__title_profile.css);
+@import url(../blocks/popup/__close/_profile/popup__close_profile.css);
+@import url(../blocks/popup/_profile/_type/popup__profile_type.css);
+@import url(../blocks/popup/__footer/_profile/popup__footer_profile.css);
+@import url(../blocks/popup/__footer/_profile/-types/popup__footer_profile-types.css);
+@import url(../blocks/popup/_profile/_icon/popup__profile_icon.css);
+@import url(../blocks/popup/__footer/_profile/-score/popup__footer_profile-score.css);
+@import url(../blocks/popup/__text/_profile/popup__text_profile.css);
+@import url(../blocks/popup/__text/_profile/-rented-books/popup__text_profile-rented-books.css);
+@import url(../blocks/popup/__text/_profile/-buy-book/popup__text_profile-buy-book.css);
+@import url(../blocks/popup/__text/_profile/-book-name/popup__text_profile-book-name.css);
+@import url(../blocks/popup/__text/_profile/-card-info/popup__text_profile-card-info.css);
+@import url(../blocks/popup/__text/_profile/-card/popup__text_profile-card.css);
+@import url(../blocks/popup/__text/_profile/-card/-number/popup__text_profile-card-number.css);
+@import url(../blocks/popup/__text/_profile/-copy/popup__text_profile-copy.css);
 
 @import url(../blocks/popup/_profile/popup_profile.css);
 
