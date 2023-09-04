@@ -1,5 +1,6 @@
 const headerMenu = document.querySelector(".header__menu");
 const headerIcon = document.querySelector(".header__profile-icon");
+const headerIconUser = document.querySelector(".header__profile-icon_user");
 
 const popup = document.querySelector(".popup");
 const popups = document.querySelectorAll(".popup");
@@ -7,6 +8,7 @@ const popupCloseButton = document.querySelector(".popup__close");
 const popupLinks = document.querySelectorAll(".popup__navigation-link");
 
 const popupNoAuth = document.querySelector(".popup_no-auth");
+const popupWithAuth = document.querySelector(".popup_with-auth");
 
 const popupRegister = document.querySelector(".popup_register");
 const popupLinkRegister = document.querySelector(
@@ -58,7 +60,7 @@ popupLinks.forEach((link) => {
 //icon profile in header//
 
 headerIcon.addEventListener("click", () => {
-  closeAllPopups()
+  closeAllPopups();
   popupNoAuth.classList.add("popup_enable");
   headerMenu.style.opacity = "1";
   headerMenu.style.visibility = "visible";
@@ -128,12 +130,36 @@ digitalLibraryLogin.addEventListener("click", () => {
   popupLogin.classList.add("popup_enable");
 });
 
-const favoritesButtonsBuy = document.querySelectorAll(
-  ".favorites__card-button"
-);
+// document.addEventListener("DOMContentLoaded", function () {
+//   const favoritesButtonsBuy = document.querySelectorAll(
+//     ".favorites__card-button"
+//   );
 
-favoritesButtonsBuy.forEach((button) => {
-  button.addEventListener("click", () => {
-    popupLogin.classList.add("popup_enable");
-  });
+//   favoritesButtonsBuy.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       const popupLogin = document.querySelector(".popup_login");
+//       if (popupLogin) {
+//         popupLogin.classList.add("popup_enable");
+//       }
+//     });
+//   });
+// });
+
+headerIconUser.addEventListener("click", () => {
+  closeAllPopups();
+  popupWithAuth.classList.add("popup_enable");
+  headerMenu.style.opacity = "1";
+  headerMenu.style.visibility = "visible";
+});
+
+popupWithAuth.addEventListener("click", (event) => {
+  if (event.target.classList.contains("popup_with-auth")) {
+    popupWithAuth.classList.remove("popup_enable");
+  }
+});
+
+popupWithAuth.addEventListener("click", (event) => {
+  if (event.target.classList.contains("popup_with-auth")) {
+    popupWithAuth.classList.remove("popup_enable");
+  }
 });
