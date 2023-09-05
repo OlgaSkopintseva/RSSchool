@@ -118,41 +118,37 @@
               src="./img/close_button.svg"
             />
           </div>
-          <form class="popup__form popup__form_register">
+          <form class="popup__form popup__form_register" name="registerForm">
             <p class="popup__form-text">First name</p>
             <input
               class="popup__input"
               type="text"
-              name="First name"
-              id="register_first-name"
+              name="firstNameRegister"
               required
             />
             <p class="popup__form-text">Last name</p>
             <input
               class="popup__input"
               type="text"
-              name="Last name"
-              id="register_last-name"
+              name="lastNameRegister"
               required
             />
             <p class="popup__form-text">E-mail</p>
             <input
               class="popup__input"
               type="email"
-              name="E-mail"
-              id="register_email"
+              name="emailRegister"
               required
             />
             <p class="popup__form-text">Password</p>
             <input
               class="popup__input"
               type="password"
-              name="Password"
+              name="passwordRegister"
               minlength="8"
-              id="register_password"
               required
             />
-            <button class="popup__button">Sign Up</button>
+            <button class="popup__button" type="submit">Sign Up</button>
           </form>
           <div class="popup__footer popup__footer_register">
             <p class="popup__register_register-prompt">
@@ -171,25 +167,23 @@
               src="./img/close_button.svg"
             />
           </div>
-          <form class="popup__form popup__form_login">
+          <form class="popup__form popup__form_login" name="loginForm">
             <p class="popup__form-text">E-mail or readers card</p>
             <input
               class="popup__input"
               type="email"
-              name="E-mail"
+              name="emailLogin"
               required
-              id="login_email"
             />
             <p class="popup__form-text">Password</p>
             <input
               class="popup__input"
-              id="login_password"
               type="password"
-              name="Password"
+              name="passwordLogin"
               minlength="8"
               required
             />
-            <button class="popup__button popup__button_login">Log In</button>
+            <button class="popup__button popup__button_login" type="submit">Log In</button>
           </form>
           <div class="popup__footer popup__footer_login">
             <p class="popup__footer_login-register_prompt">
@@ -690,7 +684,9 @@
             educational resources, and more.
           </p>
           <div class="digital__buttons digital__buttons_right">
-            <button class="digital__button digital__button_profile">Profile</button>
+            <button class="digital__button digital__button_profile">
+              Profile
+            </button>
           </div>
         </div>
       </div>
