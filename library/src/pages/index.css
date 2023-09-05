@@ -8,8 +8,6 @@
 @import url(../blocks/contacts.css);
 @import url(../blocks/digital-library.css);
 @import url(../blocks/footer.css);
-@import url(../blocks/profile.css);
-
 
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_menu/popup_menu.css);
@@ -94,7 +92,5 @@
 @import url(../blocks/popup/__text/_profile/-card/popup__text_profile-card.css);
 @import url(../blocks/popup/__text/_profile/-card/-number/popup__text_profile-card-number.css);
 @import url(../blocks/popup/__text/_profile/-copy/popup__text_profile-copy.css);
-
-@import url(../blocks/popup/_profile/popup_profile.css);
 
 @import url(../blocks/buy-card.css);
