@@ -19,7 +19,6 @@ const changeButtonColor = (buttonIndex) => {
   buttons.forEach((button, index) => {
     button.classList.remove("about__gallery-button_color-brown");
     if (index === buttonIndex) {
-      console.log(button);
       button.classList.add("about__gallery-button_color-brown");
     }
   });
@@ -56,9 +55,23 @@ imagesArray.forEach((image) => {
   cardElem.querySelector(".about__card-image").src = image.src;
 });
 
+addEventListener("resize", (event) => {
+  buttons.forEach((button) => {
+    if (window.innerWidth <= 970) {
+      button.setAttribute("disabled", true);
+    } else {
+      button.removeAttribute("disabled");
+    }
+  });
+});
+
 buttons.forEach((button, index, array) => {
   if (index === 0) {
     leftArrow.classList.add("about__gallery-arrow_disable");
+  }
+
+  if (window.innerWidth <= 970) {
+    button.setAttribute("disabled", true);
   }
 
   button.addEventListener("click", (event) => {
