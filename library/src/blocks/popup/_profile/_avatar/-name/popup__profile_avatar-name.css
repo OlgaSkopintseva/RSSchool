@@ -7,6 +7,8 @@
   line-height: 20px;
   text-transform: capitalize;
   margin: 0;
-  position: absolute;
-  top: 169px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
