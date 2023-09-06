@@ -67,7 +67,6 @@
 @import url(../blocks/popup/__sidebar/popup__sidebar_profile.css);
 @import url(../blocks/popup/_profile/_avatar/popup__profile_avatar.css);
 @import url(../blocks/popup/_profile/_avatar/-bg/popup__profile_avatar-bg.css);
-@import url(../blocks/popup/_profile/_avatar/-name/popup__profile_avatar-name.css);
 @import url(../blocks/popup/_profile/_name-bg/popup__profile_name-bg.css);
 @import url(../blocks/popup/_profile/_name/popup__profile_name.css);
 @import url(../blocks/popup/_profile/_block_content/popup__block_contaner-profile.css);
