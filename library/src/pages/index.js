@@ -1,6 +1,5 @@
 const headerMenu = document.querySelector(".header__menu");
 const headerIcon = document.querySelector(".header__profile-icon");
-const headerIconUser = document.querySelector(".header__profile-icon_user");
 
 const popup = document.querySelector(".popup");
 const popups = document.querySelectorAll(".popup");
@@ -17,11 +16,17 @@ const popupLinkLogin = document.querySelector(".popup__button-profile_login");
 const popupLinkRegister = document.querySelector(
   ".popup__button-profile_register"
 );
-const popupLinkMyProfile = document.querySelector(".popup__button-profile_my-profile");
-const popupLinkProfileLogout = document.querySelector(".popup__button-profile_log-out");
+const popupLinkMyProfile = document.querySelector(
+  ".popup__button-profile_my-profile"
+);
+const popupLinkProfileLogout = document.querySelector(
+  ".popup__button-profile_log-out"
+);
 const digitalLibrarySignUp = document.querySelector(".digital__button_sign-up");
 const digitalLibraryLogin = document.querySelector(".digital__button_log-in");
-const digitalLibraryProfile = document.querySelector(".digital__button_profile");
+const digitalLibraryProfile = document.querySelector(
+  ".digital__button_profile"
+);
 
 const popupCloseButton = document.querySelector(".popup__close");
 const popupRegisterCloseButton = document.querySelector(
@@ -29,7 +34,9 @@ const popupRegisterCloseButton = document.querySelector(
 );
 const popupLoginCloseButton = document.querySelector(".popup__close_login");
 const popupProfileCloseButton = document.querySelector(".popup__close_profile");
-const popupBuyCardCloseButton = document.querySelector(".popup__close_buy-card");
+const popupBuyCardCloseButton = document.querySelector(
+  ".popup__close_buy-card"
+);
 
 function closeAllPopups() {
   popups.forEach((popup) => {
@@ -147,9 +154,7 @@ digitalLibraryLogin.addEventListener("click", () => {
 //   favoritesButtonsBuy.forEach((button) => {
 //     button.addEventListener("click", () => {
 //       const popupLogin = document.querySelector(".popup_login");
-//       if (popupLogin) {
 //         popupLogin.classList.add("popup_enable");
-//       }
 //     });
 //   });
 // });
@@ -162,37 +167,22 @@ digitalLibraryLogin.addEventListener("click", () => {
 //   favoritesButtonsBuy.forEach((button) => {
 //     button.addEventListener("click", () => {
 //       const popupBuyCard = document.querySelector(".popup__buy-card");
-//       if (popupBuyCard) {
 //         popupBuyCard.classList.add("popup_enable");
-//       }
 //     });
 //   });
 // });
 
-// popupBuyCardCloseButton.addEventListener("click", () => {
-//   popupBuyCard.classList.remove("popup_enable")
-// });
-
-// popupBuyCard.addEventListener("click", (event) => {
-//   if (event.target.classList.contains("popup__buy-card")) {
-//     popupBuyCard.classList.remove("popup_enable");
-//   }
-// });
-
-// click on headerIconUser //
-
-headerIconUser.addEventListener("click", () => {
-  closeAllPopups();
-  popupWithAuth.classList.add("popup_enable");
-  headerMenu.style.opacity = "1";
-  headerMenu.style.visibility = "visible";
+popupBuyCardCloseButton.addEventListener("click", () => {
+  popupBuyCard.classList.remove("popup_enable");
 });
 
-popupWithAuth.addEventListener("click", (event) => {
-  if (event.target.classList.contains("popup_with-auth")) {
-    popupWithAuth.classList.remove("popup_enable");
+popupBuyCard.addEventListener("click", (event) => {
+  if (event.target.classList.contains("popup__buy-card")) {
+    popupBuyCard.classList.remove("popup_enable");
   }
 });
+
+// click on headerIconUser //
 
 popupWithAuth.addEventListener("click", (event) => {
   if (event.target.classList.contains("popup_with-auth")) {
@@ -201,12 +191,13 @@ popupWithAuth.addEventListener("click", (event) => {
 });
 
 // click on My profile button //
+
 popupLinkMyProfile.addEventListener("click", () => {
   popupUserProfile.classList.add("popup_enable");
 });
 
 popupProfileCloseButton.addEventListener("click", () => {
-  popupUserProfile.classList.remove("popup_enable")
+  popupUserProfile.classList.remove("popup_enable");
 });
 
 popupUserProfile.addEventListener("click", (event) => {
@@ -220,8 +211,21 @@ popupLinkMyProfile.addEventListener("click", () => {
   popupUserProfile.classList.add("popup_enable");
 });
 
-
 digitalLibraryProfile.addEventListener("click", () => {
-  popupUserProfile.classList.add("popup_enable")
+  popupUserProfile.classList.add("popup_enable");
 });
 
+// click on profile copy button //
+
+const profileCardNumber = document.querySelector(".popup__text_profile-card-number");
+const copyButton = document.querySelector(".popup__text_profile-copy");
+
+copyButton.addEventListener("click", function () {
+  const textToCopy = profileCardNumber.textContent;
+
+  navigator.clipboard
+    .writeText(textToCopy)
+    .then(function () {})
+    .catch(function (err) {
+    });
+});
