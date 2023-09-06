@@ -5,8 +5,104 @@ const registerForm = document.forms.registerForm;
 const loginForm = document.forms.loginForm;
 
 const iconProfile = document.querySelector(".header__profile-icon");
+const userName = document.querySelector(".popup__profile_avatar-bg");
+const userFullName = document.querySelector(".popup__profile_name-bg");
+
 const popupNoAuth = document.querySelector(".popup_no-auth");
 const popupWithAuth = document.querySelector(".popup_with-auth");
+const popupBuyCard = document.querySelector(".popup__buy-card");
+
+const digitalFindCard = document.querySelector(".digital");
+const digitalYourCard = document.querySelector(".digital_your-card");
+
+const userCredencial = JSON.parse(localStorage.getItem("registerForm"));
+
+const favoritesButtonsBuy = document.querySelectorAll(
+  ".favorites__card-button"
+);
+const popupBuyCardCloseButton = document.querySelector(
+  ".popup__close_buy-card"
+);
+
+function generateCardNumber() {
+  const cardNumber = Math.floor(Math.random() * 0x100000000).toString(16);
+  return cardNumber.padStart(9, "0");
+}
+console.log(generateCardNumber())
+
+if (localStorage.getItem("registerForm")) {
+  iconProfile.classList.add("header__profile-icon_user");
+  const initials =
+    userCredencial.firstName.slice(0, 1) + userCredencial.lastName.slice(0, 1);
+  iconProfile.textContent = initials;
+  userName.textContent = initials;
+  userFullName.textContent =
+    userCredencial.firstName + " " + userCredencial.lastName;
+
+  iconProfile.addEventListener("click", function () {
+    popupNoAuth.classList.remove("popup_enable");
+    popupWithAuth.classList.add("popup_enable");
+  });
+
+  digitalFindCard.style.display = "none";
+  digitalYourCard.style.display = "block";
+
+  
+  const cardNumberWithAuth = document.querySelector(".popup__title_with-auth");
+  cardNumberWithAuth.textContent = generateCardNumber();
+} else {
+  iconProfile.classList.remove("header__profile-icon_user");
+  iconProfile.addEventListener("click", function () {
+    popupWithAuth.classList.remove("popup_enable");
+    popupNoAuth.classList.add("popup_enable");
+  });
+  digitalFindCard.style.display = "block";
+  digitalYourCard.style.display = "none";
+}
+
+if (localStorage.getItem("loginForm")) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const favoritesButtonsBuy = document.querySelectorAll(
+      ".favorites__card-button"
+    );
+
+    favoritesButtonsBuy.forEach((button) => {
+      button.addEventListener("click", () => {
+        const popupBuyCard = document.querySelector(".popup__buy-card");
+        popupBuyCard.classList.add("popup_enable");
+      });
+    });
+  });
+} else {
+  document.addEventListener("DOMContentLoaded", function () {
+    const favoritesButtonsBuy = document.querySelectorAll(
+      ".favorites__card-button"
+    );
+
+    favoritesButtonsBuy.forEach((button) => {
+      button.addEventListener("click", () => {
+        const popupLogin = document.querySelector(".popup_login");
+        popupLogin.classList.add("popup_enable");
+      });
+    });
+  });
+}
+
+// click on logoutButton //
+
+const logoutButton = document.querySelector(".popup__button-profile_log-out");
+
+logoutButton.addEventListener("click", () => {
+  iconProfile.classList.remove("header__profile-icon_user");
+  iconProfile.textContent = "";
+  popupWithAuth.classList.remove("popup_enable");
+  iconProfile.addEventListener("click", () => {
+    popupNoAuth.classList.add("popup_enable");
+    popupWithAuth.classList.remove("popup_enable");
+  });
+  digitalFindCard.style.display = "block";
+  digitalYourCard.style.display = "none";
+});
 
 registerForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -22,17 +118,11 @@ registerForm.addEventListener("submit", function (event) {
     password: registerPassword,
   };
 
-  popupRegister.classList.remove("popup_enable");
   localStorage.setItem("registerForm", JSON.stringify(formRegisterData));
 
-  iconProfile.classList.add("header__profile-icon_user");
-  iconProfile.textContent =
-    registerFirstName.slice(0, 1) + registerLastName.slice(0, 1);
-  iconProfile.addEventListener("click", function () {
-    if (popupWithAuth) {
-      popupWithAuth.classList.add("popup_enable");
-    }
-  });
+  popupRegister.classList.remove("popup_enable");
+
+  window.location.reload();
 });
 
 loginForm.addEventListener("submit", function (event) {
@@ -45,6 +135,9 @@ loginForm.addEventListener("submit", function (event) {
     password: loginPassword,
   };
 
-  popupLogin.classList.remove("popup_enable");
   localStorage.setItem("loginForm", JSON.stringify(formLoginData));
+
+  popupLogin.classList.remove("popup_enable");
+
+  window.location.reload();
 });
