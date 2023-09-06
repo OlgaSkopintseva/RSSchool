@@ -46,15 +46,22 @@ if (localStorage.getItem("registerForm")) {
     return cardNumber.padStart(9, "0");
   }
 
+  let cardNumber = localStorage.getItem("cardNumber");
+
+  if (!cardNumber) {
+    cardNumber = generateCardNumber();
+    localStorage.setItem("cardNumber", cardNumber);
+  }
+
   const cardNumberWithAuth = document.querySelector(".popup__title_with-auth");
-  cardNumberWithAuth.textContent = generateCardNumber();
+  cardNumberWithAuth.textContent = cardNumber;
 
   const cardNumberProfile = document.querySelector(
     ".popup__text_profile-card-number"
   );
-  cardNumberProfile.textContent = generateCardNumber();
+  cardNumberProfile.textContent = cardNumber;
 
-  localStorage.setItem("cardNumber", generateCardNumber());
+  cardNumberProfile.textContent = localStorage.getItem("cardNumber");
 } else {
   iconProfile.classList.remove("header__profile-icon_user");
   iconProfile.addEventListener("click", function () {
@@ -116,6 +123,8 @@ logoutButton.addEventListener("click", () => {
       popupLogin.classList.add("popup_enable");
     });
   });
+
+  localStorage.clear()
 });
 
 registerForm.addEventListener("submit", function (event) {
