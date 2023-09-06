@@ -24,12 +24,6 @@ const popupBuyCardCloseButton = document.querySelector(
   ".popup__close_buy-card"
 );
 
-function generateCardNumber() {
-  const cardNumber = Math.floor(Math.random() * 0x100000000).toString(16);
-  return cardNumber.padStart(9, "0");
-}
-console.log(generateCardNumber())
-
 if (localStorage.getItem("registerForm")) {
   iconProfile.classList.add("header__profile-icon_user");
   const initials =
@@ -47,15 +41,27 @@ if (localStorage.getItem("registerForm")) {
   digitalFindCard.style.display = "none";
   digitalYourCard.style.display = "block";
 
-  
+  function generateCardNumber() {
+    const cardNumber = Math.floor(Math.random() * 0x100000000).toString(16);
+    return cardNumber.padStart(9, "0");
+  }
+
   const cardNumberWithAuth = document.querySelector(".popup__title_with-auth");
   cardNumberWithAuth.textContent = generateCardNumber();
+
+  const cardNumberProfile = document.querySelector(
+    ".popup__text_profile-card-number"
+  );
+  cardNumberProfile.textContent = generateCardNumber();
+
+  localStorage.setItem("cardNumber", generateCardNumber());
 } else {
   iconProfile.classList.remove("header__profile-icon_user");
   iconProfile.addEventListener("click", function () {
     popupWithAuth.classList.remove("popup_enable");
     popupNoAuth.classList.add("popup_enable");
   });
+
   digitalFindCard.style.display = "block";
   digitalYourCard.style.display = "none";
 }
@@ -100,8 +106,16 @@ logoutButton.addEventListener("click", () => {
     popupNoAuth.classList.add("popup_enable");
     popupWithAuth.classList.remove("popup_enable");
   });
+
   digitalFindCard.style.display = "block";
   digitalYourCard.style.display = "none";
+
+  favoritesButtonsBuy.forEach((button) => {
+    button.addEventListener("click", () => {
+      popupBuyCard.classList.remove("popup_enable");
+      popupLogin.classList.add("popup_enable");
+    });
+  });
 });
 
 registerForm.addEventListener("submit", function (event) {
