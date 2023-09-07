@@ -144,34 +144,6 @@ digitalLibraryLogin.addEventListener("click", () => {
   popupLogin.classList.add("popup_enable");
 });
 
-// click on buttons Buy //
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const favoritesButtonsBuy = document.querySelectorAll(
-//     ".favorites__card-button"
-//   );
-
-//   favoritesButtonsBuy.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       const popupLogin = document.querySelector(".popup_login");
-//         popupLogin.classList.add("popup_enable");
-//     });
-//   });
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const favoritesButtonsBuy = document.querySelectorAll(
-//     ".favorites__card-button"
-//   );
-
-//   favoritesButtonsBuy.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       const popupBuyCard = document.querySelector(".popup__buy-card");
-//         popupBuyCard.classList.add("popup_enable");
-//     });
-//   });
-// });
-
 popupBuyCardCloseButton.addEventListener("click", () => {
   popupBuyCard.classList.remove("popup_enable");
 });
@@ -215,7 +187,7 @@ digitalLibraryProfile.addEventListener("click", () => {
   popupUserProfile.classList.add("popup_enable");
 });
 
-// click on profile copy button //
+/* click on profile copy button */
 
 const profileCardNumber = document.querySelector(".popup__text_profile-card-number");
 const copyButton = document.querySelector(".popup__text_profile-copy");
@@ -225,7 +197,4 @@ copyButton.addEventListener("click", function () {
 
   navigator.clipboard
     .writeText(textToCopy)
-    .then(function () {})
-    .catch(function (err) {
-    });
 });
