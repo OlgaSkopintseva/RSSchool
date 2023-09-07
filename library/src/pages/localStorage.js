@@ -1,3 +1,5 @@
+import { openPopupBuyCard } from "./slider.js";
+
 const popupRegister = document.querySelector(".popup_register");
 const popupLogin = document.querySelector(".popup_login");
 
@@ -24,7 +26,9 @@ const popupBuyCardCloseButton = document.querySelector(
   ".popup__close_buy-card"
 );
 
-if (localStorage.getItem("registerForm")) {
+const favoritesCards = document.querySelector(".favorites__cards");
+
+if (localStorage.getItem("loginForm")) {
   iconProfile.classList.add("header__profile-icon_user");
   const initials =
     userCredencial.firstName.slice(0, 1) + userCredencial.lastName.slice(0, 1);
@@ -41,17 +45,7 @@ if (localStorage.getItem("registerForm")) {
   digitalFindCard.style.display = "none";
   digitalYourCard.style.display = "block";
 
-  function generateCardNumber() {
-    const cardNumber = Math.floor(Math.random() * 0x100000000).toString(16);
-    return cardNumber.padStart(9, "0");
-  }
-
   let cardNumber = localStorage.getItem("cardNumber");
-
-  if (!cardNumber) {
-    cardNumber = generateCardNumber();
-    localStorage.setItem("cardNumber", cardNumber);
-  }
 
   const cardNumberWithAuth = document.querySelector(".popup__title_with-auth");
   cardNumberWithAuth.textContent = cardNumber;
@@ -73,34 +67,6 @@ if (localStorage.getItem("registerForm")) {
   digitalYourCard.style.display = "none";
 }
 
-if (localStorage.getItem("loginForm")) {
-  document.addEventListener("DOMContentLoaded", function () {
-    const favoritesButtonsBuy = document.querySelectorAll(
-      ".favorites__card-button"
-    );
-
-    favoritesButtonsBuy.forEach((button) => {
-      button.addEventListener("click", () => {
-        const popupBuyCard = document.querySelector(".popup__buy-card");
-        popupBuyCard.classList.add("popup_enable");
-      });
-    });
-  });
-} else {
-  document.addEventListener("DOMContentLoaded", function () {
-    const favoritesButtonsBuy = document.querySelectorAll(
-      ".favorites__card-button"
-    );
-
-    favoritesButtonsBuy.forEach((button) => {
-      button.addEventListener("click", () => {
-        const popupLogin = document.querySelector(".popup_login");
-        popupLogin.classList.add("popup_enable");
-      });
-    });
-  });
-}
-
 // click on logoutButton //
 
 const logoutButton = document.querySelector(".popup__button-profile_log-out");
@@ -117,14 +83,9 @@ logoutButton.addEventListener("click", () => {
   digitalFindCard.style.display = "block";
   digitalYourCard.style.display = "none";
 
-  favoritesButtonsBuy.forEach((button) => {
-    button.addEventListener("click", () => {
-      popupBuyCard.classList.remove("popup_enable");
-      popupLogin.classList.add("popup_enable");
-    });
-  });
+  localStorage.removeItem("loginForm");
 
-  localStorage.clear()
+  openPopupBuyCard(favoritesCards);
 });
 
 registerForm.addEventListener("submit", function (event) {
@@ -140,12 +101,40 @@ registerForm.addEventListener("submit", function (event) {
     email: registerEmail,
     password: registerPassword,
   };
+  iconProfile.classList.add("header__profile-icon_user");
+  const initials = registerFirstName.slice(0, 1) + registerLastName.slice(0, 1);
+
+  iconProfile.textContent = initials;
+  userName.textContent = initials;
+  userFullName.textContent = registerFirstName + " " + registerLastName;
 
   localStorage.setItem("registerForm", JSON.stringify(formRegisterData));
+  localStorage.setItem("loginForm", JSON.stringify(formRegisterData));
+
+  iconProfile.addEventListener("click", function () {
+    popupNoAuth.classList.remove("popup_enable");
+    popupWithAuth.classList.add("popup_enable");
+  });
+
+  const cardNumber = Math.floor(Math.random() * 0x100000000)
+    .toString(16)
+    .padStart(9, "0");
+
+  localStorage.setItem("cardNumber", cardNumber);
+
+  const cardNumberWithAuth = document.querySelector(".popup__title_with-auth");
+  cardNumberWithAuth.textContent = cardNumber;
+
+  const cardNumberProfile = document.querySelector(
+    ".popup__text_profile-card-number"
+  );
+  cardNumberProfile.textContent = cardNumber;
+
+  cardNumberProfile.textContent = localStorage.getItem("cardNumber");
+
+  openPopupBuyCard(favoritesCards);
 
   popupRegister.classList.remove("popup_enable");
-
-  window.location.reload();
 });
 
 loginForm.addEventListener("submit", function (event) {
@@ -153,14 +142,42 @@ loginForm.addEventListener("submit", function (event) {
   const loginEmail = loginForm.elements.emailLogin.value;
   const loginPassword = loginForm.elements.passwordLogin.value;
 
-  const formLoginData = {
-    email: loginEmail,
-    password: loginPassword,
-  };
+  if (
+    userCredencial?.registerEmail === loginEmail &&
+    userCredencial?.registerPassword === loginPassword
+  ) {
+    localStorage.setItem("loginForm", JSON.stringify(userCredencial));
+    popupLogin.classList.remove("popup_enable");
 
-  localStorage.setItem("loginForm", JSON.stringify(formLoginData));
+    openPopupBuyCard(favoritesCards);
+    iconProfile.classList.add("header__profile-icon_user");
+    const initials =
+      userCredencial.firstName.slice(0, 1) +
+      userCredencial.lastName.slice(0, 1);
+    iconProfile.textContent = initials;
+    userName.textContent = initials;
+    userFullName.textContent =
+      userCredencial.firstName + " " + userCredencial.lastName;
 
-  popupLogin.classList.remove("popup_enable");
+    iconProfile.addEventListener("click", function () {
+      popupNoAuth.classList.remove("popup_enable");
+      popupWithAuth.classList.add("popup_enable");
+    });
 
-  window.location.reload();
+    let cardNumber = localStorage.getItem("cardNumber");
+
+    const cardNumberWithAuth = document.querySelector(
+      ".popup__title_with-auth"
+    );
+    cardNumberWithAuth.textContent = cardNumber;
+
+    const cardNumberProfile = document.querySelector(
+      ".popup__text_profile-card-number"
+    );
+    cardNumberProfile.textContent = cardNumber;
+
+    cardNumberProfile.textContent = localStorage.getItem("cardNumber");
+  } else {
+    window.location.reload();
+  }
 });
