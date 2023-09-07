@@ -2,19 +2,9 @@ import { booksArray } from "./constant.js";
 
 const favoritesCards = document.querySelector(".favorites__cards");
 const seasonButtons = document.querySelectorAll(".favorites__season");
-const favoritesSeasonRadio = document.querySelectorAll(
-  ".favorites__season-radio"
-);
-
-function clearCheckedAttribute() {
-  for (let index = 1; index < favoritesSeasonRadio.length; index++) {
-    favoritesSeasonRadio[index].checked = false;
-  }
-}
 
 seasonButtons.forEach((seasonButton) => {
   seasonButton.addEventListener("click", (event) => {
-    // clearCheckedAttribute();
     const currentTarget = event.currentTarget.className;
     favoritesCards.style.opacity = "0";
     favoritesCards.style.visibility = "hidden";
@@ -38,6 +28,36 @@ seasonButtons.forEach((seasonButton) => {
   });
 });
 
+export function openPopupBuyCard(favoritesCards) {
+  if (localStorage.getItem("loginForm")) {
+    const favoritesButtonsBuy = favoritesCards.querySelectorAll(
+      ".favorites__card-button"
+    );
+
+    favoritesButtonsBuy.forEach((button) => {
+      button.addEventListener("click", () => {
+        const popupBuyCard = document.querySelector(".popup__buy-card");
+        const popupLogin = document.querySelector(".popup_login");
+        popupBuyCard.classList.add("popup_enable");
+        popupLogin.classList.remove("popup_enable");
+      });
+    });
+  } else {
+    const favoritesButtonsBuy = favoritesCards.querySelectorAll(
+      ".favorites__card-button"
+    );
+
+    favoritesButtonsBuy.forEach((button) => {
+      button.addEventListener("click", () => {
+        const popupLogin = document.querySelector(".popup_login");
+        const popupBuyCard = document.querySelector(".popup__buy-card");
+        popupLogin.classList.add("popup_enable");
+        popupBuyCard.classList.remove("popup_enable");
+      });
+    });
+  }
+}
+
 const createCards = (season) => {
   const bookCards = document.querySelectorAll(".favorites__card");
 
@@ -58,6 +78,8 @@ const createCards = (season) => {
       cardElement.querySelector(".favorites__card-book").alt = book.alt;
 
       favoritesCards.append(cardElement);
+
+      openPopupBuyCard(favoritesCards);
     }
   });
 
