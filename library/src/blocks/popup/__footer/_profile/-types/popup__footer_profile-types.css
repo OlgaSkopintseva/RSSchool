@@ -1,0 +1,8 @@
+.popup__footer_profile-types {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}

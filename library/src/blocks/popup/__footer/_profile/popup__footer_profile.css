@@ -1,0 +1,7 @@
+.popup__footer_profile {
+  display: inline-flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 35px 0 0 0;
+  width: 237px;
+}
