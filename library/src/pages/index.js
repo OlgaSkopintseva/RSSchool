@@ -205,12 +205,12 @@ copyButton.addEventListener("click", function () {
 const bankCardNumber = document.querySelector(".popup__input-card-number");
 
 bankCardNumber.addEventListener("input", function () {
-  this.value = this.value.replace(/\D/g, "");
+  bankCardNumber.value = bankCardNumber.value.replace(/\D/g, "");
 
-  this.value = this.value.replace(/(\d{4})(?=\d)/g, "$1 ");
+  bankCardNumber.value = bankCardNumber.value.replace(/(\d{4})(?=\d)/g, "$1 ");
 
-  if (this.value.length > 19) {
-    this.value = this.value.slice(0, 19);
+  if (bankCardNumber.value.length > 19) {
+    bankCardNumber.value = bankCardNumber.value.slice(0, 19);
   }
 });
 
@@ -220,8 +220,8 @@ const expirationCodeInputs = document.querySelectorAll(
 
 expirationCodeInputs.forEach(function (input) {
   input.addEventListener("input", function () {
-    if (this.value.length > 2) {
-      this.value = this.value.slice(0, 2);
+    if (input.value.length > 2) {
+      input.value = input.value.slice(0, 2);
     }
   });
 });
