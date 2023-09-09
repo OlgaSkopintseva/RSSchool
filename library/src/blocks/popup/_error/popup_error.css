@@ -1,0 +1,28 @@
+.popup_error {
+  top: 0;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+}
+
+.popup__container_error {
+  width: 150px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #720000;
+  border-radius: 5px;
+}
+
+.popup__text_error {
+  color: #010101;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+}
