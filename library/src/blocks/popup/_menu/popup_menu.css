@@ -1,0 +1,6 @@
+.popup_menu {
+  display: flex;
+  justify-content: end;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,10 @@
+.popup__navigation-links {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  padding: 0;
+  margin: 0;
+}

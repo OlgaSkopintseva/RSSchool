@@ -1,0 +1,159 @@
+.footer {
+  max-width: 1440px;
+  height: 250px;
+  background: #0c0c0e;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__information {
+  display: grid;
+  row-gap: 10px;
+  padding: 19px 0 30px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__address {
+  width: 229px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0px;
+  margin: 0;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.footer__address:hover {
+  color: #c0c0c0;
+}
+
+.footer__shedule {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  text-align: right;
+}
+
+.footer__copyright {
+  display: grid;
+  grid-template-columns: 18% 57% 25%;
+  justify-content: space-between;
+  grid-template-rows: 22px;
+  padding: 42px 0;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  width: 102px;
+  height: 24px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social-icon {
+  list-style-type: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__year {
+  color: #fff;
+  text-align: left;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__rss-school {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  justify-self: center;
+  transition: color 0.3s linear;
+}
+
+.footer__rss-school:hover {
+  color: #c0c0c0;
+}
+
+.footer__username {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  justify-self: flex-end;
+  transition: color 0.3s linear;
+}
+
+.footer__username:hover {
+  color: #c0c0c0;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer {
+    max-width: 100%;
+  }
+
+  .footer__username {
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+
+  .footer__information {
+    padding: 22px 0 30px 0;
+  }
+
+  .footer__copyright {
+    padding: 44px 0 42px 0;
+  }
+
+  .footer__username {
+    text-align: end;
+  }
+}

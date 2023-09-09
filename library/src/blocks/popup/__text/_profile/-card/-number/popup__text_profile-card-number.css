@@ -1,0 +1,10 @@
+.popup__text_profile-card-number {
+  color: #bb945f;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+.popup__title_no-auth {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
