@@ -65,6 +65,11 @@
   height: 19px;
 }
 
+.popup__input_buy-card-cvc {
+  width: 45px;
+  height: 19px;
+}
+
 .popup__form-text_margin-25px {
   margin: 25px 0 10px 0;
 }
