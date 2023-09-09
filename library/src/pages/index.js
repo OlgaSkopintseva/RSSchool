@@ -189,12 +189,55 @@ digitalLibraryProfile.addEventListener("click", () => {
 
 /* click on profile copy button */
 
-const profileCardNumber = document.querySelector(".popup__text_profile-card-number");
+const profileCardNumber = document.querySelector(
+  ".popup__text_profile-card-number"
+);
 const copyButton = document.querySelector(".popup__text_profile-copy");
 
 copyButton.addEventListener("click", function () {
   const textToCopy = profileCardNumber.textContent;
 
-  navigator.clipboard
-    .writeText(textToCopy)
+  navigator.clipboard.writeText(textToCopy);
+});
+
+/* limitation in inputs */
+
+const bankCardNumber = document.querySelector(".popup__input-card-number");
+
+bankCardNumber.addEventListener("input", function () {
+  this.value = this.value.replace(/\D/g, "");
+
+  this.value = this.value.replace(/(\d{4})(?=\d)/g, "$1 ");
+
+  if (this.value.length > 19) {
+    this.value = this.value.slice(0, 19);
+  }
+});
+
+const expirationCodeInputs = document.querySelectorAll(
+  ".popup__input_buy-card"
+);
+
+expirationCodeInputs.forEach(function (input) {
+  input.addEventListener("input", function () {
+    if (this.value.length > 2) {
+      this.value = this.value.slice(0, 2);
+    }
+  });
+});
+
+const cvcInput = document.querySelector(".popup__input_buy-card-cvc");
+
+cvcInput.addEventListener("input", function () {
+  if (cvcInput.value.length > 3) {
+    cvcInput.value = cvcInput.value.slice(0, 3);
+  }
+});
+
+const postalCode = document.querySelector(".popup__input_postal-code");
+
+postalCode.addEventListener("input", function () {
+  if (postalCode.value.length > 8) {
+    postalCode.value = postalCode.value.slice(0, 8);
+  }
 });
