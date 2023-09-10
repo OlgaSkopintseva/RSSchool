@@ -1,6 +1,7 @@
 .popup_with-auth {
   top: 0;
-  left: 0;
+  right: 0;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   background-color: transparent;
