@@ -1,7 +1,14 @@
 .popup_with-auth {
-  top: 0;
-  left: 0;
+  top: 60px;
+  right: 20px;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
-  background-color: transparent;
+  /* background-color: transparent; */
+}
+
+@media screen and (max-width: 1024px) {
+  .popup_with-auth {
+    right: 106px;
+  }
 }
