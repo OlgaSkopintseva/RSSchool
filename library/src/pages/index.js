@@ -27,6 +27,10 @@ const digitalLibraryLogin = document.querySelector(".digital__button_log-in");
 const digitalLibraryProfile = document.querySelector(
   ".digital__button_profile"
 );
+const popupRegisterButtonLogin = document.querySelector(
+  ".popup__footer_login-register"
+);
+const popupRegisterLogin = document.querySelector(".popup__register_login");
 
 const popupCloseButton = document.querySelector(".popup__close");
 const popupRegisterCloseButton = document.querySelector(
@@ -71,8 +75,6 @@ popupLinks.forEach((link) => {
   });
 });
 
-//icon profile in header//
-
 headerIcon.addEventListener("click", () => {
   closeAllPopups();
   popupNoAuth.classList.add("popup_enable");
@@ -85,14 +87,6 @@ popupNoAuth.addEventListener("click", (event) => {
     popupNoAuth.classList.remove("popup_enable");
   }
 });
-
-popupNoAuth.addEventListener("click", (event) => {
-  if (event.target.classList.contains("popup_no-auth")) {
-    popupNoAuth.classList.remove("popup_enable");
-  }
-});
-
-//click on Register button//
 
 popupLinkRegister.addEventListener("click", () => {
   popupRegister.classList.add("popup_enable");
@@ -113,13 +107,14 @@ popupLinkRegister.addEventListener("click", () => {
   popupRegister.classList.add("popup_enable");
 });
 
-//click on digital card sign up//
+popupRegisterLogin.addEventListener("click", () => {
+  popupLogin.classList.add("popup_enable");
+  popupRegister.classList.remove("popup_enable");
+});
 
 digitalLibrarySignUp.addEventListener("click", () => {
   popupRegister.classList.add("popup_enable");
 });
-
-//click on login button//
 
 popupLinkLogin.addEventListener("click", () => {
   popupLogin.classList.add("popup_enable");
@@ -154,15 +149,16 @@ popupBuyCard.addEventListener("click", (event) => {
   }
 });
 
-// click on headerIconUser //
+popupRegisterButtonLogin.addEventListener("click", () => {
+  popupRegister.classList.add("popup_enable");
+  popupLogin.classList.remove("popup_enable");
+});
 
 popupWithAuth.addEventListener("click", (event) => {
   if (event.target.classList.contains("popup_with-auth")) {
     popupWithAuth.classList.remove("popup_enable");
   }
 });
-
-// click on My profile button //
 
 popupLinkMyProfile.addEventListener("click", () => {
   popupUserProfile.classList.add("popup_enable");
@@ -187,8 +183,6 @@ digitalLibraryProfile.addEventListener("click", () => {
   popupUserProfile.classList.add("popup_enable");
 });
 
-/* click on profile copy button */
-
 const profileCardNumber = document.querySelector(
   ".popup__text_profile-card-number"
 );
@@ -199,8 +193,6 @@ copyButton.addEventListener("click", function () {
 
   navigator.clipboard.writeText(textToCopy);
 });
-
-/* limitation in inputs */
 
 const bankCardNumber = document.querySelector(".popup__input-card-number");
 
