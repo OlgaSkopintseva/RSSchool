@@ -1,5 +1,6 @@
-import { openPopupBuyCard } from "./slider.js";
+import { buyBook } from "./slider.js";
 import { booksArray } from "./constant.js";
+import { createCards } from "./slider.js";
 
 const popupRegister = document.querySelector(".popup_register");
 const popupLogin = document.querySelector(".popup_login");
@@ -31,42 +32,6 @@ const popupBuyCardCloseButton = document.querySelector(
 
 const favoritesCards = document.querySelector(".favorites__cards");
 
-function addUserProfileIcon() {
-  iconProfile.classList.add("header__profile-icon_user");
-  const initials = registerFirstName.slice(0, 1) + registerLastName.slice(0, 1);
-  iconProfile.textContent = initials;
-  userName.textContent = initials;
-  userFullName.textContent = userFullName.textContent =
-    registerFirstName + " " + registerLastName;
-
-  iconProfile.addEventListener("click", function () {
-    popupNoAuth.classList.remove("popup_enable");
-    popupWithAuth.classList.add("popup_enable");
-  });
-}
-
-function removeUserIconProfile() {
-  iconProfile.classList.remove("header__profile-icon_user");
-  iconProfile.addEventListener("click", function () {
-    popupWithAuth.classList.remove("popup_enable");
-    popupNoAuth.classList.add("popup_enable");
-  });
-}
-
-function generateCardNumber() {
-  let cardNumber = localStorage.getItem("cardNumber");
-
-  const cardNumberWithAuth = document.querySelector(".popup__title_with-auth");
-  cardNumberWithAuth.textContent = cardNumber;
-
-  const cardNumberProfile = document.querySelector(
-    ".popup__text_profile-card-number"
-  );
-  cardNumberProfile.textContent = cardNumber;
-
-  cardNumberProfile.textContent = localStorage.getItem("cardNumber");
-}
-
 function removePopupError() {
   popupError.classList.add("popup_enable");
   popupError.addEventListener("click", (event) => {
@@ -84,6 +49,11 @@ if (localStorage.getItem("loginForm")) {
   userName.textContent = initials;
   userFullName.textContent =
     userCredencial.firstName + " " + userCredencial.lastName;
+
+  const fullName = userCredencial.firstName + " " + userCredencial.lastName;
+  userFullName.textContent = fullName;
+
+  iconProfile.setAttribute("title", fullName);
 
   iconProfile.addEventListener("click", function () {
     popupNoAuth.classList.remove("popup_enable");
@@ -129,41 +99,23 @@ if (localStorage.getItem("buyCardForm")) {
     ".popup__footer_profile-score-book"
   );
 
-  let bookCount = 0;
-
   favoritesButtonsBuy.forEach((button) => {
     button.addEventListener("click", function () {
       if (
         !button.classList.contains("favorites__card-button_color-brown_own")
       ) {
-        bookCount++;
-
         digitalScore.textContent = bookCount;
         popupScore.textContent = bookCount;
 
-        popupBuyCard.classList.remove("popup_enable");
         button.classList.add("favorites__card-button_color-brown_own");
         button.textContent = "Own";
         button.setAttribute("disabled", "true");
 
         localStorage.setItem("bookCount", JSON.stringify(bookCount));
-
-        // const rentedBook = document.querySelector(
-        //   ".popup__text_profile-book-name"
-        // );
-
-        // let selectedBookIndex = 0;
-
-        // let selectedBook = booksArray[selectedBookIndex];
-
-        // rentedBook.textContent =
-        //   selectedBook.title + ", " + selectedBook.author;
       }
     });
   });
 }
-
-// click on logoutButton //
 
 const logoutButton = document.querySelector(".popup__button-profile_log-out");
 
@@ -177,25 +129,16 @@ logoutButton.addEventListener("click", () => {
     popupWithAuth.classList.remove("popup_enable");
   });
 
+  const fullName = "";
+
+  iconProfile.setAttribute("title", fullName);
+
   digitalFindCard.style.display = "block";
   digitalYourCard.style.display = "none";
 
   localStorage.removeItem("loginForm");
 
-  // const digitalCardNumber = document.querySelector(
-  //   ".digital__form-input_color-brown-card"
-  // );
-  // const cardNumber = localStorage.getItem("cardNumber");
-
-  // const digitalCheckCard = document.querySelector(".digital__container-button");
-
-  // digitalCheckCard.addEventListener("click", () => {
-  //   if (cardNumber === digitalCardNumber.value) {
-  //     digitalFindCard.style.display = "block";
-  //   }
-  // });
-
-  openPopupBuyCard(favoritesCards);
+  buyBook(favoritesCards);
 });
 
 registerForm.addEventListener("submit", function (event) {
@@ -216,8 +159,11 @@ registerForm.addEventListener("submit", function (event) {
   const initials = registerFirstName.slice(0, 1) + registerLastName.slice(0, 1);
   iconProfile.textContent = initials;
   userName.textContent = initials;
-  userFullName.textContent = userFullName.textContent =
-    registerFirstName + " " + registerLastName;
+
+  const fullName = registerFirstName + " " + registerLastName;
+  userFullName.textContent = fullName;
+
+  iconProfile.setAttribute("title", fullName);
 
   localStorage.setItem("registerForm", JSON.stringify(formRegisterData));
   localStorage.setItem("loginForm", JSON.stringify(formRegisterData));
@@ -243,7 +189,7 @@ registerForm.addEventListener("submit", function (event) {
 
   cardNumberProfile.textContent = localStorage.getItem("cardNumber");
 
-  openPopupBuyCard(favoritesCards);
+  buyBook(favoritesCards);
 
   digitalFindCard.style.display = "none";
   digitalYourCard.style.display = "block";
@@ -263,15 +209,18 @@ loginForm.addEventListener("submit", function (event) {
     localStorage.setItem("loginForm", JSON.stringify(userCredencial));
     popupLogin.classList.remove("popup_enable");
 
-    openPopupBuyCard(favoritesCards);
-    // iconProfile.classList.add("header__profile-icon_user");
-    // const initials =
-    //   userCredencial.firstName.slice(0, 1) +
-    //   userCredencial.lastName.slice(0, 1);
-    // iconProfile.textContent = initials;
-    // userName.textContent = initials;
-    // userFullName.textContent =
-    //   userCredencial.firstName + " " + userCredencial.lastName;
+    buyBook(favoritesCards);
+    iconProfile.classList.add("header__profile-icon_user");
+    const initials =
+      userCredencial.firstName.slice(0, 1) +
+      userCredencial.lastName.slice(0, 1);
+    iconProfile.textContent = initials;
+    userName.textContent = initials;
+
+    const fullName = userCredencial.firstName + " " + userCredencial.lastName;
+    userFullName.textContent = fullName;
+
+    iconProfile.setAttribute("title", fullName);
 
     iconProfile.addEventListener("click", function () {
       popupNoAuth.classList.remove("popup_enable");
@@ -340,8 +289,9 @@ buyCardForm.addEventListener("submit", function (event) {
   };
 
   localStorage.setItem("buyCardForm", JSON.stringify(formBuyCardData));
-
-  openPopupBuyCard(favoritesCards);
+  localStorage.setItem("bookAbonement", JSON.stringify(true));
 
   popupBuyCard.classList.remove("popup_enable");
+
+  createCards("winter");
 });
