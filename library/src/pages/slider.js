@@ -3,6 +3,13 @@ import { booksArray } from "./constant.js";
 const favoritesCards = document.querySelector(".favorites__cards");
 const seasonButtons = document.querySelectorAll(".favorites__season");
 
+const purchasedBook = [];
+const savedPurchasedBook = JSON.parse(localStorage.getItem("purchasedBook"));
+
+savedPurchasedBook?.forEach((id) => {
+  purchasedBook.push(id);
+});
+
 seasonButtons.forEach((seasonButton) => {
   seasonButton.addEventListener("click", (event) => {
     const currentTarget = event.currentTarget.className;
@@ -28,37 +35,46 @@ seasonButtons.forEach((seasonButton) => {
   });
 });
 
-export function openPopupBuyCard(favoritesCards) {
-  if (localStorage.getItem("loginForm")) {
-    const favoritesButtonsBuy = favoritesCards.querySelectorAll(
-      ".favorites__card-button"
-    );
+export function buyBook(cardElement, bookId) {
+  const favoritesButtonBuy = cardElement.querySelector(
+    ".favorites__card-button"
+  );
 
-    favoritesButtonsBuy.forEach((button) => {
-      button.addEventListener("click", () => {
+  if (localStorage.getItem("loginForm")) {
+    const bookAbonement = localStorage.getItem("bookAbonement");
+
+    if (bookAbonement) {
+      favoritesButtonBuy.addEventListener("click", (event) => {
+        favoritesButtonBuy.classList.add(
+          "favorites__card-button_color-brown_own"
+        );
+        favoritesButtonBuy.textContent = "Own";
+        favoritesButtonBuy.setAttribute("disabled", "true");
+        favoritesButtonBuy.style.pointerEvents = "none";
+
+        purchasedBook.push(bookId);
+
+        localStorage.setItem("purchasedBook", JSON.stringify(purchasedBook));
+      });
+    } else {
+      favoritesButtonBuy.addEventListener("click", () => {
         const popupBuyCard = document.querySelector(".popup__buy-card");
         const popupLogin = document.querySelector(".popup_login");
         popupBuyCard.classList.add("popup_enable");
         popupLogin.classList.remove("popup_enable");
       });
-    });
+    }
   } else {
-    const favoritesButtonsBuy = favoritesCards.querySelectorAll(
-      ".favorites__card-button"
-    );
-
-    favoritesButtonsBuy.forEach((button) => {
-      button.addEventListener("click", () => {
-        const popupLogin = document.querySelector(".popup_login");
-        const popupBuyCard = document.querySelector(".popup__buy-card");
-        popupLogin.classList.add("popup_enable");
-        popupBuyCard.classList.remove("popup_enable");
-      });
+    favoritesButtonBuy.addEventListener("click", () => {
+      const popupLogin = document.querySelector(".popup_login");
+      const popupBuyCard = document.querySelector(".popup__buy-card");
+      popupLogin.classList.add("popup_enable");
+      popupBuyCard.classList.remove("popup_enable");
     });
   }
 }
 
-const createCards = (season) => {
+export const createCards = (season) => {
   const bookCards = document.querySelectorAll(".favorites__card");
 
   booksArray.forEach((book) => {
@@ -77,9 +93,27 @@ const createCards = (season) => {
       cardElement.querySelector(".favorites__card-book").src = book.src;
       cardElement.querySelector(".favorites__card-book").alt = book.alt;
 
+      const savedPurchasedBook = JSON.parse(
+        localStorage.getItem("purchasedBook")
+      );
+
+      savedPurchasedBook?.forEach((id) => {
+        if (id === book.id) {
+          const favoritesButtonBuy = cardElement.querySelector(
+            ".favorites__card-button"
+          );
+          favoritesButtonBuy.classList.add(
+            "favorites__card-button_color-brown_own"
+          );
+          favoritesButtonBuy.textContent = "Own";
+          favoritesButtonBuy.setAttribute("disabled", "true");
+          favoritesButtonBuy.style.pointerEvents = "none";
+        }
+      });
+
       favoritesCards.append(cardElement);
 
-      openPopupBuyCard(favoritesCards);
+      buyBook(cardElement, book.id);
     }
   });
 
