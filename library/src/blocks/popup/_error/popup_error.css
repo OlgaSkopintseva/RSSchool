@@ -1,5 +1,6 @@
 .popup_error {
   top: 0;
+  right: 0;
   display: flex;
   position: fixed;
   justify-content: center;
