@@ -1,5 +1,6 @@
 .popup__buy-card {
   top: 0;
+  right: 0;
   display: flex;
   position: fixed;
   justify-content: center;
@@ -61,6 +62,11 @@
 }
 
 .popup__input_buy-card {
+  width: 45px;
+  height: 19px;
+}
+
+.popup__input_buy-card-cvc {
   width: 45px;
   height: 19px;
 }

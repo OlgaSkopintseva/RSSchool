@@ -92,4 +92,6 @@
 @import url(../blocks/popup/__text/_profile/-card/-number/popup__text_profile-card-number.css);
 @import url(../blocks/popup/__text/_profile/-copy/popup__text_profile-copy.css);
 
+@import url(../blocks/popup/_error/popup_error.css);
+
 @import url(../blocks/buy-card.css);

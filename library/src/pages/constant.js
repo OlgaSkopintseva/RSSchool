@@ -7,7 +7,7 @@ export const imagesArray = [
 ];
 
 export const booksArray = [
-  {
+  { id: 1,
     title: "The Book Eaters",
     author: "By Sunyi Dean",
     about:
@@ -17,6 +17,7 @@ export const booksArray = [
     season: "winter",
   },
   {
+    id: 2,
     title: "Cackle",
     author: "By Rachel Harrison",
     about:
@@ -26,6 +27,7 @@ export const booksArray = [
     season: "winter",
   },
   {
+    id: 3,
     title: "Dante: Poet of the Secular World",
     author: "By Erich Auerbach",
     about:
@@ -35,6 +37,7 @@ export const booksArray = [
     season: "winter",
   },
   {
+    id: 4,
     title: "The Last Queen",
     author: "By Clive Irving",
     about:
@@ -44,7 +47,7 @@ export const booksArray = [
     season: "winter",
   },
 
-  {
+  {id: 5,
     title: "The Body",
     author: "By Stephen King",
     about:
@@ -54,6 +57,7 @@ export const booksArray = [
     season: "spring",
   },
   {
+    id: 6,
     title: "Carry: A Memoir of Survival on Stolen Land",
     author: "By Toni Jenson",
     about:
@@ -63,6 +67,7 @@ export const booksArray = [
     season: "spring",
   },
   {
+    id: 7,
     title: "Days of Distraction",
     author: "By Alexandra Chang",
     about:
@@ -72,6 +77,7 @@ export const booksArray = [
     season: "spring",
   },
   {
+    id: 8,
     title: "Dominicana",
     author: "By Angie Cruz",
     about:
@@ -81,6 +87,7 @@ export const booksArray = [
     season: "spring",
   },
   {
+    id: 9,
     title: "Crude: A Memoir",
     author: "By Pablo Fajardo & ​​Sophie Tardy-Joubert",
     about:
@@ -90,6 +97,7 @@ export const booksArray = [
     season: "summer",
   },
   {
+    id: 10,
     title: "Let My People Go Surfing",
     author: "By Yvon Chouinard",
     about:
@@ -99,6 +107,7 @@ export const booksArray = [
     season: "summer",
   },
   {
+    id: 11,
     title: "The Octopus Museum: Poems",
     author: "By Brenda Shaughnessy",
     about:
@@ -108,6 +117,7 @@ export const booksArray = [
     season: "summer",
   },
   {
+    id: 12,
     title: "Shark Dialogues: A Novel",
     author: "By Kiana Davenport",
     about:
@@ -116,7 +126,7 @@ export const booksArray = [
     alt: "The Shark Dialogues: A Novel book photo",
     season: "summer",
   },
-  {
+  { id: 13,
     title: "Casual Conversation",
     author: "By Renia White",
     about:
@@ -125,7 +135,7 @@ export const booksArray = [
     alt: "The Casual Conversation book photo",
     season: "autumn",
   },
-  {
+  { id: 14,
     title: "The Great Fire",
     author: "By Lou Ureneck",
     about:
@@ -134,7 +144,7 @@ export const booksArray = [
     alt: "The The Great Fire book photo",
     season: "autumn",
   },
-  {
+  { id: 15,
     title: "Rickey: The Life and Legend",
     author: "By Howard Bryant",
     about:
@@ -144,6 +154,7 @@ export const booksArray = [
     season: "autumn",
   },
   {
+    id: 16,
     title: "Slug: And Other Stories",
     author: "By Megan Milks",
     about:
