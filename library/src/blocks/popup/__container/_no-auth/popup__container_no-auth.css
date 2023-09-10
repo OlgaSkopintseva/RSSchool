@@ -1,13 +1,4 @@
 .popup__container_no-auth {
   width: 80px;
   height: 115px;
-  top: 60px;
-  right: 20px;
-  position: absolute;
-}
-
-@media screen and (max-width: 1024px) {
-  .popup__container_no-auth {
-    right: 106px;
-  }
 }
