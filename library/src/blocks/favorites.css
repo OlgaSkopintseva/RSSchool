@@ -202,30 +202,7 @@
   transition: 0.5s;
 }
 
-.favorites__card-button_color-brown {
-  background-color: #fff;
-  text-align: center;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  color: #bb945f;
-  line-height: normal;
-  letter-spacing: 1px;
-  margin: 0;
-  padding: 0;
-  border-radius: 2px;
-  border: 1px solid #bb945f;
-  width: 75px;
-  height: 30px;
-  position: absolute;
-  top: auto;
-  left: 20px;
-  bottom: 15px;
-  right: 0px;
-}
-
-.favorites__card-button_color-brown:hover {
+.favorites__card-button_color-brown_own {
   background-color: #fff;
   color: #bb945f;
   border: 1px solid #bb945f;
