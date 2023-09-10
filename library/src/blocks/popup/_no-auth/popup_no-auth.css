@@ -1,13 +1,9 @@
 .popup_no-auth {
-  top: 60px;
-  right: 20px;
+  top: 0;
+  right: 0;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   background-color: transparent;
 }
 
-@media screen and (max-width: 1024px) {
-  .popup_no-auth {
-    right: 106px;
-  }
-}
