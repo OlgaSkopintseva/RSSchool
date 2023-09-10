@@ -37,225 +37,6 @@
       </nav>
       <button class="header__profile-icon" type="button"></button>
       <button class="header__menu" type="button"></button>
-      <div class="popup popup_menu">
-        <div class="popup__container popup__container_menu">
-          <div class="popup__header popup__header_menu">
-            <img
-              class="popup__close popup__close_menu"
-              src="./img/cross.svg"
-              alt="Cross"
-            />
-          </div>
-          <nav class="popup__navigation">
-            <ul class="popup__navigation-links">
-              <li>
-                <a class="popup__navigation-link" href="#about">About</a>
-              </li>
-              <li>
-                <a class="popup__navigation-link" href="#favorites"
-                  >Favorites</a
-                >
-              </li>
-              <li>
-                <a class="popup__navigation-link" href="#coffee-shop"
-                  >Coffee shop</a
-                >
-              </li>
-              <li>
-                <a class="popup__navigation-link" href="#contacts">Contacts</a>
-              </li>
-              <li>
-                <a class="popup__navigation-link" href="#library-card"
-                  >Library Card</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="popup popup_no-auth">
-        <div class="popup__container popup__container_no-auth">
-          <p class="popup__title popup__title_no-auth">Profile</p>
-          <hr class="popup__hr" />
-          <div class="popup__block_no-auth">
-            <button class="popup__button-profile popup__button-profile_login">
-              Log in
-            </button>
-            <button
-              class="popup__button-profile popup__button-profile_register"
-            >
-              Register
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="popup popup_with-auth">
-        <div class="popup__container popup__container_with-auth">
-          <p class="popup__title popup__title_with-auth"></p>
-          <hr class="popup__hr" />
-          <div class="popup__block_with-auth">
-            <button
-              class="popup__button-profile popup__button-profile_my-profile"
-              type="button"
-            >
-              My profile
-            </button>
-            <button
-              class="popup__button-profile popup__button-profile_log-out"
-              type="button"
-            >
-              Log Out
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="popup popup_register">
-        <div class="popup__container popup__container_register">
-          <div class="popup__header popup__header_register">
-            <h1 class="popup__title popup__title_register">Register</h1>
-            <img
-              class="popup__close popup__close_register"
-              src="./img/close_button.svg"
-            />
-          </div>
-          <form class="popup__form popup__form_register" name="registerForm">
-            <p class="popup__form-text">First name</p>
-            <input
-              class="popup__input"
-              type="text"
-              name="firstNameRegister"
-              required
-            />
-            <p class="popup__form-text">Last name</p>
-            <input
-              class="popup__input"
-              type="text"
-              name="lastNameRegister"
-              required
-            />
-            <p class="popup__form-text">E-mail</p>
-            <input
-              class="popup__input"
-              type="email"
-              name="emailRegister"
-              required
-            />
-            <p class="popup__form-text">Password</p>
-            <input
-              class="popup__input"
-              type="password"
-              name="passwordRegister"
-              minlength="8"
-              required
-            />
-            <button class="popup__button" type="submit">Sign Up</button>
-          </form>
-          <div class="popup__footer popup__footer_register">
-            <p class="popup__register_register-prompt">
-              Already have an account?
-            </p>
-            <p class="popup__register_login">Login</p>
-          </div>
-        </div>
-      </div>
-      <div class="popup popup_login">
-        <div class="popup__container popup__container_login">
-          <div class="popup__header popup__header_login">
-            <h2 class="popup__title popup__title_login">Login</h2>
-            <img
-              class="popup__close popup__close_login"
-              src="./img/close_button.svg"
-            />
-          </div>
-          <form class="popup__form popup__form_login" name="loginForm">
-            <p class="popup__form-text">E-mail or readers card</p>
-            <input
-              class="popup__input"
-              type="email"
-              name="emailLogin"
-              required
-            />
-            <p class="popup__form-text">Password</p>
-            <input
-              class="popup__input"
-              type="password"
-              name="passwordLogin"
-              minlength="8"
-              required
-            />
-            <button class="popup__button popup__button_login" type="submit">
-              Log In
-            </button>
-          </form>
-          <div class="popup__footer popup__footer_login">
-            <p class="popup__footer_login-register_prompt">
-              Don`t have an account?
-            </p>
-            <p class="popup__footer_login-register">Register</p>
-          </div>
-        </div>
-      </div>
-      <div class="popup popup_error">
-        <div class="popup__container popup__container_error">
-          <p class="popup__text popup__text_error">Error</p>
-        </div>
-      </div>
-      <div class="popup popup_profile">
-        <div class="popup__container popup__container_profile">
-          <aside class="popup__sidebar_profile">
-            <div class="popup__profile_avatar-bg"></div>
-            <div class="popup__profile_name-bg"></div>
-          </aside>
-          <div class="popup__block_content-profile">
-            <header class="popup__header popup__header_profile">
-              <h2 class="popup__title popup__title_profile">My profile</h2>
-              <img
-                class="popup__close popup__close_profile"
-                src="./img/close_button.svg"
-              />
-            </header>
-            <div class="popup__footer_profile">
-              <ul class="popup__footer_profile-types">
-                <li class="popup__profile_type">visits</li>
-                <li
-                  class="popup__profile_icon popup__profile_footer-icon-union"
-                ></li>
-                <li class="popup__footer_profile-score">23</li>
-              </ul>
-              <ul class="popup__footer_profile-types">
-                <li class="popup__profile_type">bonuses</li>
-                <li
-                  class="popup__profile_icon popup__profile_footer-icon-star"
-                ></li>
-                <li class="popup__footer_profile-score">1240</li>
-              </ul>
-              <ul class="popup__footer_profile-types">
-                <li class="popup__profile_type">Books</li>
-                <li
-                  class="popup__profile_icon popup__profile_footer-icon-book"
-                ></li>
-                <li class="popup__footer_profile-score">2</li>
-              </ul>
-            </div>
-            <div class="popup__text_profile">
-              <p class="popup__text_profile-rented-books">Rented books</p>
-              <ul class="popup__text_profile-buy-book">
-                <li class="popup__text_profile-book-name">
-                  The Last Queen, Clive Irving
-                </li>
-                <li class="popup__text_profile-book-name">
-                  Dominicana, Angie Cruz
-                </li>
-              </ul>
-            </div>
-            <div class="popup__text_profile-card-info">
-              <p class="popup__text_profile-card">Card number</p>
-              <p class="popup__text_profile-card-number"></p>
-              <button class="popup__text_profile-copy"></button>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <main class="content">
       <section class="welcome" title="Welcome image">
@@ -380,62 +161,7 @@
           </template>
         </div>
       </section>
-      <div class="popup popup__buy-card">
-        <div class="popup__container popup__container_buy-card">
-          <header class="popup__header popup__header_buy-card">
-            <h2 class="popup__title popup__title_buy-card">
-              Buy a library card
-            </h2>
-            <img
-              class="popup__close popup__close_buy-card"
-              src="../src/img/close__button_white.svg"
-            />
-          </header>
-          <div class="popup__text-container_buy-card">
-            <form class="popup__form popup__form_buy-card">
-              <p class="popup__form-text">Bank card number</p>
-              <input class="popup__input popup__input_buy-card_" type="text" />
-              <p class="popup__form-text">Expiration code</p>
-              <div class="popup__input_buy-card-container">
-                <input
-                  class="popup__input popup__input_buy-card"
-                  type="text"
-                  maxlength="2"
-                />
-                <input
-                  class="popup__input popup__input_buy-card"
-                  type="text"
-                  maxlength="2"
-                />
-              </div>
-              <p class="popup__form-text">CVC</p>
-              <input
-                class="popup__input popup__input_buy-card"
-                type="text"
-                maxlength="3"
-              />
-              <p class="popup__form-text popup__form-text_margin-25px">
-                Cardholder name
-              </p>
-              <input class="popup__input" type="text" />
-              <p class="popup__form-text">Postal code</p>
-              <input class="popup__input" type="text" />
-              <p class="popup__form-text">City / Town</p>
-              <input class="popup__input" type="text" />
-              <div class="popup__form-footer">
-                <button class="popup__button">Buy</button>
-                <p class="popup__price">$ 25.00</p>
-              </div>
-            </form>
-            <p class="popup__text_buy-card">
-              If you are live, work, attend school, or pay property taxes in New
-              York State, you can get a $25 digital library card right now using
-              this online form. Visitors to New York State can also use this
-              form to apply for a temporary card.
-            </p>
-          </div>
-        </div>
-      </div>
+
       <section class="shop" id="coffee-shop">
         <h2 class="shop__title">Coffee shop</h2>
         <hr class="shop__hr" />
@@ -532,6 +258,7 @@
           </div>
         </div>
       </section>
+
       <section class="contacts" id="contacts">
         <h2 class="contacts__title">Our Contacts</h2>
         <hr class="contacts__hr" />
@@ -573,6 +300,7 @@
           />
         </div>
       </section>
+
       <section class="digital" id="library-card">
         <h2 class="digital__title">Digital Library Cards</h2>
         <hr class="digital__hr" />
@@ -643,19 +371,19 @@
                 </p>
                 <form class="digital__form">
                   <input
-                    class="digital__form-input digital__form-input_color-brown"
+                    class="digital__form-input digital__form-input_color-brown-name"
                     type="text"
                     name="last-name"
-                    placeholder="John Doe"
+                    placeholder=""
                     pattern="[A-Za-z0-9\-]+"
                     required
                     title="Only letters and numbers"
                   />
                   <input
-                    class="digital__form-input digital__form-input_color-brown"
+                    class="digital__form-input digital__form-input_color-brown-card"
                     type="text"
                     name="card-number"
-                    placeholder="F00234030"
+                    placeholder=""
                     pattern="[A-Za-z0-9\-]+"
                     required
                     title="Only letters and numbers"
@@ -682,7 +410,11 @@
                     <ul class="digital__container-form_footer-types">
                       <li class="digital__container-form_footer-type">Books</li>
                       <li class="digital__container-form_footer-icon-book"></li>
-                      <li class="digital__container-form_footer-score">2</li>
+                      <li
+                        class="digital__container-form_footer-score digital__container-form_footer-score-book"
+                      >
+                        0
+                      </li>
                     </ul>
                   </div>
                 </form>
@@ -705,6 +437,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer__information">
         <div class="footer__row">
@@ -755,6 +488,298 @@
         >
       </div>
     </footer>
+
+    <div class="popup popup_menu">
+      <div class="popup__container popup__container_menu">
+        <div class="popup__header popup__header_menu">
+          <img
+            class="popup__close popup__close_menu"
+            src="./img/cross.svg"
+            alt="Cross"
+          />
+        </div>
+        <nav class="popup__navigation">
+          <ul class="popup__navigation-links">
+            <li>
+              <a class="popup__navigation-link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="popup__navigation-link" href="#favorites">Favorites</a>
+            </li>
+            <li>
+              <a class="popup__navigation-link" href="#coffee-shop"
+                >Coffee shop</a
+              >
+            </li>
+            <li>
+              <a class="popup__navigation-link" href="#contacts">Contacts</a>
+            </li>
+            <li>
+              <a class="popup__navigation-link" href="#library-card"
+                >Library Card</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="popup popup__buy-card">
+      <div class="popup__container popup__container_buy-card">
+        <header class="popup__header popup__header_buy-card">
+          <h2 class="popup__title popup__title_buy-card">Buy a library card</h2>
+          <img
+            class="popup__close popup__close_buy-card"
+            src="../src/img/close__button_white.svg"
+          />
+        </header>
+        <div class="popup__text-container_buy-card">
+          <form class="popup__form popup__form_buy-card" name="buyCardForm">
+            <p class="popup__form-text">Bank card number</p>
+            <input
+              class="popup__input popup__input-card-number"
+              type="text"
+              required
+              name="bankCardName"
+            />
+            <p class="popup__form-text">Expiration code</p>
+            <div class="popup__input_buy-card-container">
+              <input
+                class="popup__input popup__input_buy-card"
+                type="number"
+                required
+                name="expirationCodeFirst"
+              />
+              <input
+                class="popup__input popup__input_buy-card"
+                type="number"
+                required
+                name="expirationCodeSecond"
+              />
+            </div>
+            <p class="popup__form-text">CVC</p>
+            <input
+              class="popup__input popup__input_buy-card-cvc"
+              type="number"
+              required
+              name="cvcBuyCard"
+            />
+            <p class="popup__form-text popup__form-text_margin-25px">
+              Cardholder name
+            </p>
+            <input
+              class="popup__input"
+              type="text"
+              required
+              name="cardholderName"
+            />
+            <p class="popup__form-text">Postal code</p>
+            <input
+              class="popup__input popup__input_postal-code"
+              type="number"
+              required
+              name="postalCode"
+            />
+            <p class="popup__form-text">City / Town</p>
+            <input class="popup__input" type="text" required name="cityTown" />
+            <div class="popup__form-footer">
+              <button class="popup__button popup__button_buy-library-card">
+                Buy
+              </button>
+              <p class="popup__price">$ 25.00</p>
+            </div>
+          </form>
+          <p class="popup__text_buy-card">
+            If you are live, work, attend school, or pay property taxes in New
+            York State, you can get a $25 digital library card right now using
+            this online form. Visitors to New York State can also use this form
+            to apply for a temporary card.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_no-auth">
+      <div class="popup__container popup__container_no-auth">
+        <p class="popup__title popup__title_no-auth">Profile</p>
+        <hr class="popup__hr" />
+        <div class="popup__block_no-auth">
+          <button class="popup__button-profile popup__button-profile_login">
+            Log in
+          </button>
+          <button class="popup__button-profile popup__button-profile_register">
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup_with-auth">
+      <div class="popup__container popup__container_with-auth">
+        <p class="popup__title popup__title_with-auth"></p>
+        <hr class="popup__hr" />
+        <div class="popup__block_with-auth">
+          <button
+            class="popup__button-profile popup__button-profile_my-profile"
+            type="button"
+          >
+            My profile
+          </button>
+          <button
+            class="popup__button-profile popup__button-profile_log-out"
+            type="button"
+          >
+            Log Out
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_register">
+      <div class="popup__container popup__container_register">
+        <div class="popup__header popup__header_register">
+          <h1 class="popup__title popup__title_register">Register</h1>
+          <img
+            class="popup__close popup__close_register"
+            src="./img/close_button.svg"
+          />
+        </div>
+        <form class="popup__form popup__form_register" name="registerForm">
+          <p class="popup__form-text">First name</p>
+          <input
+            class="popup__input"
+            type="text"
+            name="firstNameRegister"
+            required
+          />
+          <p class="popup__form-text">Last name</p>
+          <input
+            class="popup__input"
+            type="text"
+            name="lastNameRegister"
+            required
+          />
+          <p class="popup__form-text">E-mail</p>
+          <input
+            class="popup__input"
+            type="email"
+            name="emailRegister"
+            required
+          />
+          <p class="popup__form-text">Password</p>
+          <input
+            class="popup__input"
+            type="password"
+            name="passwordRegister"
+            minlength="8"
+            required
+          />
+          <button class="popup__button" type="submit">Sign Up</button>
+        </form>
+        <div class="popup__footer popup__footer_register">
+          <p class="popup__register_register-prompt">
+            Already have an account?
+          </p>
+          <p class="popup__register_login">Login</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_login">
+      <div class="popup__container popup__container_login">
+        <div class="popup__header popup__header_login">
+          <h2 class="popup__title popup__title_login">Login</h2>
+          <img
+            class="popup__close popup__close_login"
+            src="./img/close_button.svg"
+          />
+        </div>
+        <form class="popup__form popup__form_login" name="loginForm">
+          <p class="popup__form-text">E-mail or readers card</p>
+          <input class="popup__input" type="email" name="emailLogin" required />
+          <p class="popup__form-text">Password</p>
+          <input
+            class="popup__input"
+            type="password"
+            name="passwordLogin"
+            minlength="8"
+            required
+          />
+          <button class="popup__button popup__button_login" type="submit">
+            Log In
+          </button>
+        </form>
+        <div class="popup__footer popup__footer_login">
+          <p class="popup__footer_login-register_prompt">
+            Don`t have an account?
+          </p>
+          <p class="popup__footer_login-register">Register</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_error">
+      <div class="popup__container popup__container_error">
+        <p class="popup__text popup__text_error">Error</p>
+      </div>
+    </div>
+
+    <div class="popup popup_profile">
+      <div class="popup__container popup__container_profile">
+        <aside class="popup__sidebar_profile">
+          <div class="popup__profile_avatar-bg"></div>
+          <div class="popup__profile_name-bg"></div>
+        </aside>
+        <div class="popup__block_content-profile">
+          <header class="popup__header popup__header_profile">
+            <h2 class="popup__title popup__title_profile">My profile</h2>
+            <img
+              class="popup__close popup__close_profile"
+              src="./img/close_button.svg"
+            />
+          </header>
+          <div class="popup__footer_profile">
+            <ul class="popup__footer_profile-types">
+              <li class="popup__profile_type">visits</li>
+              <li
+                class="popup__profile_icon popup__profile_footer-icon-union"
+              ></li>
+              <li
+                class="popup__footer_profile-score popup__footer_profile-score-visits"
+              ></li>
+            </ul>
+            <ul class="popup__footer_profile-types">
+              <li class="popup__profile_type">bonuses</li>
+              <li
+                class="popup__profile_icon popup__profile_footer-icon-star"
+              ></li>
+              <li class="popup__footer_profile-score">1240</li>
+            </ul>
+            <ul class="popup__footer_profile-types">
+              <li class="popup__profile_type">Books</li>
+              <li
+                class="popup__profile_icon popup__profile_footer-icon-book"
+              ></li>
+              <li
+                class="popup__footer_profile-score popup__footer_profile-score-book"
+              >
+                0
+              </li>
+            </ul>
+          </div>
+          <div class="popup__text_profile">
+            <p class="popup__text_profile-rented-books">Rented books</p>
+            <ul class="popup__text_profile-buy-book">
+              <li class="popup__text_profile-book-name"></li>
+            </ul>
+          </div>
+          <div class="popup__text_profile-card-info">
+            <p class="popup__text_profile-card">Card number</p>
+            <p class="popup__text_profile-card-number"></p>
+            <button class="popup__text_profile-copy"></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script type="module" src="./pages/index.js"></script>
   <script type="module" src="./pages/carousel.js"></script>
