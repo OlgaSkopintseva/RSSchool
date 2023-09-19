@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="icon" href="./svg/favicon.png" type="image/x-icon" />
+  </head>
+  <body class="page">
+    <img class="page__bg_image" />
+    <main class="main">
+      <div class="container">
+        <img class="container__image" />
+        <audio src="./audio/Don't Start Now.mp3" class="audio"></audio>
+        <div class="container__player">
+          <img class="player__play" src="./svg/play.png" />
+          <img src="./svg/forward.png" alt="" class="player__previous" />
+          <img src="./svg/backward.png" alt="" class="player__next" />
+          <div class="player__artist"></div>
+          <div class="player__song_name"></div>
+          <input type="range" class="player__input" />
+          <div class="currentTime"></div>
+          <div class="durationTime"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__information">
+        <p class="footer__year">2023</p>
+        <a
+          href="https://github.com/OlgaSkopintseva?tab=repositories"
+          class="footer__github"
+          >GitHub</a
+        >
+      </div>
+      <a
+        class="footer__rss_school"
+        href="https://rs.school/js-stage0/"
+        target="_blank"
+      ></a>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+</html>
