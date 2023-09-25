@@ -4,6 +4,7 @@ const searchInput = document.querySelector(".header__search_input");
 const clearInput = document.querySelector(".clear-icon");
 const imagesWrapper = document.querySelector(".content__images");
 const lightBox = document.querySelector(".lightbox");
+const closeButton = document.querySelector(".close__button");
 
 searchInput.focus();
 
@@ -48,6 +49,13 @@ const showLightbox = (name, img) => {
   lightboxImage.src = img;
   photographerName.innerText = name;
   lightbox.classList.add("show");
+  document.body.style.overflow = "hidden";
+};
+
+const closeLightbox = () => {
+  const lightbox = document.querySelector(".lightbox");
+  lightbox.classList.remove("show");
+  document.body.style.overflow = "auto";
 };
 
 const generateHTML = (images) => {
@@ -114,5 +122,4 @@ getImages(
 
 loadMoreButton.addEventListener("click", loadMoreImages);
 searchInput.addEventListener("keyup", loadSearchImages);
-
-// `https://api.unsplash.com/photos/?client_id=${apiKey}&per_page=${perPage}&page=${currentPage}&query=${searchQuery}`
+closeButton.addEventListener("click", closeLightbox);
