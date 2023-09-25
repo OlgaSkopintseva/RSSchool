@@ -1,10 +1,12 @@
 const apiKey = "awl44Zpf006esorGvZfU4rxvPn7zQiydo-4URBkk6LE";
 const loadMoreButton = document.querySelector(".content__button");
 const searchInput = document.querySelector(".header__search_input");
-const clearInput = document.querySelector(".clear-icon");
+const clearInput = document.querySelector(".header__clear_icon");
 const imagesWrapper = document.querySelector(".content__images");
-const lightBox = document.querySelector(".lightbox");
+const lightBox = document.querySelector(".popup_enable");
 const closeButton = document.querySelector(".close__button");
+const searchButton = document.querySelector(".header__search_icon");
+const downloadButton = document.querySelector(".download__icon");
 
 searchInput.focus();
 
@@ -40,11 +42,12 @@ const downloadImages = (imgURL) => {
 };
 
 const showLightbox = (name, img) => {
-  const lightbox = document.querySelector(".lightbox");
-  const lightboxImage = lightbox.querySelector(".lightbox__img");
+  const lightbox = document.querySelector(".popup_enable");
+  const lightboxImage = lightbox.querySelector(".popup_enable__img");
   const photographerName = lightbox.querySelector(
-    ".photographer__name_lightbox"
+    ".photographer__name_popup_enable"
   );
+  downloadButton.setAttribute("data-img", img);
 
   lightboxImage.src = img;
   photographerName.innerText = name;
@@ -53,7 +56,7 @@ const showLightbox = (name, img) => {
 };
 
 const closeLightbox = () => {
-  const lightbox = document.querySelector(".lightbox");
+  const lightbox = document.querySelector(".popup_enable");
   lightbox.classList.remove("show");
   document.body.style.overflow = "auto";
 };
@@ -123,3 +126,9 @@ getImages(
 loadMoreButton.addEventListener("click", loadMoreImages);
 searchInput.addEventListener("keyup", loadSearchImages);
 closeButton.addEventListener("click", closeLightbox);
+searchButton.addEventListener("click", () => {
+  loadSearchImages({ key: "Enter", target: searchInput });
+});
+downloadButton.addEventListener("click", (e) =>
+  downloadImages(e.target.dataset.img)
+);

@@ -12,29 +12,35 @@
     <link rel="icon" href="./icons/galerry__icon.png" type="image/x-icon" />
   </head>
   <body class="body">
-    <div class="lightbox">
+    <div class="popup_enable">
       <div class="wrapper">
-        <div class="header_wrapper">
+        <div class="wrapper__header">
           <div class="photographer">
             <img
-              class="camera__icon_black camera__icon_black-lightbox"
+              class="camera__icon_black camera__icon_black-popup_enable"
               src="./icons/camera__icon_black.png"
             />
-            <span class="photographer__name photographer__name_lightbox"
-              ></span
-            >
+            <span
+              class="photographer__name photographer__name_popup_enable"
+            ></span>
           </div>
           <div class="buttons">
             <img
               src="./icons/download__icon_black.png"
-              alt=""
+              alt="img"
               class="download__icon"
             />
-            <img src="./icons/close__icon.png" alt="" class="close__button" />
+            <img
+              src="./icons/close__icon.png"
+              alt="img"
+              class="close__button"
+            />
           </div>
         </div>
         <div class="preview-img">
-          <div class="img"><img src="" alt="" class="lightbox__img"/></div>
+          <div class="img">
+            <img src="" alt="img" class="popup_enable__img" />
+          </div>
         </div>
       </div>
     </div>
@@ -44,8 +50,14 @@
         <h2 class="header__logo_name">Unsplash API</h2>
       </div>
       <div class="header__search">
-        <input type="text" class="header__search_input" placeholder="Search..." autocomplete="off" id="searchInput">
-        <img class="clear-icon" src="./icons/close__icon.png">
+        <input
+          type="text"
+          class="header__search_input"
+          placeholder="Search..."
+          autocomplete="off"
+          id="searchInput"
+        />
+        <img class="header__clear_icon" src="./icons/close__icon.png" />
         <img class="header__search_icon" src="./icons/search_icon.png" />
       </div>
     </header>

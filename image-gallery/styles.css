@@ -38,15 +38,15 @@
   width: 350px;
 }
 
-.clear-icon {
+.header__clear_icon {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
   display: none;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 .header__search_input {
@@ -60,12 +60,16 @@
   border: 1px solid #dddddd;
 }
 
+.header__search_input:focus {
+  border: 2px solid #5d00ce9a;
+}
+
 .header__search_icon {
   position: absolute;
   width: 20px;
   cursor: pointer;
   top: 9px;
-  right: 22px;
+  right: 25px;
   transition: filter 0.5s;
 }
 
@@ -189,7 +193,7 @@
   cursor: pointer;
 }
 
-.lightbox {
+.popup_enable {
   position: fixed;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.7);
@@ -198,11 +202,11 @@
   display: none;
 }
 
-.lightbox.show {
+.popup_enable.show {
   display: block;
 }
 
-.lightbox .wrapper {
+.popup_enable .wrapper {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -210,22 +214,22 @@
   transform: translate(-50%, -50%);
   background-color: #fff;
   border-radius: 3px;
-  width: 100%;
+  width: 80%;
   max-width: 850px;
 }
 
-.header_wrapper {
+.wrapper__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.photographer__name_lightbox {
+.photographer__name_popup_enable {
   color: #000;
   font-size: 15px;
 }
 
-.camera__icon_black-lightbox {
+.camera__icon_black-popup_enable {
   width: 20px;
   height: 20px;
 }
@@ -234,11 +238,13 @@
   width: 17px;
   height: 17px;
   cursor: pointer;
+  padding: 6px;
 }
 
 .preview-img {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
 .wrapper .preview-img .img {
@@ -255,7 +261,7 @@
 .buttons {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .footer {
@@ -302,10 +308,9 @@
   align-items: center;
   justify-content: center;
   background-image: url(./icons/rss.svg);
-  height: 40px;
-  width: 100px;
-  margin: 0;
-  padding: 0 20px 0 0;
+  height: 30px;
+  width: 80px;
+  margin: 0 20px 0 0;
   background-repeat: no-repeat;
   background-size: contain;
 }
