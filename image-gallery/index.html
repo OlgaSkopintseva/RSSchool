@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./icons/galerry__icon.png" type="image/x-icon" />
+  </head>
+  <body class="body">
+    <div class="popup_enable">
+      <div class="wrapper">
+        <div class="wrapper__header">
+          <div class="photographer">
+            <img
+              class="camera__icon_black camera__icon_black-popup_enable"
+              src="./icons/camera__icon_black.png"
+            />
+            <span
+              class="photographer__name photographer__name_popup_enable"
+            ></span>
+          </div>
+          <div class="buttons">
+            <img
+              src="./icons/download__icon_black.png"
+              alt="img"
+              class="download__icon"
+            />
+            <img
+              src="./icons/close__icon.png"
+              alt="img"
+              class="close__button"
+            />
+          </div>
+        </div>
+        <div class="preview-img">
+          <div class="img">
+            <img src="" alt="img" class="popup_enable__img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo_img" src="./icons/camera_icon.png" />
+        <h2 class="header__logo_name">Unsplash API</h2>
+      </div>
+      <div class="header__search">
+        <input
+          type="text"
+          class="header__search_input"
+          placeholder="Search..."
+          autocomplete="off"
+          id="searchInput"
+        />
+        <img class="header__clear_icon" src="./icons/close__icon.png" />
+        <img class="header__search_icon" src="./icons/search_icon.png" />
+      </div>
+    </header>
+    <main class="content">
+      <ul class="content__images"></ul>
+      <button class="content__button">Load More</button>
+    </main>
+    <footer class="footer">
+      <div class="footer__information">
+        <p class="footer__year">2023</p>
+        <a
+          href="https://github.com/OlgaSkopintseva?tab=repositories"
+          class="footer__github"
+          >GitHub</a
+        >
+      </div>
+      <a
+        class="footer__rss_school"
+        href="https://rs.school/js-stage0/"
+        target="_blank"
+      ></a>
+    </footer>
+  </body>
+  <script src="./app.js" defer></script>
+</html>
