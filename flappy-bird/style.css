@@ -16,3 +16,57 @@
   top: 0;
   z-index: 1;
 }
+.result {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 2px solid #261802;
+  background: #d2dc98;
+  position: absolute;
+  z-index: 2;
+  top: 260px;
+  width: 140px;
+  height: 120px;
+  display: none;
+}
+
+.result__text {
+  font-family: "VT323", monospace;
+  font-size: 23px;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
+  color: rgba(165, 49, 49, 1);
+  margin: 12px 10px;
+  padding: 0;
+}
+
+.result__text_results {
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  margin: 10px 0;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #261802;
+  background: #f57600;
+  font-family: "VT323", monospace;
+  font-size: 23px;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  position: absolute;
+  top: 400px;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
