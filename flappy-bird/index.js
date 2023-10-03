@@ -46,7 +46,12 @@ function moveUp() {
   fly.play();
 }
 
-document.addEventListener("keydown", moveUp);
+document.addEventListener("keydown", function (event) {
+  if (event.keyCode === 38) {
+    moveUp();
+  }
+});
+
 
 function startGame() {
   isGameOver = false;
