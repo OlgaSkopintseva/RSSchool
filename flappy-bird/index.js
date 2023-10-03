@@ -71,3 +71,14 @@ function gameOver() {
   addScoreToLS(score, timeInSeconds);
   displayScores();
 }
+
+function inferredEndTime() {
+  const gameEndTime = Date.now();
+  timeInSeconds = Math.floor((gameEndTime - gameStartTime) / 1000);
+  resultTime.textContent = "Time: " + timeInSeconds + " sec";
+}
+
+pipe[0] = {
+  x: cvs.width,
+  y: 0,
+};
