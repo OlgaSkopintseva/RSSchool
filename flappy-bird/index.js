@@ -47,3 +47,27 @@ function moveUp() {
 }
 
 document.addEventListener("keydown", moveUp);
+
+function startGame() {
+  isGameOver = false;
+  button.style.display = "none";
+  result.style.display = "none";
+  score = 0;
+  gameStartTime = Date.now();
+  pipe = [];
+
+  pipe[0] = {
+    x: cvs.width,
+    y: 0,
+  };
+}
+
+function gameOver() {
+  isGameOver = true;
+  button.style.display = "block";
+  result.style.display = "block";
+  gameStartTime = Date.now();
+  resultScore.textContent = "Score: " + score;
+  addScoreToLS(score, timeInSeconds);
+  displayScores();
+}
