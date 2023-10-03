@@ -28,3 +28,15 @@ const bird_die = new Audio();
 fly.src = "audio/fly.mp3";
 score_audio.src = "audio/score.mp3";
 bird_die.src = "audio/bird_die.mp3";
+
+let gap = 110;
+
+let isGameOver = false;
+let gameStartTime = 0;
+let pipe = [];
+let score = 0;
+let timeInSeconds = 0;
+
+let xPos = 10;
+let yPos = 150;
+let grav = 1.5;
