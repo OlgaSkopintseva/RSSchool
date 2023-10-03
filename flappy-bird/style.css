@@ -4,18 +4,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  font-family: "VT323", monospace;
+  background-color: #89dce6b2;
 }
 
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   position: absolute;
-  top: 0;
+  top: 40px;
   z-index: 1;
 }
+
+.record__icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  margin: 10px 0 0 245px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.canvas {
+  border: 2px solid #261802c7;
+  border-radius: 10px;
+}
+
 .result {
   margin: 0;
   padding: 0;
@@ -28,14 +44,13 @@
   background: #d2dc98;
   position: absolute;
   z-index: 2;
-  top: 260px;
+  top: 240px;
   width: 140px;
   height: 120px;
   display: none;
 }
 
 .result__text {
-  font-family: "VT323", monospace;
   font-size: 23px;
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
   color: rgba(165, 49, 49, 1);
@@ -65,8 +80,58 @@
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
   color: #fff;
   position: absolute;
-  top: 400px;
+  top: 380px;
   z-index: 2;
   cursor: pointer;
   display: none;
+}
+
+.footer {
+  background-color: #492e01c5;
+  height: 50px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__information {
+  display: flex;
+  gap: 20px;
+  padding: 0 0 0 20px;
+}
+
+.footer__year {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer__github {
+  text-decoration: none;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer__github:hover {
+  color: #70c5ce;
+  transition: 0.5s;
+}
+
+.footer__rss_school {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/rss.svg);
+  height: 30px;
+  width: 80px;
+  margin: 0 20px 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
