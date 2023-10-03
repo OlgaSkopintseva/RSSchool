@@ -135,3 +135,46 @@ function draw() {
 
   requestAnimationFrame(draw);
 }
+
+pipeBottom.onload = draw;
+startGame();
+
+tablOfRecords.style.display = "none";
+
+recordIcon.addEventListener("click", () => {
+  tablOfRecords.style.display = "flex";
+});
+
+closeIcon.addEventListener("click", () => {
+  tablOfRecords.style.display = "none";
+});
+
+function addScoreToLS(score, time) {
+  const scores = JSON.parse(localStorage.getItem("scores")) || [];
+  scores.push({ score, time });
+  localStorage.setItem("scores", JSON.stringify(scores));
+}
+
+function displayScores() {
+  const tableBody = document.querySelector(".table__body");
+  const scores = JSON.parse(localStorage.getItem("scores")) || [];
+
+  scores.sort((a, b) => b.score - a.score);
+  scores.splice(10);
+
+  tableBody.innerHTML = `
+  <th class="table__category">Place</th>
+  <th class="table__category">Score</th>
+  <th class="table__category">Time</th>
+  `;
+
+  scores.forEach((scoreObj, index) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td class="table__category table__place">${index + 1}</td>
+      <td class="table__category table__score">${scoreObj.score}</td>
+      <td class="table__category table__time">${scoreObj.time} sec</td>
+    `;
+    tableBody.appendChild(row);
+  });
+}
