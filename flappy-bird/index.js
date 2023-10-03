@@ -40,3 +40,10 @@ let timeInSeconds = 0;
 let xPos = 10;
 let yPos = 150;
 let grav = 1.5;
+
+function moveUp() {
+  yPos -= 30;
+  fly.play();
+}
+
+document.addEventListener("keydown", moveUp);
