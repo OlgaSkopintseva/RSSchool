@@ -135,3 +135,60 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.table__of_records {
+  display: flex;
+  justify-content: center;
+}
+
+.table__header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 145px;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+}
+
+.table__records_text {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #f57600;
+}
+
+.cross__icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 100px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.table {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 180px;
+  z-index: 3;
+  background-color: #261802;
+}
+
+.table__body {
+  margin: 0;
+}
+
+.table__row {
+  margin: 0;
+}
+
+.table__category {
+  width: 85px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  background-color: #fbffc3;
+}
