@@ -212,3 +212,58 @@ closeGalleryButton.addEventListener("click", () => {
   galleryIcon.style.display = "none";
   resultContainer.style.display = "flex";
 });
+
+let selectedCharacter = localStorage.getItem("selectedCharacter");
+if (selectedCharacter) {
+  bird.src = selectedCharacter;
+} else {
+  bird.src = "img/bird.png";
+}
+
+selectedCharacter = localStorage.getItem("selectedCharacter");
+const icon = document.querySelector(".choose__icon");
+
+if (selectedCharacter) {
+  icon.src = selectedCharacter;
+} else {
+  icon.src = "img/bird.png";
+}
+
+const container = document.querySelector(".content__header");
+container.appendChild(icon);
+
+function selectCharacter(cardElement, characterSrc) {
+  selectedCharacter = localStorage.getItem("selectedCharacter");
+
+  const allCards = document.querySelectorAll(".gallery__icon_card");
+  allCards.forEach((card) => card.classList.remove("selected"));
+
+  cardElement.classList.add("selected");
+
+  bird.src = characterSrc;
+  localStorage.setItem("selectedCharacter", characterSrc);
+}
+
+birdCard.addEventListener("click", () => {
+  selectCharacter(birdCard, "img/bird.png");
+});
+
+dogCard.addEventListener("click", () => {
+  selectCharacter(dogCard, "img/dog__img.png");
+});
+
+catCard.addEventListener("click", () => {
+  selectCharacter(catCard, "img/cat__img.png");
+});
+
+selectedCharacter = localStorage.getItem("selectedCharacter");
+if (selectedCharacter) {
+  bird.src = selectedCharacter;
+
+  const selectedCard = document.querySelector(
+    `.gallery__icon_card img[src="${selectedCharacter}"]`
+  );
+  if (selectedCard) {
+    selectedCard.parentElement.classList.add("selected");
+  }
+}
