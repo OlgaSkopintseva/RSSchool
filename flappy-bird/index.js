@@ -199,3 +199,16 @@ function displayScores() {
     tableBody.appendChild(row);
   });
 }
+
+galleryIcon.style.display = "none";
+
+chooseIcon.addEventListener("click", () => {
+  galleryIcon.style.display = "flex";
+  resultContainer.style.display = "none";
+  tablOfRecords.style.display = "none";
+});
+
+closeGalleryButton.addEventListener("click", () => {
+  galleryIcon.style.display = "none";
+  resultContainer.style.display = "flex";
+});
