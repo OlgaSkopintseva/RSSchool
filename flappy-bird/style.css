@@ -17,19 +17,48 @@
   z-index: 1;
 }
 
+.content__header {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  position: absolute;
+  margin: 10px 0 0 210px;
+  top: 0;
+  z-index: 2;
+}
+
+.choose__icon {
+  height: 23px;
+  width: 30px;
+  cursor: pointer;
+  order: 1;
+}
+
 .record__icon {
   height: 30px;
   width: 30px;
-  position: absolute;
-  top: 0;
-  margin: 10px 0 0 245px;
-  z-index: 2;
   cursor: pointer;
+  order: 2;
 }
 
 .canvas {
   border: 2px solid #261802c7;
   border-radius: 10px;
+}
+
+.result__container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result__game_over {
+  height: 40px;
+  width: 180px;
+  position: absolute;
+  top: 197px;
+  z-index: 2;
 }
 
 .result {
@@ -74,13 +103,13 @@
   width: 100px;
   height: 40px;
   border: 2px solid #261802;
-  background: #f57600;
+  background: #ff8b1e;
   font-family: "VT323", monospace;
   font-size: 23px;
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
   color: #fff;
   position: absolute;
-  top: 380px;
+  top: 372px;
   z-index: 2;
   cursor: pointer;
   display: none;
@@ -156,13 +185,13 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #f57600;
+  color: #ff8b1e;
 }
 
 .cross__icon {
   height: 20px;
   width: 20px;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 87px;
   padding: 0;
   cursor: pointer;
 }
@@ -185,10 +214,10 @@
 }
 
 .table__category {
-  width: 85px;
+  width: 80px;
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 20px;
-  background-color: #fbffc3;
+  background-color: #fffae8;
 }
