@@ -221,3 +221,102 @@
   font-size: 20px;
   background-color: #fffae8;
 }
+
+.gallery__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  top: 200px;
+}
+
+.gallery__icon_header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery__icon_text {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #ff8b1e;
+}
+
+.gallery__cross_icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 0 0 45px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.gallery__icon_container {
+  width: 254px;
+  height: 115px;
+  background-color: #d2dc98;
+  border: 2px solid #261802;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery__icon_container-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 18px;
+  margin: 5px 0 0 0;
+}
+
+.gallery__icon_card {
+  width: 60px;
+  height: 60px;
+  background-color: #fbffc379;
+  border: 1px solid #26180234;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid #faffb0ce;
+}
+
+.gallery__icon_bird {
+  width: 40px;
+  height: 31px;
+}
+
+.gallery__icon_dog {
+  height: 32px;
+  width: 37px;
+}
+
+.gallery__icon_cat {
+  height: 36px;
+  width: 36px;
+}
+
+.gallery__icon_name-container {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0 0 0;
+  gap: 55px;
+  padding: 0;
+}
+
+.gallery__icon_name {
+  font-size: 20px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
