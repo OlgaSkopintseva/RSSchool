@@ -8,6 +8,19 @@ const resultTime = document.querySelector(".result__text_time");
 const recordIcon = document.querySelector(".record__icon");
 const tablOfRecords = document.querySelector(".table__of_records");
 const closeIcon = document.querySelector(".cross__icon");
+const chooseIcon = document.querySelector(".choose__icon");
+const galleryIcon = document.querySelector(".gallery__icon");
+const closeGalleryButton = document.querySelector(".gallery__cross_icon");
+const gameOverLogo = document.querySelector(".result__game_over");
+const resultContainer = document.querySelector(".result__container");
+
+const birdImg = document.querySelector(".gallery__icon_bird");
+const dogImg = document.querySelector(".gallery__icon_dog");
+const catImg = document.querySelector(".gallery__icon_cat");
+
+const birdCard = document.querySelector(".gallery__icon_card-bird");
+const dogCard = document.querySelector(".gallery__icon_card-dog");
+const catCard = document.querySelector(".gallery__icon_card-cat");
 
 const bird = new Image();
 const bg = new Image();
@@ -52,11 +65,11 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-
 function startGame() {
   isGameOver = false;
   button.style.display = "none";
   result.style.display = "none";
+  gameOverLogo.style.display = "none";
   score = 0;
   gameStartTime = Date.now();
   pipe = [];
@@ -71,6 +84,7 @@ function gameOver() {
   isGameOver = true;
   button.style.display = "block";
   result.style.display = "block";
+  gameOverLogo.style.display = "block";
   gameStartTime = Date.now();
   resultScore.textContent = "Score: " + score;
   addScoreToLS(score, timeInSeconds);
@@ -148,10 +162,12 @@ tablOfRecords.style.display = "none";
 
 recordIcon.addEventListener("click", () => {
   tablOfRecords.style.display = "flex";
+  galleryIcon.style.display = "none";
 });
 
 closeIcon.addEventListener("click", () => {
   tablOfRecords.style.display = "none";
+  resultContainer.style.display = "flex";
 });
 
 function addScoreToLS(score, time) {
