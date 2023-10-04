@@ -13,24 +13,21 @@
   </head>
   <body class="page">
     <div class="content">
-      <img class="record__icon" src="./img/record__icon.png" />
+      <div class="content__header">
+        <img class="record__icon" src="./img/record__icon.png" />
+        <img class="choose__icon" src="" />
+      </div>
       <canvas width="288" height="512" class="canvas" class="canvas"></canvas>
     </div>
-    <div class="result">
-      <p class="result__text result__text_results">Results</p>
-      <p class="result__text result__text_score"></p>
-      <p class="result__text result__text_time"></p>
+    <div class="result__container">
+      <img class="result__game_over" src="./img/game__over.png" />
+      <div class="result">
+        <p class="result__text result__text_results">Results</p>
+        <p class="result__text result__text_score"></p>
+        <p class="result__text result__text_time"></p>
+      </div>
     </div>
     <button class="button">Restart</button>
-    <div class="table__of_records">
-      <div class="table__header">
-        <p class="table__records_text">Record Table</p>
-        <img class="cross__icon" src="./img/cross__icon.png" />
-      </div>
-      <table class="table">
-        <tbody class="table__body"></tbody>
-      </table>
-    </div>
   </body>
   <footer class="footer">
     <div class="footer__information">
@@ -47,5 +44,14 @@
       target="_blank"
     ></a>
   </footer>
+  <div class="table__of_records">
+    <div class="table__header">
+      <p class="table__records_text">Record Table</p>
+      <img class="cross__icon" src="./img/cross__icon.png" />
+    </div>
+    <table class="table">
+      <tbody class="table__body"></tbody>
+    </table>
+  </div>
   <script src="./index.js" defer></script>
 </html>
