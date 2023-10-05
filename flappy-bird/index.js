@@ -13,6 +13,7 @@ const galleryIcon = document.querySelector(".gallery__icon");
 const closeGalleryButton = document.querySelector(".gallery__cross_icon");
 const gameOverLogo = document.querySelector(".result__game_over");
 const resultContainer = document.querySelector(".result__container");
+const ruleText = document.querySelector(".rule__text");
 
 const birdImg = document.querySelector(".gallery__icon_bird");
 const dogImg = document.querySelector(".gallery__icon_dog");
@@ -39,7 +40,6 @@ const score_audio = new Audio();
 const bird_die = new Audio();
 
 fly.src = "audio/fly.mp3";
-score_audio.src = "audio/score.mp3";
 bird_die.src = "audio/bird_die.mp3";
 
 let gap = 110;
@@ -52,7 +52,7 @@ let timeInSeconds = 0;
 
 let xPos = 10;
 let yPos = 150;
-let grav = 1.5;
+let grav = 1.35;
 
 function moveUp() {
   yPos -= 30;
@@ -134,14 +134,22 @@ function draw() {
 
     if (pipe[i].x == 5) {
       score++;
-      score_audio.play();
     }
+  }
+
+  if (localStorage.getItem("scores")) {
+    ruleText.style.display = "none";
   }
 
   button.addEventListener("click", () => {
     if (isGameOver) {
       location.reload();
       startGame();
+      restartButtonClicked = true;
+    }
+
+    if (localStorage.getItem("scores")) {
+      ruleText.style.display = "none";
     }
   });
 
@@ -242,6 +250,8 @@ function selectCharacter(cardElement, characterSrc) {
 
   bird.src = characterSrc;
   localStorage.setItem("selectedCharacter", characterSrc);
+
+  icon.src = characterSrc;
 }
 
 birdCard.addEventListener("click", () => {
