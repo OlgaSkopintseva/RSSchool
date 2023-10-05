@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./img/bird.png" rel="icon" type="image/x-icon" />
+  </head>
+  <body class="page">
+    <div class="content">
+      <div class="content__header">
+        <img class="record__icon" src="./img/record__icon.png" />
+        <img class="choose__icon" src="" />
+      </div>
+      <canvas width="288" height="512" class="canvas" class="canvas"></canvas>
+    </div>
+    <div class="result__container">
+      <img class="result__game_over" src="./img/game__over.png" />
+      <div class="result">
+        <p class="result__text result__text_results">Results</p>
+        <p class="result__text result__text_score"></p>
+        <p class="result__text result__text_time"></p>
+      </div>
+    </div>
+    <button class="button">Restart</button>
+  </body>
+  <footer class="footer">
+    <div class="footer__information">
+      <p class="footer__year">2023</p>
+      <a
+        href="https://github.com/OlgaSkopintseva?tab=repositories"
+        class="footer__github"
+        >GitHub</a
+      >
+    </div>
+    <a
+      class="footer__rss_school"
+      href="https://rs.school/js-stage0/"
+      target="_blank"
+    ></a>
+  </footer>
+  <div class="table__of_records">
+    <div class="table__header">
+      <p class="table__records_text">Record Table</p>
+      <img class="cross__icon" src="./img/cross__icon.png" />
+    </div>
+    <table class="table">
+      <tbody class="table__body"></tbody>
+    </table>
+  </div>
+  <div class="gallery__icon">
+    <div class="gallery__icon_header">
+      <p class="gallery__icon_text">Choose Character</p>
+      <img class="gallery__cross_icon" src="./img/cross__icon.png" />
+    </div>
+    <div class="gallery__icon_container">
+      <div class="gallery__icon_container-cards">
+        <div class="gallery__icon_card gallery__icon_card-bird">
+          <img
+            class="gallery__icon_img gallery__icon_bird"
+            src="./img/bird.png"
+            alt="icon"
+          />
+        </div>
+        <div class="gallery__icon_card gallery__icon_card-dog">
+          <img
+            class="gallery__icon_img gallery__icon_dog"
+            src="./img/dog__img.png"
+            alt="icon"
+          />
+        </div>
+        <div class="gallery__icon_card gallery__icon_card-cat">
+          <img
+            class="gallery__icon_img gallery__icon_cat"
+            src="./img/cat__img.png"
+            alt="icon"
+          />
+        </div>
+      </div>
+      <div class="gallery__icon_name-container">
+        <p class="gallery__icon_name">Bird</p>
+        <p class="gallery__icon_name">Dog</p>
+        <p class="gallery__icon_name">Cat</p>
+      </div>
+    </div>
+  </div>
+  <p class="rule__text">To control the character, you need to press the ↑ key</p>
+  <script src="./index.js" defer></script>
+</html>
